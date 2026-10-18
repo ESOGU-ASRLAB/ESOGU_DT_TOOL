@@ -1,0 +1,5 @@
+COMPLETE
+run_id=FULLSRC_LLAMA32_PARALLEL_R04
+runtime_seconds=121.398895
+pairs=2016
+db_id=6ad3e2f8ce62970377f70fd6

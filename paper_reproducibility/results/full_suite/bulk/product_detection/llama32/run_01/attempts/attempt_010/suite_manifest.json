@@ -1,0 +1,13 @@
+{
+  "suite_id": "FULLSRC",
+  "artifact_type": "source_code",
+  "source_artifact": "C:\\Users\\matisse\\Desktop\\STLC-Manager\\test_inputs\\ProductDetection.cpp",
+  "source_artifact_hash": "7a5019c8fb15e3cdc4a8d7e3bf9706a2ad146c104df60a05e8399644021cc545",
+  "source_session_id": "52083295-62a9-45f4-bd77-ad32cc2599c2",
+  "generation_model": "NOT RECORDED",
+  "generation_timestamp": "2026-03-06 12:55:10.929000",
+  "database_record_id": "69aacdd4d040c89c74b30991",
+  "scenario_count": 8,
+  "test_case_count": 64,
+  "suite_content_hash": "f57529d1e8397a650f6e6fbef32986beac9e1425ca9c91d8600051c12d33d101"
+}

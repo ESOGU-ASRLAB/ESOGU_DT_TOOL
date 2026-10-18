@@ -1,0 +1,6 @@
+﻿optimizer_column,maximum_comparisons,maximum_source_suite,minimum_comparisons,minimum_source_suite,spread_fraction,spread_percent_rounded
+Qwen3-Coder-30B,7090,LLaMa3.3-70B,3015,Qwen3-Coder-30B,0.57475317348378,57
+Codestral-22B,9893,LLaMa3.3-70B,4738,Codestral-22B,0.5210755079349034,52
+LLaMa3.2-3B,15576,LLaMa3.3-70B,7476,Codestral-22B,0.5200308166409862,52
+LLaMa3.3-70B,11500,LLaMa3.3-70B,5836,GPT-OSS-20B,0.4925217391304348,49
+GPT-OSS-20B,8397,LLaMa3.3-70B,4418,Codestral-22B,0.473859711801834,47

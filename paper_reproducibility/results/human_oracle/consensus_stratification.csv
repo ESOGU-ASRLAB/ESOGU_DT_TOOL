@@ -1,0 +1,25 @@
+﻿source_model,consensus_strength,count,percentage,unique,similar,unresolved
+Codestral-22B,3/3 unanimous,57,46.341463,43,14,0
+Codestral-22B,2/3 majority,66,53.658537,45,21,0
+Codestral-22B,unresolved,0,0.000000,0,0,0
+GPT-OSS-20B,3/3 unanimous,103,75.182482,64,39,0
+GPT-OSS-20B,2/3 majority,34,24.817518,19,15,0
+GPT-OSS-20B,unresolved,0,0.000000,0,0,0
+Gemini2.5-Flash,3/3 unanimous,50,35.971223,48,2,0
+Gemini2.5-Flash,2/3 majority,89,64.028777,62,27,0
+Gemini2.5-Flash,unresolved,0,0.000000,0,0,0
+Gemini2.5-Pro,3/3 unanimous,64,42.105263,57,7,0
+Gemini2.5-Pro,2/3 majority,88,57.894737,48,40,0
+Gemini2.5-Pro,unresolved,0,0.000000,0,0,0
+LLaMa3.2-3B,3/3 unanimous,48,28.402367,39,9,0
+LLaMa3.2-3B,2/3 majority,121,71.597633,82,39,0
+LLaMa3.2-3B,unresolved,0,0.000000,0,0,0
+LLaMa3.3-70B,3/3 unanimous,71,40.112994,63,8,0
+LLaMa3.3-70B,2/3 majority,106,59.887006,61,45,0
+LLaMa3.3-70B,unresolved,0,0.000000,0,0,0
+Qwen3-Coder-30B,3/3 unanimous,80,45.197740,53,27,0
+Qwen3-Coder-30B,2/3 majority,97,54.802260,56,41,0
+Qwen3-Coder-30B,unresolved,0,0.000000,0,0,0
+Overall,3/3 unanimous,473,44.040968,367,106,0
+Overall,2/3 majority,601,55.959032,373,228,0
+Overall,unresolved,0,0.000000,0,0,0

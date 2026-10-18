@@ -1,0 +1,581 @@
+{
+  "run_id": "FULLREQ_LLAMA32_BULK_R01",
+  "responses": [
+    {
+      "seed": 20261018,
+      "elapsed_seconds": 0.3961477279663086,
+      "request_chars": 1580,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 387,
+        "total_tokens": 409,
+        "prompt_tokens_details": {
+          "cached_tokens": 54
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 1,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261019,
+      "elapsed_seconds": 0.22690725326538086,
+      "request_chars": 1467,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 348,
+        "total_tokens": 370,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 2,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261020,
+      "elapsed_seconds": 0.19943928718566895,
+      "request_chars": 1397,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 343,
+        "total_tokens": 365,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 3,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261021,
+      "elapsed_seconds": 0.19861388206481934,
+      "request_chars": 1356,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 325,
+        "total_tokens": 347,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 4,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261022,
+      "elapsed_seconds": 0.18583059310913086,
+      "request_chars": 1573,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 374,
+        "total_tokens": 396,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 5,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261023,
+      "elapsed_seconds": 0.20554041862487793,
+      "request_chars": 1478,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 343,
+        "total_tokens": 365,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 6,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261024,
+      "elapsed_seconds": 0.18604183197021484,
+      "request_chars": 1470,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 354,
+        "total_tokens": 376,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 7,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261025,
+      "elapsed_seconds": 0.18477392196655273,
+      "request_chars": 1404,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 348,
+        "total_tokens": 370,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 8,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261026,
+      "elapsed_seconds": 0.2063300609588623,
+      "request_chars": 1505,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 345,
+        "total_tokens": 367,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 9,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261027,
+      "elapsed_seconds": 0.20105290412902832,
+      "request_chars": 1445,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 342,
+        "total_tokens": 364,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 10,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261028,
+      "elapsed_seconds": 0.20423579216003418,
+      "request_chars": 1368,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 330,
+        "total_tokens": 352,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 11,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261029,
+      "elapsed_seconds": 0.2023756504058838,
+      "request_chars": 1346,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 320,
+        "total_tokens": 342,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 12,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261030,
+      "elapsed_seconds": 0.20837020874023438,
+      "request_chars": 1651,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 384,
+        "total_tokens": 406,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 13,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261031,
+      "elapsed_seconds": 0.21415972709655762,
+      "request_chars": 1485,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 350,
+        "total_tokens": 372,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 14,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261032,
+      "elapsed_seconds": 0.20560264587402344,
+      "request_chars": 1463,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 349,
+        "total_tokens": 371,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 15,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261033,
+      "elapsed_seconds": 0.20394039154052734,
+      "request_chars": 1474,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 350,
+        "total_tokens": 372,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 16,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261034,
+      "elapsed_seconds": 0.20345520973205566,
+      "request_chars": 1400,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 330,
+        "total_tokens": 352,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 17,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261035,
+      "elapsed_seconds": 0.20075178146362305,
+      "request_chars": 1345,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 320,
+        "total_tokens": 342,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 18,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261036,
+      "elapsed_seconds": 0.20361733436584473,
+      "request_chars": 1344,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 320,
+        "total_tokens": 342,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 19,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261037,
+      "elapsed_seconds": 0.1990036964416504,
+      "request_chars": 1316,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 325,
+        "total_tokens": 347,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 20,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261038,
+      "elapsed_seconds": 0.2085559368133545,
+      "request_chars": 1524,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 373,
+        "total_tokens": 395,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 21,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261039,
+      "elapsed_seconds": 0.18244552612304688,
+      "request_chars": 1403,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 332,
+        "total_tokens": 354,
+        "prompt_tokens_details": {
+          "cached_tokens": 199
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 22,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261040,
+      "elapsed_seconds": 0.20375370979309082,
+      "request_chars": 1395,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 328,
+        "total_tokens": 350,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 23,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261041,
+      "elapsed_seconds": 0.20068717002868652,
+      "request_chars": 1335,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 322,
+        "total_tokens": 344,
+        "prompt_tokens_details": {
+          "cached_tokens": 199
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 24,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261042,
+      "elapsed_seconds": 0.2050037384033203,
+      "request_chars": 1514,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 358,
+        "total_tokens": 380,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 25,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261043,
+      "elapsed_seconds": 0.20476269721984863,
+      "request_chars": 1418,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 337,
+        "total_tokens": 359,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 26,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261044,
+      "elapsed_seconds": 0.20009922981262207,
+      "request_chars": 1417,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 336,
+        "total_tokens": 358,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 27,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261045,
+      "elapsed_seconds": 0.19984745979309082,
+      "request_chars": 1371,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 331,
+        "total_tokens": 353,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 28,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261046,
+      "elapsed_seconds": 0.2037181854248047,
+      "request_chars": 1438,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 346,
+        "total_tokens": 368,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 29,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261047,
+      "elapsed_seconds": 0.2001664638519287,
+      "request_chars": 1413,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 348,
+        "total_tokens": 370,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 30,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261048,
+      "elapsed_seconds": 0.1995530128479004,
+      "request_chars": 1398,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 334,
+        "total_tokens": 356,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 31,
+      "attempt": 1,
+      "kind": "bulk"
+    },
+    {
+      "seed": 20261049,
+      "elapsed_seconds": 0.20738911628723145,
+      "request_chars": 1380,
+      "raw_content": "{\"unique_indices\":[0],\"duplicate_groups\":[{\"representative_index\":0,\"duplicate_indices\":[1]}]}",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 330,
+        "total_tokens": 352,
+        "prompt_tokens_details": {
+          "cached_tokens": 198
+        }
+      },
+      "finish_reason": "stop",
+      "batch_number": 32,
+      "attempt": 1,
+      "kind": "bulk"
+    }
+  ]
+}

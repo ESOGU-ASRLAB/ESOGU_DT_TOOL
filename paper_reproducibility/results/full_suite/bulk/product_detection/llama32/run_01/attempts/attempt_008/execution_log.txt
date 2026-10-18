@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\matisse\Desktop\STLC-Manager\test_results\reviewer_revision_2026\final_revision\scripts\run_full_suite_experiment.py", line 495, in run_one
+    pair_rows, raw, uf = await run_bulk(suite["cases"], model, base_seed)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\matisse\Desktop\STLC-Manager\test_results\reviewer_revision_2026\final_revision\scripts\run_full_suite_experiment.py", line 245, in run_bulk
+    raise RuntimeError(f"Bulk batch {batch_number} failed validation: {errors}")
+RuntimeError: Bulk batch 8 failed validation: ['Coverage mismatch expected=[0, 1, 2, 3] got=[0, 1]', 'Coverage mismatch expected=[0, 1, 2, 3] got=[0, 1]', 'Coverage mismatch expected=[0, 1, 2, 3] got=[0, 1]', 'Coverage mismatch expected=[0, 1, 2, 3] got=[0, 1]']

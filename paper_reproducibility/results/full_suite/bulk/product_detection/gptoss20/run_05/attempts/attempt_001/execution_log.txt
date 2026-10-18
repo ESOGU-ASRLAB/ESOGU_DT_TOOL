@@ -1,0 +1,5 @@
+COMPLETE
+run_id=FULLSRC_GPTOSS20_BULK_R05
+runtime_seconds=26.898939
+pairs=32
+db_id=6ad3e791ce62970377f70fe6

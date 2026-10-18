@@ -1,0 +1,286 @@
+[
+  {
+    "session_id": "8507a7f2-9429-4a39-90e4-01325444da2e",
+    "created_at": "N/A",
+    "processes_found": [
+      "test_case_generation"
+    ],
+    "processes_count": 1,
+    "missing_processes": [
+      "requirement_analysis",
+      "test_planning",
+      "test_scenario_generation",
+      "test_case_optimization",
+      "test_code_generation",
+      "environment_setup",
+      "test_execution",
+      "test_reporting",
+      "test_closure"
+    ],
+    "stlc_completeness": 1,
+    "test_scenario_count": 0,
+    "test_case_count": 35,
+    "test_case_optimized_count": 0,
+    "test_execution_count": 0,
+    "has_test_reporting_data": false,
+    "has_test_closure_data": false,
+    "details": {
+      "test_case_format": "output.test_case_results (direct)"
+    }
+  },
+  {
+    "session_id": "cb196397-b950-485f-b14c-af9fd5f3e3bc",
+    "created_at": "N/A",
+    "processes_found": [
+      "test_case_generation"
+    ],
+    "processes_count": 1,
+    "missing_processes": [
+      "requirement_analysis",
+      "test_planning",
+      "test_scenario_generation",
+      "test_case_optimization",
+      "test_code_generation",
+      "environment_setup",
+      "test_execution",
+      "test_reporting",
+      "test_closure"
+    ],
+    "stlc_completeness": 1,
+    "test_scenario_count": 0,
+    "test_case_count": 55,
+    "test_case_optimized_count": 0,
+    "test_execution_count": 0,
+    "has_test_reporting_data": false,
+    "has_test_closure_data": false,
+    "details": {
+      "test_case_format": "output.test_case_results (direct)"
+    }
+  },
+  {
+    "session_id": "841c8cb4-676b-42ed-b82b-c4de1893502a",
+    "created_at": "2025-11-24 14:43:17.980000",
+    "processes_found": [
+      "test_case_optimization"
+    ],
+    "processes_count": 1,
+    "missing_processes": [
+      "requirement_analysis",
+      "test_planning",
+      "test_scenario_generation",
+      "test_case_generation",
+      "test_code_generation",
+      "environment_setup",
+      "test_execution",
+      "test_reporting",
+      "test_closure"
+    ],
+    "stlc_completeness": 1,
+    "test_scenario_count": 0,
+    "test_case_count": 0,
+    "test_case_optimized_count": 0,
+    "test_execution_count": 0,
+    "has_test_reporting_data": false,
+    "has_test_closure_data": false,
+    "details": {}
+  },
+  {
+    "session_id": "129793d5-bae2-4da4-858a-06947f0e646b",
+    "created_at": "2025-10-23 10:48:18.690000",
+    "processes_found": [
+      "test_scenario_generation"
+    ],
+    "processes_count": 1,
+    "missing_processes": [
+      "requirement_analysis",
+      "test_planning",
+      "test_case_generation",
+      "test_case_optimization",
+      "test_code_generation",
+      "environment_setup",
+      "test_execution",
+      "test_reporting",
+      "test_closure"
+    ],
+    "stlc_completeness": 1,
+    "test_scenario_count": 7,
+    "test_case_count": 0,
+    "test_case_optimized_count": 0,
+    "test_execution_count": 0,
+    "has_test_reporting_data": true,
+    "has_test_closure_data": true,
+    "details": {}
+  },
+  {
+    "session_id": "bd39408b-90f1-46ba-930a-b133abb71c1f",
+    "created_at": "2025-10-23 10:54:49.793000",
+    "processes_found": [
+      "test_scenario_generation"
+    ],
+    "processes_count": 1,
+    "missing_processes": [
+      "requirement_analysis",
+      "test_planning",
+      "test_case_generation",
+      "test_case_optimization",
+      "test_code_generation",
+      "environment_setup",
+      "test_execution",
+      "test_reporting",
+      "test_closure"
+    ],
+    "stlc_completeness": 1,
+    "test_scenario_count": 7,
+    "test_case_count": 0,
+    "test_case_optimized_count": 0,
+    "test_execution_count": 0,
+    "has_test_reporting_data": true,
+    "has_test_closure_data": true,
+    "details": {}
+  },
+  {
+    "session_id": "project.xml Test Scenario&Test Cases",
+    "created_at": "2025-07-04 16:56:39.659000",
+    "processes_found": [
+      "test_scenario_generation",
+      "test_case_generation"
+    ],
+    "processes_count": 2,
+    "missing_processes": [
+      "requirement_analysis",
+      "test_planning",
+      "test_case_optimization",
+      "test_code_generation",
+      "environment_setup",
+      "test_execution",
+      "test_reporting",
+      "test_closure"
+    ],
+    "stlc_completeness": 2,
+    "test_scenario_count": 7,
+    "test_case_count": 56,
+    "test_case_optimized_count": 0,
+    "test_execution_count": 0,
+    "has_test_reporting_data": true,
+    "has_test_closure_data": true,
+    "details": {
+      "test_case_format": "output.test_case_results (direct)"
+    }
+  },
+  {
+    "session_id": "f9928335-53d2-4246-81d6-f59d152ede47",
+    "created_at": "2026-01-12 21:12:15.464000",
+    "processes_found": [
+      "code_review",
+      "requirement_analysis",
+      "test_planning"
+    ],
+    "processes_count": 3,
+    "missing_processes": [
+      "test_scenario_generation",
+      "test_case_generation",
+      "test_case_optimization",
+      "test_code_generation",
+      "environment_setup",
+      "test_execution",
+      "test_reporting",
+      "test_closure"
+    ],
+    "stlc_completeness": 2,
+    "test_scenario_count": 0,
+    "test_case_count": 0,
+    "test_case_optimized_count": 0,
+    "test_execution_count": 0,
+    "has_test_reporting_data": false,
+    "has_test_closure_data": false,
+    "details": {}
+  },
+  {
+    "session_id": "test-exec-20260111-203534-Selected-Tests-(92-t",
+    "created_at": "N/A",
+    "processes_found": [
+      "test_execution"
+    ],
+    "processes_count": 1,
+    "missing_processes": [
+      "requirement_analysis",
+      "test_planning",
+      "test_scenario_generation",
+      "test_case_generation",
+      "test_case_optimization",
+      "test_code_generation",
+      "environment_setup",
+      "test_reporting",
+      "test_closure"
+    ],
+    "stlc_completeness": 1,
+    "test_scenario_count": 0,
+    "test_case_count": 0,
+    "test_case_optimized_count": 0,
+    "test_execution_count": 1,
+    "has_test_reporting_data": false,
+    "has_test_closure_data": false,
+    "details": {
+      "execution": {
+        "passed": 1,
+        "failed": 0,
+        "skipped": 0,
+        "pass_rate": 100.0
+      }
+    }
+  },
+  {
+    "session_id": "07d9af28-58bf-48fc-a53c-8998aac08b2f",
+    "created_at": "N/A",
+    "processes_found": [
+      "test_code_generation"
+    ],
+    "processes_count": 1,
+    "missing_processes": [
+      "requirement_analysis",
+      "test_planning",
+      "test_scenario_generation",
+      "test_case_generation",
+      "test_case_optimization",
+      "environment_setup",
+      "test_execution",
+      "test_reporting",
+      "test_closure"
+    ],
+    "stlc_completeness": 1,
+    "test_scenario_count": 0,
+    "test_case_count": 0,
+    "test_case_optimized_count": 0,
+    "test_execution_count": 0,
+    "has_test_reporting_data": false,
+    "has_test_closure_data": false,
+    "details": {}
+  },
+  {
+    "session_id": "d25dc5b4-7697-4767-8027-8edfc414a036",
+    "created_at": "2026-01-11 15:37:41.660000",
+    "processes_found": [
+      "environment_setup"
+    ],
+    "processes_count": 1,
+    "missing_processes": [
+      "requirement_analysis",
+      "test_planning",
+      "test_scenario_generation",
+      "test_case_generation",
+      "test_case_optimization",
+      "test_code_generation",
+      "test_execution",
+      "test_reporting",
+      "test_closure"
+    ],
+    "stlc_completeness": 1,
+    "test_scenario_count": 0,
+    "test_case_count": 0,
+    "test_case_optimized_count": 0,
+    "test_execution_count": 0,
+    "has_test_reporting_data": false,
+    "has_test_closure_data": false,
+    "details": {}
+  }
+]

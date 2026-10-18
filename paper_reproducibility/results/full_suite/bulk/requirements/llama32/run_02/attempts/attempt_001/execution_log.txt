@@ -1,0 +1,5 @@
+COMPLETE
+run_id=FULLREQ_LLAMA32_BULK_R02
+runtime_seconds=6.425435
+pairs=32
+db_id=6ad3e37fce62970377f70fd9

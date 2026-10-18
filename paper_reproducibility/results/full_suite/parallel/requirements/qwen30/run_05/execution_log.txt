@@ -1,0 +1,5 @@
+COMPLETE
+run_id=FULLREQ_QWEN30_PARALLEL_R05
+runtime_seconds=301.667142
+pairs=2016
+db_id=6ad3fff2ce62970377f71009

@@ -1,0 +1,34 @@
+[
+  {
+    "DuplicateCase": {
+      "ScenarioID": "TS_002",
+      "TestCaseID": "TC_002_008",
+      "Title": "State Transition Verification: BAND to MOVING to HOME",
+      "Description": "Verify that the robot correctly transitions through states (BAND → MOVING → HOME) when moving from BANDi to HOMEi, adhering to safety constraints.",
+      "Objective": "Ensure proper state management during movement sequence.",
+      "Category": "Positive",
+      "Comments": "Confirm correct order and timing of state changes.",
+      "ArtifactType": "requirements",
+      "SourceFile": "Functional_and_NonFunctional_Requirements.txt",
+      "SourceSessionID": "40b370ff-da15-46f2-ad96-692814082995",
+      "SourceInputSHA256": "705067b15ff8542772259ac589d99e37841311483b06f6eae56bc878376e1d51",
+      "ArtifactScopedScenarioID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_002",
+      "CaseUID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_002::TC_002_008::08"
+    },
+    "MatchedWith": {
+      "ScenarioID": "TS_002",
+      "TestCaseID": "TC_002_007",
+      "Title": "Edge Case Test: Movement Between Adjacent Locations",
+      "Description": "Test movement between adjacent locations like BANDi to HOMEi, ensuring minimal delay and proper state transitions without unnecessary stops or re-routes.",
+      "Objective": "Validate efficient movement for short-distance paths.",
+      "Category": "Positive",
+      "Comments": "Check performance and correctness of nearby location navigation.",
+      "ArtifactType": "requirements",
+      "SourceFile": "Functional_and_NonFunctional_Requirements.txt",
+      "SourceSessionID": "40b370ff-da15-46f2-ad96-692814082995",
+      "SourceInputSHA256": "705067b15ff8542772259ac589d99e37841311483b06f6eae56bc878376e1d51",
+      "ArtifactScopedScenarioID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_002",
+      "CaseUID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_002::TC_002_007::07"
+    }
+  }
+]

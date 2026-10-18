@@ -1,0 +1,5 @@
+COMPLETE
+run_id=FULLREQ_LLAMA32_PARALLEL_R03
+runtime_seconds=120.296722
+pairs=2016
+db_id=6ad3e4fbce62970377f70fdf

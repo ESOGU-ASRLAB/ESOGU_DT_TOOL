@@ -1,0 +1,5 @@
+COMPLETE
+run_id=FULLSRC_LLAMA32_BULK_R02
+runtime_seconds=6.399874
+pairs=32
+db_id=6ad3e17bce62970377f70fd0

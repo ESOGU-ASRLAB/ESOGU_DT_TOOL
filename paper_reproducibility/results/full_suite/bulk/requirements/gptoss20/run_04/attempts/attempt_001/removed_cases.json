@@ -1,0 +1,34 @@
+[
+  {
+    "DuplicateCase": {
+      "ScenarioID": "TS_006",
+      "TestCaseID": "TC_006_002",
+      "Title": "Verify Safe State of Gripper During Obstacle Avoidance",
+      "Description": "Test that the gripper remains in a safe state (either open or closed) when an obstacle is detected during movement, based on current task status.",
+      "Objective": "Validate gripper behavior under dynamic environmental conditions",
+      "Category": "Positive",
+      "Comments": "Ensure no unintended gripper action occurs during collision avoidance",
+      "ArtifactType": "requirements",
+      "SourceFile": "Functional_and_NonFunctional_Requirements.txt",
+      "SourceSessionID": "40b370ff-da15-46f2-ad96-692814082995",
+      "SourceInputSHA256": "705067b15ff8542772259ac589d99e37841311483b06f6eae56bc878376e1d51",
+      "ArtifactScopedScenarioID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_006",
+      "CaseUID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_006::TC_006_002::02"
+    },
+    "MatchedWith": {
+      "ScenarioID": "TS_006",
+      "TestCaseID": "TC_006_001",
+      "Title": "Verify Collision Avoidance with Obstacle Detection During Movement",
+      "Description": "Validate that the robot detects an obstacle in its path using sensors and halts or reroutes to avoid collision, ensuring compliance with RQ1–RQ5. The gripper must remain in a safe state (open or closed) depending on current task status.",
+      "Objective": "Ensure robust collision avoidance mechanism during dynamic movement",
+      "Category": "Positive",
+      "Comments": "Test includes verification of sensor data processing and robot response",
+      "ArtifactType": "requirements",
+      "SourceFile": "Functional_and_NonFunctional_Requirements.txt",
+      "SourceSessionID": "40b370ff-da15-46f2-ad96-692814082995",
+      "SourceInputSHA256": "705067b15ff8542772259ac589d99e37841311483b06f6eae56bc878376e1d51",
+      "ArtifactScopedScenarioID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_006",
+      "CaseUID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_006::TC_006_001::01"
+    }
+  }
+]

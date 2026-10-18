@@ -1,0 +1,5 @@
+COMPLETE
+run_id=FULLREQ_GPTOSS20_PARALLEL_R05
+runtime_seconds=288.217449
+pairs=2016
+db_id=6ad3f380ce62970377f70ff5

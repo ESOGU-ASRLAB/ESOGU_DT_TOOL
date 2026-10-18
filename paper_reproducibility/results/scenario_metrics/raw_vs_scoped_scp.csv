@@ -1,0 +1,91 @@
+﻿analysis_scope,run_id,suite_id,model_key,mode,repeat,legacy_raw_id_scp,artifact_scoped_scp,difference
+single_suite,FULLREQ_GPTOSS20_BULK_R01,FULLREQ,gptoss20,Local Bulk,1,1.0,1.0,0.0
+single_suite,FULLREQ_GPTOSS20_BULK_R02,FULLREQ,gptoss20,Local Bulk,2,1.0,1.0,0.0
+single_suite,FULLREQ_GPTOSS20_BULK_R03,FULLREQ,gptoss20,Local Bulk,3,1.0,1.0,0.0
+single_suite,FULLREQ_GPTOSS20_BULK_R04,FULLREQ,gptoss20,Local Bulk,4,1.0,1.0,0.0
+single_suite,FULLREQ_GPTOSS20_BULK_R05,FULLREQ,gptoss20,Local Bulk,5,1.0,1.0,0.0
+single_suite,FULLREQ_GPTOSS20_PARALLEL_R01,FULLREQ,gptoss20,Controlled Local Parallel,1,1.0,1.0,0.0
+single_suite,FULLREQ_GPTOSS20_PARALLEL_R02,FULLREQ,gptoss20,Controlled Local Parallel,2,1.0,1.0,0.0
+single_suite,FULLREQ_GPTOSS20_PARALLEL_R03,FULLREQ,gptoss20,Controlled Local Parallel,3,1.0,1.0,0.0
+single_suite,FULLREQ_GPTOSS20_PARALLEL_R04,FULLREQ,gptoss20,Controlled Local Parallel,4,1.0,1.0,0.0
+single_suite,FULLREQ_GPTOSS20_PARALLEL_R05,FULLREQ,gptoss20,Controlled Local Parallel,5,1.0,1.0,0.0
+single_suite,FULLREQ_LLAMA32_BULK_R01,FULLREQ,llama32,Local Bulk,1,1.0,1.0,0.0
+single_suite,FULLREQ_LLAMA32_BULK_R02,FULLREQ,llama32,Local Bulk,2,1.0,1.0,0.0
+single_suite,FULLREQ_LLAMA32_BULK_R03,FULLREQ,llama32,Local Bulk,3,1.0,1.0,0.0
+single_suite,FULLREQ_LLAMA32_BULK_R04,FULLREQ,llama32,Local Bulk,4,1.0,1.0,0.0
+single_suite,FULLREQ_LLAMA32_BULK_R05,FULLREQ,llama32,Local Bulk,5,1.0,1.0,0.0
+single_suite,FULLREQ_LLAMA32_PARALLEL_R01,FULLREQ,llama32,Controlled Local Parallel,1,1.0,1.0,0.0
+single_suite,FULLREQ_LLAMA32_PARALLEL_R02,FULLREQ,llama32,Controlled Local Parallel,2,1.0,1.0,0.0
+single_suite,FULLREQ_LLAMA32_PARALLEL_R03,FULLREQ,llama32,Controlled Local Parallel,3,0.75,0.75,0.0
+single_suite,FULLREQ_LLAMA32_PARALLEL_R04,FULLREQ,llama32,Controlled Local Parallel,4,0.875,0.875,0.0
+single_suite,FULLREQ_LLAMA32_PARALLEL_R05,FULLREQ,llama32,Controlled Local Parallel,5,1.0,1.0,0.0
+single_suite,FULLREQ_QWEN30_BULK_R01,FULLREQ,qwen30,Local Bulk,1,1.0,1.0,0.0
+single_suite,FULLREQ_QWEN30_BULK_R02,FULLREQ,qwen30,Local Bulk,2,1.0,1.0,0.0
+single_suite,FULLREQ_QWEN30_BULK_R03,FULLREQ,qwen30,Local Bulk,3,1.0,1.0,0.0
+single_suite,FULLREQ_QWEN30_BULK_R04,FULLREQ,qwen30,Local Bulk,4,1.0,1.0,0.0
+single_suite,FULLREQ_QWEN30_BULK_R05,FULLREQ,qwen30,Local Bulk,5,1.0,1.0,0.0
+single_suite,FULLREQ_QWEN30_PARALLEL_R01,FULLREQ,qwen30,Controlled Local Parallel,1,1.0,1.0,0.0
+single_suite,FULLREQ_QWEN30_PARALLEL_R02,FULLREQ,qwen30,Controlled Local Parallel,2,0.875,0.875,0.0
+single_suite,FULLREQ_QWEN30_PARALLEL_R03,FULLREQ,qwen30,Controlled Local Parallel,3,0.875,0.875,0.0
+single_suite,FULLREQ_QWEN30_PARALLEL_R04,FULLREQ,qwen30,Controlled Local Parallel,4,1.0,1.0,0.0
+single_suite,FULLREQ_QWEN30_PARALLEL_R05,FULLREQ,qwen30,Controlled Local Parallel,5,1.0,1.0,0.0
+single_suite,FULLSRC_GPTOSS20_BULK_R01,FULLSRC,gptoss20,Local Bulk,1,1.0,1.0,0.0
+single_suite,FULLSRC_GPTOSS20_BULK_R02,FULLSRC,gptoss20,Local Bulk,2,1.0,1.0,0.0
+single_suite,FULLSRC_GPTOSS20_BULK_R03,FULLSRC,gptoss20,Local Bulk,3,1.0,1.0,0.0
+single_suite,FULLSRC_GPTOSS20_BULK_R04,FULLSRC,gptoss20,Local Bulk,4,1.0,1.0,0.0
+single_suite,FULLSRC_GPTOSS20_BULK_R05,FULLSRC,gptoss20,Local Bulk,5,1.0,1.0,0.0
+single_suite,FULLSRC_GPTOSS20_PARALLEL_R01,FULLSRC,gptoss20,Controlled Local Parallel,1,1.0,1.0,0.0
+single_suite,FULLSRC_GPTOSS20_PARALLEL_R02,FULLSRC,gptoss20,Controlled Local Parallel,2,0.875,0.875,0.0
+single_suite,FULLSRC_GPTOSS20_PARALLEL_R03,FULLSRC,gptoss20,Controlled Local Parallel,3,0.875,0.875,0.0
+single_suite,FULLSRC_GPTOSS20_PARALLEL_R04,FULLSRC,gptoss20,Controlled Local Parallel,4,0.875,0.875,0.0
+single_suite,FULLSRC_GPTOSS20_PARALLEL_R05,FULLSRC,gptoss20,Controlled Local Parallel,5,1.0,1.0,0.0
+single_suite,FULLSRC_LLAMA32_BULK_R01,FULLSRC,llama32,Local Bulk,1,1.0,1.0,0.0
+single_suite,FULLSRC_LLAMA32_BULK_R02,FULLSRC,llama32,Local Bulk,2,1.0,1.0,0.0
+single_suite,FULLSRC_LLAMA32_BULK_R03,FULLSRC,llama32,Local Bulk,3,1.0,1.0,0.0
+single_suite,FULLSRC_LLAMA32_BULK_R04,FULLSRC,llama32,Local Bulk,4,1.0,1.0,0.0
+single_suite,FULLSRC_LLAMA32_BULK_R05,FULLSRC,llama32,Local Bulk,5,1.0,1.0,0.0
+single_suite,FULLSRC_LLAMA32_PARALLEL_R01,FULLSRC,llama32,Controlled Local Parallel,1,1.0,1.0,0.0
+single_suite,FULLSRC_LLAMA32_PARALLEL_R02,FULLSRC,llama32,Controlled Local Parallel,2,1.0,1.0,0.0
+single_suite,FULLSRC_LLAMA32_PARALLEL_R03,FULLSRC,llama32,Controlled Local Parallel,3,1.0,1.0,0.0
+single_suite,FULLSRC_LLAMA32_PARALLEL_R04,FULLSRC,llama32,Controlled Local Parallel,4,1.0,1.0,0.0
+single_suite,FULLSRC_LLAMA32_PARALLEL_R05,FULLSRC,llama32,Controlled Local Parallel,5,1.0,1.0,0.0
+single_suite,FULLSRC_QWEN30_BULK_R01,FULLSRC,qwen30,Local Bulk,1,1.0,1.0,0.0
+single_suite,FULLSRC_QWEN30_BULK_R02,FULLSRC,qwen30,Local Bulk,2,1.0,1.0,0.0
+single_suite,FULLSRC_QWEN30_BULK_R03,FULLSRC,qwen30,Local Bulk,3,1.0,1.0,0.0
+single_suite,FULLSRC_QWEN30_BULK_R04,FULLSRC,qwen30,Local Bulk,4,1.0,1.0,0.0
+single_suite,FULLSRC_QWEN30_BULK_R05,FULLSRC,qwen30,Local Bulk,5,1.0,1.0,0.0
+single_suite,FULLSRC_QWEN30_PARALLEL_R01,FULLSRC,qwen30,Controlled Local Parallel,1,0.875,0.875,0.0
+single_suite,FULLSRC_QWEN30_PARALLEL_R02,FULLSRC,qwen30,Controlled Local Parallel,2,0.875,0.875,0.0
+single_suite,FULLSRC_QWEN30_PARALLEL_R03,FULLSRC,qwen30,Controlled Local Parallel,3,1.0,1.0,0.0
+single_suite,FULLSRC_QWEN30_PARALLEL_R04,FULLSRC,qwen30,Controlled Local Parallel,4,0.875,0.875,0.0
+single_suite,FULLSRC_QWEN30_PARALLEL_R05,FULLSRC,qwen30,Controlled Local Parallel,5,0.875,0.875,0.0
+combined_two_suite,FULLREQ_GPTOSS20_PARALLEL_R01+FULLSRC_GPTOSS20_PARALLEL_R01,COMBINED,gptoss20,Controlled Local Parallel,1,1.0,1.0,0.0
+combined_two_suite,FULLREQ_GPTOSS20_PARALLEL_R02+FULLSRC_GPTOSS20_PARALLEL_R02,COMBINED,gptoss20,Controlled Local Parallel,2,1.0,0.9375,-0.0625
+combined_two_suite,FULLREQ_GPTOSS20_PARALLEL_R03+FULLSRC_GPTOSS20_PARALLEL_R03,COMBINED,gptoss20,Controlled Local Parallel,3,1.0,0.9375,-0.0625
+combined_two_suite,FULLREQ_GPTOSS20_PARALLEL_R04+FULLSRC_GPTOSS20_PARALLEL_R04,COMBINED,gptoss20,Controlled Local Parallel,4,1.0,0.9375,-0.0625
+combined_two_suite,FULLREQ_GPTOSS20_PARALLEL_R05+FULLSRC_GPTOSS20_PARALLEL_R05,COMBINED,gptoss20,Controlled Local Parallel,5,1.0,1.0,0.0
+combined_two_suite,FULLREQ_GPTOSS20_BULK_R01+FULLSRC_GPTOSS20_BULK_R01,COMBINED,gptoss20,Local Bulk,1,1.0,1.0,0.0
+combined_two_suite,FULLREQ_GPTOSS20_BULK_R02+FULLSRC_GPTOSS20_BULK_R02,COMBINED,gptoss20,Local Bulk,2,1.0,1.0,0.0
+combined_two_suite,FULLREQ_GPTOSS20_BULK_R03+FULLSRC_GPTOSS20_BULK_R03,COMBINED,gptoss20,Local Bulk,3,1.0,1.0,0.0
+combined_two_suite,FULLREQ_GPTOSS20_BULK_R04+FULLSRC_GPTOSS20_BULK_R04,COMBINED,gptoss20,Local Bulk,4,1.0,1.0,0.0
+combined_two_suite,FULLREQ_GPTOSS20_BULK_R05+FULLSRC_GPTOSS20_BULK_R05,COMBINED,gptoss20,Local Bulk,5,1.0,1.0,0.0
+combined_two_suite,FULLREQ_LLAMA32_PARALLEL_R01+FULLSRC_LLAMA32_PARALLEL_R01,COMBINED,llama32,Controlled Local Parallel,1,1.0,1.0,0.0
+combined_two_suite,FULLREQ_LLAMA32_PARALLEL_R02+FULLSRC_LLAMA32_PARALLEL_R02,COMBINED,llama32,Controlled Local Parallel,2,1.0,1.0,0.0
+combined_two_suite,FULLREQ_LLAMA32_PARALLEL_R03+FULLSRC_LLAMA32_PARALLEL_R03,COMBINED,llama32,Controlled Local Parallel,3,1.0,0.875,-0.125
+combined_two_suite,FULLREQ_LLAMA32_PARALLEL_R04+FULLSRC_LLAMA32_PARALLEL_R04,COMBINED,llama32,Controlled Local Parallel,4,1.0,0.9375,-0.0625
+combined_two_suite,FULLREQ_LLAMA32_PARALLEL_R05+FULLSRC_LLAMA32_PARALLEL_R05,COMBINED,llama32,Controlled Local Parallel,5,1.0,1.0,0.0
+combined_two_suite,FULLREQ_LLAMA32_BULK_R01+FULLSRC_LLAMA32_BULK_R01,COMBINED,llama32,Local Bulk,1,1.0,1.0,0.0
+combined_two_suite,FULLREQ_LLAMA32_BULK_R02+FULLSRC_LLAMA32_BULK_R02,COMBINED,llama32,Local Bulk,2,1.0,1.0,0.0
+combined_two_suite,FULLREQ_LLAMA32_BULK_R03+FULLSRC_LLAMA32_BULK_R03,COMBINED,llama32,Local Bulk,3,1.0,1.0,0.0
+combined_two_suite,FULLREQ_LLAMA32_BULK_R04+FULLSRC_LLAMA32_BULK_R04,COMBINED,llama32,Local Bulk,4,1.0,1.0,0.0
+combined_two_suite,FULLREQ_LLAMA32_BULK_R05+FULLSRC_LLAMA32_BULK_R05,COMBINED,llama32,Local Bulk,5,1.0,1.0,0.0
+combined_two_suite,FULLREQ_QWEN30_PARALLEL_R01+FULLSRC_QWEN30_PARALLEL_R01,COMBINED,qwen30,Controlled Local Parallel,1,1.0,0.9375,-0.0625
+combined_two_suite,FULLREQ_QWEN30_PARALLEL_R02+FULLSRC_QWEN30_PARALLEL_R02,COMBINED,qwen30,Controlled Local Parallel,2,0.875,0.875,0.0
+combined_two_suite,FULLREQ_QWEN30_PARALLEL_R03+FULLSRC_QWEN30_PARALLEL_R03,COMBINED,qwen30,Controlled Local Parallel,3,1.0,0.9375,-0.0625
+combined_two_suite,FULLREQ_QWEN30_PARALLEL_R04+FULLSRC_QWEN30_PARALLEL_R04,COMBINED,qwen30,Controlled Local Parallel,4,1.0,0.9375,-0.0625
+combined_two_suite,FULLREQ_QWEN30_PARALLEL_R05+FULLSRC_QWEN30_PARALLEL_R05,COMBINED,qwen30,Controlled Local Parallel,5,1.0,0.9375,-0.0625
+combined_two_suite,FULLREQ_QWEN30_BULK_R01+FULLSRC_QWEN30_BULK_R01,COMBINED,qwen30,Local Bulk,1,1.0,1.0,0.0
+combined_two_suite,FULLREQ_QWEN30_BULK_R02+FULLSRC_QWEN30_BULK_R02,COMBINED,qwen30,Local Bulk,2,1.0,1.0,0.0
+combined_two_suite,FULLREQ_QWEN30_BULK_R03+FULLSRC_QWEN30_BULK_R03,COMBINED,qwen30,Local Bulk,3,1.0,1.0,0.0
+combined_two_suite,FULLREQ_QWEN30_BULK_R04+FULLSRC_QWEN30_BULK_R04,COMBINED,qwen30,Local Bulk,4,1.0,1.0,0.0
+combined_two_suite,FULLREQ_QWEN30_BULK_R05+FULLSRC_QWEN30_BULK_R05,COMBINED,qwen30,Local Bulk,5,1.0,1.0,0.0

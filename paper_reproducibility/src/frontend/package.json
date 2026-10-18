@@ -1,0 +1,51 @@
+{
+  "name": "stlc-manager",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@hello-pangea/dnd": "^16.3.0",
+    "@heroicons/react": "^2.0.18",
+    "@monaco-editor/react": "^4.7.0",
+    "@reduxjs/toolkit": "^2.6.1",
+    "@xterm/addon-fit": "^0.10.0",
+    "@xterm/xterm": "^5.5.0",
+    "autoprefixer": "^10.4.16",
+    "axios": "^1.8.1",
+    "clsx": "^2.1.1",
+    "frappe-gantt": "^1.0.3",
+    "frappe-gantt-react": "^0.2.2",
+    "gantt-task-react": "^0.3.9",
+    "postcss": "^8.4.31",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-gantt-chart": "^0.3.0-rc.11",
+    "react-hot-toast": "^2.5.2",
+    "react-markdown": "^8.0.7",
+    "react-redux": "^9.2.0",
+    "remark-gfm": "^4.0.1",
+    "tailwindcss": "^3.3.3",
+    "uuid": "^11.1.0",
+    "xterm": "^5.3.0",
+    "xterm-addon-fit": "^0.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^9.23.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "vite": "^6.3.5",
+    "vitest": "^3.0.9"
+  }
+}

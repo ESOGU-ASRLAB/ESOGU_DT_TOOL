@@ -1,0 +1,25 @@
+# requirements.txt
+# ----------------
+# Uygulamada kullanılması planlanan temel kütüphaneler.
+# İhtiyaca göre bu listeyi genişletebilirsiniz.
+
+fastapi
+uvicorn
+python-multipart
+pymongo
+langchain
+langchain-openai
+langchain-text-splitters
+PyPDF2
+python-docx
+python-dotenv
+pydantic
+requests
+google-generativeai
+google-genai
+aiohttp
+motor
+docker
+tiktoken
+paramiko
+fastembed>=0.9,<1.0

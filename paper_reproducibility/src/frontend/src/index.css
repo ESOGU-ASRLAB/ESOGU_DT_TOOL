@@ -1,0 +1,44 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* stylelint-enable */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  select {
+    @apply block w-full rounded-md border-gray-300 shadow-sm 
+      focus:border-blue-500 focus:ring-blue-500;
+  }
+  
+  /* Enhanced word wrapping for test scenario content */
+  .test-scenario-content {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .test-scenario-text {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+  
+  /* Prevent horizontal overflow in containers */
+  .overflow-safe {
+    overflow-x: hidden;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    max-width: 100%;
+  }
+}

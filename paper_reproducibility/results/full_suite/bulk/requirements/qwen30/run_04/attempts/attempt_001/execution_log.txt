@@ -1,0 +1,5 @@
+COMPLETE
+run_id=FULLREQ_QWEN30_BULK_R04
+runtime_seconds=11.737258
+pairs=32
+db_id=6ad3fa05ce62970377f71003

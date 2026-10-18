@@ -1,0 +1,13 @@
+﻿suite_id,model_key,model_display,mode,items,stable_items,unstable_items,unstable_item_percentage,mean_modal_agreement,mean_disagreement_rate,repeated_run_fleiss_kappa,raw_repeated_run_agreement
+FULLREQ,gptoss20,GPT-OSS 20B,Controlled Local Parallel,64,49,15,23.4375,0.94375,0.056249999999999994,0.5285714285714285,0.896875
+FULLREQ,gptoss20,GPT-OSS 20B,Local Bulk,64,62,2,3.125,0.99375,0.006249999999999999,-0.006289308176094895,0.9875
+FULLREQ,llama32,Llama 3.2 3B,Controlled Local Parallel,64,15,49,76.5625,0.753125,0.246875,0.17997997997997994,0.6
+FULLREQ,llama32,Llama 3.2 3B,Local Bulk,64,64,0,0.0,1.0,0.0,1.0,1.0
+FULLREQ,qwen30,Qwen3-Coder 30B A3B,Controlled Local Parallel,64,58,6,9.375,0.971875,0.028124999999999997,0.9062170294244071,0.953125
+FULLREQ,qwen30,Qwen3-Coder 30B A3B,Local Bulk,64,64,0,0.0,1.0,0.0,1.0,1.0
+FULLSRC,gptoss20,GPT-OSS 20B,Controlled Local Parallel,64,23,41,64.0625,0.8125,0.1875,0.2841638981173864,0.684375
+FULLSRC,gptoss20,GPT-OSS 20B,Local Bulk,64,61,3,4.6875,0.984375,0.015625,0.32059447983014916,0.975
+FULLSRC,llama32,Llama 3.2 3B,Controlled Local Parallel,64,49,15,23.4375,0.940625,0.059375,0.7142707074951417,0.89375
+FULLSRC,llama32,Llama 3.2 3B,Local Bulk,64,64,0,0.0,1.0,0.0,1.0,1.0
+FULLSRC,qwen30,Qwen3-Coder 30B A3B,Controlled Local Parallel,64,56,8,12.5,0.965625,0.034374999999999996,0.8715348208248818,0.940625
+FULLSRC,qwen30,Qwen3-Coder 30B A3B,Local Bulk,64,64,0,0.0,1.0,0.0,1.0,1.0

@@ -1,0 +1,13 @@
+﻿source_artifact,suite_id,suite_size,scenario_count,model,mode,repeats
+C:\Users\matisse\Desktop\STLC-Manager\test_inputs\Functional_and_NonFunctional_Requirements.txt,FULLREQ,64,8,GPT-OSS 20B,Controlled Local Parallel,5
+C:\Users\matisse\Desktop\STLC-Manager\test_inputs\Functional_and_NonFunctional_Requirements.txt,FULLREQ,64,8,GPT-OSS 20B,Local Bulk,5
+C:\Users\matisse\Desktop\STLC-Manager\test_inputs\Functional_and_NonFunctional_Requirements.txt,FULLREQ,64,8,Llama 3.2 3B,Controlled Local Parallel,5
+C:\Users\matisse\Desktop\STLC-Manager\test_inputs\Functional_and_NonFunctional_Requirements.txt,FULLREQ,64,8,Llama 3.2 3B,Local Bulk,5
+C:\Users\matisse\Desktop\STLC-Manager\test_inputs\Functional_and_NonFunctional_Requirements.txt,FULLREQ,64,8,Qwen3-Coder 30B A3B,Controlled Local Parallel,5
+C:\Users\matisse\Desktop\STLC-Manager\test_inputs\Functional_and_NonFunctional_Requirements.txt,FULLREQ,64,8,Qwen3-Coder 30B A3B,Local Bulk,5
+C:\Users\matisse\Desktop\STLC-Manager\test_inputs\ProductDetection.cpp,FULLSRC,64,8,GPT-OSS 20B,Controlled Local Parallel,5
+C:\Users\matisse\Desktop\STLC-Manager\test_inputs\ProductDetection.cpp,FULLSRC,64,8,GPT-OSS 20B,Local Bulk,5
+C:\Users\matisse\Desktop\STLC-Manager\test_inputs\ProductDetection.cpp,FULLSRC,64,8,Llama 3.2 3B,Controlled Local Parallel,5
+C:\Users\matisse\Desktop\STLC-Manager\test_inputs\ProductDetection.cpp,FULLSRC,64,8,Llama 3.2 3B,Local Bulk,5
+C:\Users\matisse\Desktop\STLC-Manager\test_inputs\ProductDetection.cpp,FULLSRC,64,8,Qwen3-Coder 30B A3B,Controlled Local Parallel,5
+C:\Users\matisse\Desktop\STLC-Manager\test_inputs\ProductDetection.cpp,FULLSRC,64,8,Qwen3-Coder 30B A3B,Local Bulk,5

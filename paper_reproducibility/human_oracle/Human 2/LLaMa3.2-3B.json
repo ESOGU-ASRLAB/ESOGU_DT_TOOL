@@ -1,0 +1,1531 @@
+{
+  "total_test_cases": 169,
+  "summary": {
+    "Unique": 107,
+    "Similar": 62
+  },
+  "process_name": "LLaMa3.2-3B",
+  "oracle": [
+    {
+      "row_ref": "R4316",
+      "original_id": "TC_001_001",
+      "title": "Verify Conversion of Decimal Values to Binary for Sensors - Valid Inputs",
+      "description": "Test that the conversion of decimal values to binary for sensors works correctly with valid inputs, ensuring accurate data representation and correct sensor readings.",
+      "objective": "Validate the conversion of decimal values to binary for sensors with valid inputs",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4317",
+      "original_id": "TC_001_001",
+      "title": "Verify Robot System Initialization",
+      "description": "Test that the robot system initializes correctly, including checking for proper hardware connections and software configurations.",
+      "objective": "Validate robot system initialization process",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4318",
+      "original_id": "TC_001_001",
+      "title": "Verify RobotController Initialization with Valid Inputs",
+      "description": "This test case ensures that the RobotController class initializes correctly using valid inputs for its attributes.",
+      "objective": "Validate initialization of RobotController with correct and valid inputs.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4319",
+      "original_id": "TC_001_002",
+      "title": "Verify Conversion of Decimal Values to Binary for Sensors - Invalid Inputs (Zero)",
+      "description": "Test that the conversion of decimal values to binary for sensors handles invalid inputs correctly, specifically zero values.",
+      "objective": "Validate the handling of invalid input zero for sensor conversion",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4320",
+      "original_id": "TC_001_002",
+      "title": "Verify Distance Sensors Detection",
+      "description": "Test that the distance sensors (D1 and D2) detect the correct object type (SODA or WATER).",
+      "objective": "Validate distance sensor functionality",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4321",
+      "original_id": "TC_001_002",
+      "title": "Verify Initialization Fails with Invalid WayPoints Input",
+      "description": "This test case checks the behavior of RobotController when initialized with invalid wayPoints input.",
+      "objective": "Validate error handling during initialization with invalid inputs for wayPoints.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4322",
+      "original_id": "TC_001_003",
+      "title": "Verify Conversion of Decimal Values to Binary for Sensors - Invalid Inputs (Negative Numbers)",
+      "description": "Test that the conversion of decimal values to binary for sensors handles invalid inputs correctly, specifically negative numbers.",
+      "objective": "Validate the handling of invalid input negative numbers for sensor conversion",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4323",
+      "original_id": "TC_001_003",
+      "title": "Verify Gripper Operation",
+      "description": "Test that the gripper opens and closes correctly according to the object type detected.",
+      "objective": "Validate gripper functionality",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4324",
+      "original_id": "TC_001_003",
+      "title": "Verify Initialization Fails with Invalid State Input",
+      "description": "This test case evaluates the system's response when initializing RobotController with invalid state input.",
+      "objective": "Validate error handling during initialization with invalid inputs for state.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4325",
+      "original_id": "TC_001_004",
+      "title": "Verify Conversion of Decimal Values to Binary for Sensors - Boundary Conditions (Maximum Value)",
+      "description": "Test that the conversion of decimal values to binary for sensors handles boundary conditions correctly, specifically the maximum value.",
+      "objective": "Validate the handling of boundary condition maximum value for sensor conversion",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4326",
+      "original_id": "TC_001_004",
+      "title": "Verify Initialization Fails with Invalid Gripper Tool Input",
+      "description": "This test case assesses the system's behavior when initializing RobotController with invalid gripper tool input.",
+      "objective": "Validate error handling during initialization with invalid inputs for gripper.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4327",
+      "original_id": "TC_001_004",
+      "title": "Verify Object Placement",
+      "description": "Test that the robot places SODA in REDi and WATER in WHITEi correctly.",
+      "objective": "Validate object placement functionality",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4328",
+      "original_id": "TC_001_005",
+      "title": "Verify Conversion of Decimal Values to Binary for Sensors - Boundary Conditions (Minimum Value)",
+      "description": "Test that the conversion of decimal values to binary for sensors handles boundary conditions correctly, specifically the minimum value.",
+      "objective": "Validate the handling of boundary condition minimum value for sensor conversion",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4329",
+      "original_id": "TC_001_005",
+      "title": "Verify Initialization Fails with Invalid Product Detection Input",
+      "description": "This test case checks the system's response when initializing RobotController with invalid product detection input.",
+      "objective": "Validate error handling during initialization with invalid inputs for productDetection.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4330",
+      "original_id": "TC_001_005",
+      "title": "Verify State Transitions",
+      "description": "Test that the robot transitions between states (INIT, BAND, HOME, RED, WHITE, MOVING) correctly.",
+      "objective": "Validate state transition functionality",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4331",
+      "original_id": "TC_001_006",
+      "title": "Verify Conversion of Decimal Values to Binary for Sensors - Product Detection (Soda)",
+      "description": "Test that the conversion of decimal values to binary for sensors correctly detects products, specifically soda.",
+      "objective": "Validate product detection for soda",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4332",
+      "original_id": "TC_001_006",
+      "title": "Verify Initialization Fails with Invalid Target WayPoint Input",
+      "description": "This test case evaluates the system's behavior when initializing RobotController with invalid target wayPoint input.",
+      "objective": "Validate error handling during initialization with invalid inputs for targetWayPoint.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4333",
+      "original_id": "TC_001_006",
+      "title": "Verify Safety Constraints",
+      "description": "Test that the robot does not move to REDi or WHITEi when another robot is in or moving to the same area.",
+      "objective": "Validate safety constraints",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4334",
+      "original_id": "TC_001_007",
+      "title": "Verify Conversion of Decimal Values to Binary for Sensors - Product Detection (Water)",
+      "description": "Test that the conversion of decimal values to binary for sensors correctly detects products, specifically water.",
+      "objective": "Validate product detection for water",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4335",
+      "original_id": "TC_001_007",
+      "title": "Verify Initialization Fails with Invalid Current Pose Input",
+      "description": "This test case checks the system's response when initializing RobotController with invalid currentPose input.",
+      "objective": "Validate error handling during initialization with invalid inputs for currentPose.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4336",
+      "original_id": "TC_001_007",
+      "title": "Verify Real-Time Responsiveness",
+      "description": "Test that sensor readings and state transitions are updated within the control timestep.",
+      "objective": "Validate real-time responsiveness",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4337",
+      "original_id": "TC_001_008",
+      "title": "Verify Conversion of Decimal Values to Binary for Sensors - Product Detection (None)",
+      "description": "Test that the conversion of decimal values to binary for sensors correctly detects products, specifically none.",
+      "objective": "Validate product detection for none",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4338",
+      "original_id": "TC_001_008",
+      "title": "Verify Modularity",
+      "description": "Test that components such as gripper, robot controller, product detector, and conveyor are independently modelled.",
+      "objective": "Validate modularity",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4339",
+      "original_id": "TC_001",
+      "title": "Verify Robot Movement and Navigation",
+      "description": "Test that the robot moves correctly from BANDi to HOMEi, grasping products along the way.",
+      "objective": "Validate robot movement and navigation capabilities",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4340",
+      "original_id": "TC_001_001",
+      "title": "Verify Product Detection with Gripper State OPEN and Sensor Readings D1=0, D2=0",
+      "description": "Test that the system correctly identifies no product when gripper state is open and sensor readings are both 0.",
+      "objective": "Validate product detection mechanism with gripper state open and sensor readings zero",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4341",
+      "original_id": "TC_001_001",
+      "title": "Verify Successful Addition of WayPoint to RobotController",
+      "description": "This test case checks the successful addition of a valid JointPose object as a new wayPoint in the RobotController's wayPoints attribute.",
+      "objective": "Validate that the addWayPoint operation correctly adds a valid JointPose object to the RobotController's wayPoints collection.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4342",
+      "original_id": "TC_001_002",
+      "title": "Verify Failure to Add Invalid WayPoint to RobotController",
+      "description": "This test case attempts to add an invalid JointPose object (e.g., null or malformed) as a wayPoint and checks for proper error handling.",
+      "objective": "Ensure that the system handles invalid inputs correctly by preventing them from being added to the wayPoints collection.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4343",
+      "original_id": "TC_001_002",
+      "title": "Verify Product Detection with Gripper State OPEN and Sensor Readings D1=100, D2=0",
+      "description": "Test that the system correctly identifies soda product when gripper state is open and sensor reading for D1 is 100.",
+      "objective": "Validate product detection mechanism with gripper state open and sensor readings 100 for D1",
+      "decision": "Similar",
+      "similar_to": "R4340"
+    },
+    {
+      "row_ref": "R4344",
+      "original_id": "TC_001_003",
+      "title": "Check AddWayPoint Operation with Duplicate WayPoints",
+      "description": "This test case attempts to add a duplicate wayPoint (same JointPose) and checks for proper handling of duplicates.",
+      "objective": "Validate that the system does not allow adding duplicate wayPoints and handles them gracefully.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4345",
+      "original_id": "TC_001_003",
+      "title": "Verify Product Detection with Gripper State OPEN and Sensor Readings D1=0, D2=100",
+      "description": "Test that the system correctly identifies water product when gripper state is open and sensor reading for D2 is 100.",
+      "objective": "Validate product detection mechanism with gripper state open and sensor readings 100 for D2",
+      "decision": "Similar",
+      "similar_to": "R4340"
+    },
+    {
+      "row_ref": "R4346",
+      "original_id": "TC_001_004",
+      "title": "Test AddWayPoint with Large Number of WayPoints",
+      "description": "This test case attempts to add a large number of wayPoints and checks for performance and memory constraints.",
+      "objective": "Ensure that the system can handle a high volume of wayPoints without crashing or degrading performance.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4347",
+      "original_id": "TC_001_004",
+      "title": "Verify Product Detection with Gripper State CLOSED and Sensor Readings D1=0, D2=0",
+      "description": "Test that the system correctly identifies no product when gripper state is closed and sensor readings are both 0.",
+      "objective": "Validate product detection mechanism with gripper state closed and sensor readings zero",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4348",
+      "original_id": "TC_001_005",
+      "title": "Verify Error Recovery After AddWayPoint Failure",
+      "description": "This test case simulates an error during the addWayPoint operation and checks for proper recovery mechanisms.",
+      "objective": "Validate that the system can recover from errors gracefully without affecting other operations.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4349",
+      "original_id": "TC_001_005",
+      "title": "Verify Product Detection with Gripper State CLOSED and Sensor Readings D1=100, D2=0",
+      "description": "Test that the system correctly identifies no product when gripper state is closed and sensor reading for D1 is 100.",
+      "objective": "Validate product detection mechanism with gripper state closed and sensor readings 100 for D1",
+      "decision": "Similar",
+      "similar_to": "R4347"
+    },
+    {
+      "row_ref": "R4350",
+      "original_id": "TC_001_006",
+      "title": "Test AddWayPoint with Concurrent Operations",
+      "description": "This test case checks the behavior of addWayPoint when multiple threads attempt to add wayPoints concurrently.",
+      "objective": "Ensure that concurrent operations do not cause data corruption or race conditions in the RobotController's wayPoints collection.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4351",
+      "original_id": "TC_001_006",
+      "title": "Verify Product Detection with Gripper State CLOSED and Sensor Readings D1=0, D2=100",
+      "description": "Test that the system correctly identifies no product when gripper state is closed and sensor reading for D2 is 100.",
+      "objective": "Validate product detection mechanism with gripper state closed and sensor readings 100 for D2",
+      "decision": "Similar",
+      "similar_to": "R4347"
+    },
+    {
+      "row_ref": "R4352",
+      "original_id": "TC_001_007",
+      "title": "Check AddWayPoint with WayPoints Collection Limit",
+      "description": "This test case attempts to add a number of wayPoints that exceeds the predefined limit and checks for proper handling.",
+      "objective": "Validate that the system enforces limits on the size of the wayPoints collection.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4353",
+      "original_id": "TC_001_007",
+      "title": "Verify Product Detection with Gripper State OPEN and Sensor Readings D1=0, D2=50",
+      "description": "Test that the system correctly identifies no product when gripper state is open and sensor reading for D1 is 0, and sensor reading for D2 is 50.",
+      "objective": "Validate product detection mechanism with gripper state open and sensor readings 0 for D1, 50 for D2",
+      "decision": "Similar",
+      "similar_to": "R4340"
+    },
+    {
+      "row_ref": "R4354",
+      "original_id": "TC_001_008",
+      "title": "Verify Product Detection with Gripper State CLOSED and Sensor Readings D1=50, D2=100",
+      "description": "Test that the system correctly identifies no product when gripper state is closed and sensor reading for D1 is 50, and sensor reading for D2 is 100.",
+      "objective": "Validate product detection mechanism with gripper state closed and sensor readings 50 for D1, 100 for D2",
+      "decision": "Similar",
+      "similar_to": "R4347"
+    },
+    {
+      "row_ref": "R4355",
+      "original_id": "TC_002",
+      "title": "Test Object Detection and Grasping",
+      "description": "Verify the system detects SODA or WATER correctly using distance sensors (D1 and D2) and grasps products accordingly.",
+      "objective": "Validate object detection and grasping mechanisms",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4356",
+      "original_id": "TC_003",
+      "title": "Verify Collision Detection and Avoidance",
+      "description": "Test that the robot avoids collisions with other robots or objects in its path.",
+      "objective": "Validate collision detection and avoidance mechanisms",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4357",
+      "original_id": "TC_004",
+      "title": "Test State Transitions and Control Timestep",
+      "description": "Verify the system transitions between states (INIT, BAND, HOME, RED, WHITE, MOVING) correctly within the control timestep.",
+      "objective": "Validate state transition mechanisms and real-time responsiveness",
+      "decision": "Similar",
+      "similar_to": "R4330"
+    },
+    {
+      "row_ref": "R4358",
+      "original_id": "TC_005",
+      "title": "Verify Product Placement and Delivery",
+      "description": "Test that the robot places SODA in REDi and WATER in WHITEi correctly after grasping products.",
+      "objective": "Validate product placement and delivery mechanisms",
+      "decision": "Similar",
+      "similar_to": "R4327"
+    },
+    {
+      "row_ref": "R4359",
+      "original_id": "TC_006",
+      "title": "Test Robot Movement from BANDi to HOMEi",
+      "description": "Verify the robot moves correctly from BANDi to HOMEi after grasping products.",
+      "objective": "Validate movement mechanisms and navigation capabilities",
+      "decision": "Similar",
+      "similar_to": "R4339"
+    },
+    {
+      "row_ref": "R4360",
+      "original_id": "TC_007",
+      "title": "Test Error Recovery Mechanisms",
+      "description": "Test that the system recovers correctly from errors such as invalid inputs or interruptions.",
+      "objective": "Validate error recovery mechanisms and robustness",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4361",
+      "original_id": "TC_008",
+      "title": "Verify System Performance and Scalability",
+      "description": "Test that the system performs correctly with multiple robots and products.",
+      "objective": "Validate system performance and scalability",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4362",
+      "original_id": "TC_001",
+      "title": "Verify Sensor Data Accuracy - Camera Detection",
+      "description": "Test that the camera detects objects correctly and provides accurate readings.",
+      "objective": "Validate camera sensor data accuracy",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4363",
+      "original_id": "TC_001_001",
+      "title": "Verify Successful Grasp Operation of GripperTool",
+      "description": "This test case ensures that the GripperTool can successfully grasp an object when provided with valid inputs.",
+      "objective": "Validate successful execution of the grasp operation using valid parameters.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4364",
+      "original_id": "TC_001_002",
+      "title": "Test Grasp Operation with Invalid Product Detection",
+      "description": "This test case checks the system's response when an invalid product detection is provided during a grasp operation.",
+      "objective": "Validate error handling and recovery mechanism for invalid inputs in grasping.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4365",
+      "original_id": "TC_001_003",
+      "title": "Boundary Test for Grasp Operation with Minimum Joint Pose Values",
+      "description": "This test case evaluates the system's behavior when minimum joint pose values are used during a grasp operation.",
+      "objective": "Ensure the system handles boundary conditions correctly in grasping operations.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4366",
+      "original_id": "TC_001_004",
+      "title": "Boundary Test for Grasp Operation with Maximum Joint Pose Values",
+      "description": "This test case checks the system's response when maximum joint pose values are used during a grasp operation.",
+      "objective": "Ensure the system handles boundary conditions correctly in grasping operations.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4367",
+      "original_id": "TC_001_005",
+      "title": "Error Recovery During Grasp Operation",
+      "description": "This test case assesses the system's error recovery mechanisms during a grasp operation.",
+      "objective": "Validate that the system can recover from errors gracefully and provide appropriate feedback.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4368",
+      "original_id": "TC_001_006",
+      "title": "Grasp Operation with Null Product Detection",
+      "description": "This test case checks the system's response when null product detection is provided during a grasp operation.",
+      "objective": "Validate error handling and recovery mechanism for null inputs in grasping.",
+      "decision": "Similar",
+      "similar_to": "R4364"
+    },
+    {
+      "row_ref": "R4369",
+      "original_id": "TC_001_007",
+      "title": "Grasp Operation with Invalid Joint Pose Values",
+      "description": "This test case evaluates the system's response when invalid joint pose values are used during a grasp operation.",
+      "objective": "Validate error handling and recovery mechanism for invalid inputs in grasping.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4370",
+      "original_id": "TC_002",
+      "title": "Verify Sensor Data Accuracy - Lidar Detection",
+      "description": "Test that the lidar detects objects correctly and provides accurate readings.",
+      "objective": "Validate lidar sensor data accuracy",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4371",
+      "original_id": "TC_003",
+      "title": "Verify Sensor Data Accuracy - Ultrasonic Detection",
+      "description": "Test that the ultrasonic sensor detects objects correctly and provides accurate readings.",
+      "objective": "Validate ultrasonic sensor data accuracy",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4372",
+      "original_id": "TC_003_001",
+      "title": "Verify Error Handling for Invalid Distance Sensor Reading (Small)",
+      "description": "Test that the system displays an error message when the distance sensor reading is less than 0 or greater than 250.",
+      "objective": "Validate error handling mechanism for invalid distance sensor readings",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4373",
+      "original_id": "TC_003_002",
+      "title": "Verify Error Handling for Invalid Distance Sensor Reading (Big)",
+      "description": "Test that the system displays an error message when the distance sensor reading is less than 0 or greater than 250.",
+      "objective": "Validate error handling mechanism for invalid distance sensor readings",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4374",
+      "original_id": "TC_003_003",
+      "title": "Verify Error Handling for Invalid Gripper State (OPEN)",
+      "description": "Test that the system displays an error message when the gripper state is not OPEN.",
+      "objective": "Validate error handling mechanism for invalid gripper states",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4375",
+      "original_id": "TC_003_004",
+      "title": "Verify Error Handling for Invalid Product Detection (NONE)",
+      "description": "Test that the system displays an error message when the product detection is NONE.",
+      "objective": "Validate error handling mechanism for invalid product detections",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4376",
+      "original_id": "TC_003_005",
+      "title": "Verify Error Handling for Invalid Time Step (0)",
+      "description": "Test that the system displays an error message when the time step is 0.",
+      "objective": "Validate error handling mechanism for invalid time steps",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4377",
+      "original_id": "TC_003_006",
+      "title": "Verify Error Handling for Invalid Time Step (Negative)",
+      "description": "Test that the system displays an error message when the time step is negative.",
+      "objective": "Validate error handling mechanism for invalid time steps",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4378",
+      "original_id": "TC_003_007",
+      "title": "Verify Error Handling for Invalid Sensor Readings (Boundary)",
+      "description": "Test that the system displays an error message when the sensor readings are at the boundary values (0 or 250).",
+      "objective": "Validate error handling mechanism for invalid sensor readings at boundaries",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4379",
+      "original_id": "TC_003_008",
+      "title": "Verify Error Handling for Invalid Sensor Readings (Edge Case)",
+      "description": "Test that the system displays an error message when the sensor readings are at extreme values (-100 or 500).",
+      "objective": "Validate error handling mechanism for invalid sensor readings at edge cases",
+      "decision": "Similar",
+      "similar_to": "R4378"
+    },
+    {
+      "row_ref": "R4380",
+      "original_id": "TC_004",
+      "title": "Verify Sensor Data Accuracy - Object Type Detection",
+      "description": "Test that the system correctly detects the type of object (SODA or WATER) using distance sensors.",
+      "objective": "Validate object type detection mechanism",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4381",
+      "original_id": "TC_005",
+      "title": "Verify Sensor Data Accuracy - State Transition Testing",
+      "description": "Test that the system correctly transitions between states (INIT, BAND, HOME, RED, WHITE, MOVING) based on sensor data.",
+      "objective": "Validate state transition mechanism",
+      "decision": "Similar",
+      "similar_to": "R4330"
+    },
+    {
+      "row_ref": "R4382",
+      "original_id": "TC_006",
+      "title": "Verify Sensor Data Accuracy - Safety Constraints Testing",
+      "description": "Test that the system correctly satisfies safety constraints (RQ1–RQ5) to prevent robot collisions.",
+      "objective": "Validate safety constraint mechanism",
+      "decision": "Similar",
+      "similar_to": "R4333"
+    },
+    {
+      "row_ref": "R4383",
+      "original_id": "TC_007",
+      "title": "Verify Sensor Data Accuracy - Error Handling Testing",
+      "description": "Test that the system correctly handles errors (e.g., sensor failure, invalid input) and provides accurate readings.",
+      "objective": "Validate error handling mechanism",
+      "decision": "Similar",
+      "similar_to": "R4360"
+    },
+    {
+      "row_ref": "R4384",
+      "original_id": "TC_008",
+      "title": "Verify Sensor Data Accuracy - Boundary Value Analysis Testing",
+      "description": "Test that the system correctly handles boundary values (e.g., minimum/maximum distance, invalid object type) and provides accurate readings.",
+      "objective": "Validate boundary value analysis mechanism",
+      "decision": "Similar",
+      "similar_to": "R4378"
+    },
+    {
+      "row_ref": "R4385",
+      "original_id": "TC_004_001",
+      "title": "Verify Conversion of Decimal Values to Binary for Small Numbers",
+      "description": "Test that decimal values less than 250 are correctly converted to binary by the ProductDetection class.",
+      "objective": "Validate conversion of small decimal numbers to binary",
+      "decision": "Similar",
+      "similar_to": "R4316"
+    },
+    {
+      "row_ref": "R4386",
+      "original_id": "TC_004_001",
+      "title": "Verify Object Detection and Grasping",
+      "description": "Test that the robot detects the correct object type (SODA or WATER) using distance sensors and grasps it correctly.",
+      "objective": "Validate object detection mechanism and gripper functionality",
+      "decision": "Similar",
+      "similar_to": "R4355"
+    },
+    {
+      "row_ref": "R4387",
+      "original_id": "TC_004_001",
+      "title": "Verify ProductDetection Interaction with GripperTool and RobotController",
+      "description": "This test case ensures that the ProductDetection class correctly interacts with the GripperTool and RobotController classes during product detection.",
+      "objective": "Validate interactions between ProductDetection, GripperTool, and RobotController classes for correct operation.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4388",
+      "original_id": "TC_004_002",
+      "title": "Test Gripper Movement and State Transitions",
+      "description": "Verify that the gripper opens and closes correctly according to the detected object type and moves between states (BAND, HOME, RED, WHITE) as expected.",
+      "objective": "Validate gripper movement and state transition mechanisms",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4389",
+      "original_id": "TC_004_002",
+      "title": "Test GripperTool Grasp and Release Operations",
+      "description": "This test case checks the functionality of the GripperTool's grasp and release operations.",
+      "objective": "Validate the correctness of the grasp and release methods in the GripperTool class.",
+      "decision": "Similar",
+      "similar_to": "R4363"
+    },
+    {
+      "row_ref": "R4390",
+      "original_id": "TC_004_002",
+      "title": "Verify Conversion of Decimal Values to Binary for Large Numbers",
+      "description": "Test that decimal values greater than or equal to 250 are correctly converted to binary by the ProductDetection class.",
+      "objective": "Validate conversion of large decimal numbers to binary",
+      "decision": "Similar",
+      "similar_to": "R4325"
+    },
+    {
+      "row_ref": "R4391",
+      "original_id": "TC_004_003",
+      "title": "Validate RobotController Movement Operations",
+      "description": "This test case verifies the movement operations of the RobotController class.",
+      "objective": "Ensure that the RobotController can move to specified waypoints and maintain correct state.",
+      "decision": "Similar",
+      "similar_to": "R4339"
+    },
+    {
+      "row_ref": "R4392",
+      "original_id": "TC_004_003",
+      "title": "Verify Conversion of Decimal Values to Binary for Negative Numbers",
+      "description": "Test that negative decimal values are correctly converted to binary by the ProductDetection class.",
+      "objective": "Validate conversion of negative decimal numbers to binary",
+      "decision": "Similar",
+      "similar_to": "R4322"
+    },
+    {
+      "row_ref": "R4393",
+      "original_id": "TC_004_003",
+      "title": "Verify Object Placement and Delivery",
+      "description": "Test that the robot places SODA in REDi and WATER in WHITEi correctly after grasping the object.",
+      "objective": "Validate object placement functionality",
+      "decision": "Similar",
+      "similar_to": "R4358"
+    },
+    {
+      "row_ref": "R4394",
+      "original_id": "TC_004_004",
+      "title": "Check Error Handling in GripperTool Operations",
+      "description": "This test case assesses the error recovery mechanisms of the GripperTool class during operations.",
+      "objective": "Ensure proper handling and recovery from errors in the grasp and release methods.",
+      "decision": "Similar",
+      "similar_to": "R4367"
+    },
+    {
+      "row_ref": "R4395",
+      "original_id": "TC_004_004",
+      "title": "Test Collision Avoidance and Safety Constraints",
+      "description": "Verify that the robot does not collide with other robots or objects in REDi or WHITEi when moving between states.",
+      "objective": "Validate collision avoidance mechanism and safety constraints",
+      "decision": "Similar",
+      "similar_to": "R4356"
+    },
+    {
+      "row_ref": "R4396",
+      "original_id": "TC_004_004",
+      "title": "Verify Conversion of Decimal Values to Binary with Zero Input",
+      "description": "Test that zero decimal values are correctly converted to binary by the ProductDetection class.",
+      "objective": "Validate conversion of zero decimal numbers to binary",
+      "decision": "Similar",
+      "similar_to": "R4319"
+    },
+    {
+      "row_ref": "R4397",
+      "original_id": "TC_004_005",
+      "title": "Test ProductDetection with Invalid Inputs",
+      "description": "This test case evaluates the system's response when invalid inputs are provided to the ProductDetection class.",
+      "objective": "Ensure that the system handles invalid inputs gracefully and provides appropriate error messages.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4398",
+      "original_id": "TC_004_005",
+      "title": "Test Real-Time Responsiveness and Sensor Readings",
+      "description": "Test that sensor readings are updated within the control timestep and state transitions occur in real-time.",
+      "objective": "Validate real-time responsiveness mechanism",
+      "decision": "Similar",
+      "similar_to": "R4336"
+    },
+    {
+      "row_ref": "R4399",
+      "original_id": "TC_004_005",
+      "title": "Verify Conversion of Decimal Values to Binary with Invalid Input",
+      "description": "Test that invalid decimal values are handled correctly by the ProductDetection class.",
+      "objective": "Validate error handling for invalid input",
+      "decision": "Similar",
+      "similar_to": "R4319"
+    },
+    {
+      "row_ref": "R4400",
+      "original_id": "TC_004_006",
+      "title": "Boundary Case for RobotController Waypoint Addition",
+      "description": "This test case checks the boundary conditions for adding waypoints to the RobotController's wayPoints attribute.",
+      "objective": "Ensure that the system handles edge cases correctly when adding waypoints.",
+      "decision": "Similar",
+      "similar_to": "R4352"
+    },
+    {
+      "row_ref": "R4401",
+      "original_id": "TC_004_006",
+      "title": "Verify Conversion of Decimal Values to Binary with Sensor Faults",
+      "description": "Test that sensor faults are handled correctly by the ProductDetection class.",
+      "objective": "Validate error handling for sensor faults",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4402",
+      "original_id": "TC_004_006",
+      "title": "Verify Modularity and Scalability",
+      "description": "Test that components such as gripper, robot controller, product detector, and conveyor are independently modelled and the system can be scaled to add more robots.",
+      "objective": "Validate modularity and scalability mechanisms",
+      "decision": "Similar",
+      "similar_to": "R4338"
+    },
+    {
+      "row_ref": "R4403",
+      "original_id": "TC_004_007",
+      "title": "Performance Test for RobotController Movement Operations",
+      "description": "This test case evaluates the performance of the RobotController class during movement operations.",
+      "objective": "Ensure that the system performs efficiently under load and meets performance criteria.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4404",
+      "original_id": "TC_004_007",
+      "title": "Test Determinism and Predictable Outcomes",
+      "description": "Verify that the behavior of gripper and robot controller produces predictable outcomes under the same inputs.",
+      "objective": "Validate determinism mechanism",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4405",
+      "original_id": "TC_004_007",
+      "title": "Verify Conversion of Decimal Values to Binary with Gripper State Changes",
+      "description": "Test that gripper state changes are handled correctly by the ProductDetection class.",
+      "objective": "Validate error handling for gripper state changes",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4406",
+      "original_id": "TC_004_008",
+      "title": "Test Error Recovery and Fault Conditions",
+      "description": "Test that the system recovers from fault conditions such as sensor failures or gripper malfunctions.",
+      "objective": "Validate error recovery mechanism",
+      "decision": "Similar",
+      "similar_to": "R4360"
+    },
+    {
+      "row_ref": "R4407",
+      "original_id": "TC_004_008",
+      "title": "Verify Conversion of Decimal Values to Binary with Multiple Sensor Readings",
+      "description": "Test that multiple sensor readings are handled correctly by the ProductDetection class.",
+      "objective": "Validate error handling for multiple sensor readings",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4408",
+      "original_id": "TC_001_001",
+      "title": "Verify RobotController Run Operation with Valid Inputs",
+      "description": "This test case validates the run operation of the RobotController class using valid inputs, ensuring successful execution and correct state transitions.",
+      "objective": "Validate that the RobotController's run operation functions correctly with valid parameters.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4409",
+      "original_id": "TC_001_002",
+      "title": "Test Invalid Input for RobotController Run Operation",
+      "description": "This test case checks the system's response when invalid inputs are provided to the run operation.",
+      "objective": "Ensure that the system handles invalid inputs gracefully and provides appropriate error messages.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4410",
+      "original_id": "TC_001_003",
+      "title": "Boundary Test for RobotController Run Operation",
+      "description": "This test case evaluates the system's behavior with boundary values for input parameters.",
+      "objective": "Verify that the system handles edge cases correctly, such as minimum and maximum values.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4411",
+      "original_id": "TC_001_004",
+      "title": "Error Recovery Test for RobotController Run Operation",
+      "description": "This test case assesses the system's error recovery mechanisms during normal operations.",
+      "objective": "Ensure that the system can recover from errors and provide correct outputs after interruptions or fault conditions.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4412",
+      "original_id": "TC_001_005",
+      "title": "Concurrency Test for RobotController Run Operation",
+      "description": "This test case evaluates the system's ability to handle multiple concurrent run operations.",
+      "objective": "Ensure that the system can manage parallel execution without data corruption or loss.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4413",
+      "original_id": "TC_001_006",
+      "title": "Performance Test for RobotController Run Operation",
+      "description": "This test case measures the performance of the run operation under various loads.",
+      "objective": "Ensure that the system performs efficiently with acceptable response times.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4414",
+      "original_id": "TC_001_007",
+      "title": "Security Test for RobotController Run Operation",
+      "description": "This test case checks the system's security measures against unauthorized access and data manipulation.",
+      "objective": "Ensure that the run operation is secure from unauthorized inputs or modifications.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4415",
+      "original_id": "TC_005_001",
+      "title": "Verify Correct Product Identification for Valid Sensor Readings - Valid Sensor Combinations",
+      "description": "Test that the system correctly identifies products with valid sensor combinations, ensuring accurate product detection.",
+      "objective": "Validate correct product identification for valid sensor readings",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4416",
+      "original_id": "TC_005_001",
+      "title": "Verify Distance Sensor Readings for Object Detection",
+      "description": "Test that distance sensors (D1 and D2) provide accurate readings for object detection, ensuring correct classification of SODA or WATER.",
+      "objective": "Validate distance sensor functionality for object detection",
+      "decision": "Similar",
+      "similar_to": "R4320"
+    },
+    {
+      "row_ref": "R4417",
+      "original_id": "TC_005_002",
+      "title": "Test Gripper Movement and State Transitions",
+      "description": "Verify that the gripper moves correctly according to object type detected, ensuring proper state transitions (INIT, BAND, HOME, RED, WHITE, MOVING).",
+      "objective": "Validate gripper movement and state transition adherence",
+      "decision": "Similar",
+      "similar_to": "R4388"
+    },
+    {
+      "row_ref": "R4418",
+      "original_id": "TC_005_002",
+      "title": "Verify Correct Product Identification for Valid Sensor Readings - Invalid Sensor Combinations",
+      "description": "Test that the system correctly identifies products with invalid sensor combinations, ensuring accurate product detection.",
+      "objective": "Validate correct product identification for valid sensor readings",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4419",
+      "original_id": "TC_005_003",
+      "title": "Verify Correct Product Identification for Valid Sensor Readings - Gripper State Validation",
+      "description": "Test that the system correctly identifies products based on gripper state, ensuring accurate product detection.",
+      "objective": "Validate correct product identification for valid sensor readings",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4420",
+      "original_id": "TC_005_003",
+      "title": "Verify Object Placement and Delivery",
+      "description": "Test that the robot places SODA in REDi and WATER in WHITEi correctly, ensuring proper delivery of products.",
+      "objective": "Validate object placement and delivery functionality",
+      "decision": "Similar",
+      "similar_to": "R4358"
+    },
+    {
+      "row_ref": "R4421",
+      "original_id": "TC_005_004",
+      "title": "Test Collision Avoidance and Safety Constraints",
+      "description": "Verify that the robot avoids collisions with other robots or objects, ensuring safety constraints RQ1–RQ5 are met.",
+      "objective": "Validate collision avoidance and safety constraint adherence",
+      "decision": "Similar",
+      "similar_to": "R4356"
+    },
+    {
+      "row_ref": "R4422",
+      "original_id": "TC_005_004",
+      "title": "Verify Correct Product Identification for Valid Sensor Readings - Boundary Value Analysis",
+      "description": "Test that the system correctly identifies products at boundary values of sensor readings, ensuring accurate product detection.",
+      "objective": "Validate correct product identification for valid sensor readings",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4423",
+      "original_id": "TC_005_005",
+      "title": "Test Real-Time Responsiveness and Sensor Readings",
+      "description": "Test that sensor readings and state transitions are updated within the control timestep, ensuring real-time responsiveness.",
+      "objective": "Validate real-time responsiveness and sensor reading accuracy",
+      "decision": "Similar",
+      "similar_to": "R4336"
+    },
+    {
+      "row_ref": "R4424",
+      "original_id": "TC_005_005",
+      "title": "Verify Correct Product Identification for Valid Sensor Readings - Error Handling Validation",
+      "description": "Test that the system correctly handles errors during product identification, ensuring accurate product detection.",
+      "objective": "Validate correct product identification for valid sensor readings",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4425",
+      "original_id": "TC_005_006",
+      "title": "Verify Correct Product Identification for Valid Sensor Readings - Security Testing",
+      "description": "Test that the system correctly identifies products with secure sensor readings, ensuring accurate product detection.",
+      "objective": "Validate correct product identification for valid sensor readings",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4426",
+      "original_id": "TC_005_006",
+      "title": "Verify Modularity and Component Independence",
+      "description": "Test that components such as gripper, robot controller, product detector, and conveyor are independently modelled and function correctly.",
+      "objective": "Validate modularity and component independence",
+      "decision": "Similar",
+      "similar_to": "R4338"
+    },
+    {
+      "row_ref": "R4427",
+      "original_id": "TC_005_007",
+      "title": "Test Determinism and Predictable Outcomes",
+      "description": "Verify that the behavior of gripper and robot controller produces predictable outcomes under the same inputs, ensuring determinism.",
+      "objective": "Validate determinism and predictable outcomes",
+      "decision": "Similar",
+      "similar_to": "R4404"
+    },
+    {
+      "row_ref": "R4428",
+      "original_id": "TC_005_007",
+      "title": "Verify Correct Product Identification for Valid Sensor Readings - Performance Testing",
+      "description": "Test that the system correctly identifies products with high-performance sensor readings, ensuring accurate product detection.",
+      "objective": "Validate correct product identification for valid sensor readings",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4429",
+      "original_id": "TC_005_008",
+      "title": "Test Scalability and Architecture Flexibility",
+      "description": "Test that the architecture allows extension to more robots with similar interaction protocols, ensuring scalability.",
+      "objective": "Validate scalability and architecture flexibility",
+      "decision": "Similar",
+      "similar_to": "R4402"
+    },
+    {
+      "row_ref": "R4430",
+      "original_id": "TC_005_008",
+      "title": "Verify Correct Product Identification for Valid Sensor Readings - Non-Functional Testing",
+      "description": "Test that the system correctly identifies products with non-functional sensor readings, ensuring accurate product detection.",
+      "objective": "Validate correct product identification for valid sensor readings",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4431",
+      "original_id": "TC_001_001",
+      "title": "Verify GripperTool Release Operation with Valid Inputs",
+      "description": "This test case checks the release operation of the GripperTool class using valid inputs to ensure proper execution and state transition.",
+      "objective": "Validate the release operation of GripperTool with correct inputs.",
+      "decision": "Similar",
+      "similar_to": "R4389"
+    },
+    {
+      "row_ref": "R4432",
+      "original_id": "TC_001_002",
+      "title": "Test GripperTool Release with Invalid State",
+      "description": "This test case evaluates the system's behavior when attempting to release a gripper that is not in a state where it can be released.",
+      "objective": "Validate error handling for invalid states during release operation.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4433",
+      "original_id": "TC_001_003",
+      "title": "Test GripperTool Release with Null Input",
+      "description": "This test case assesses the system's response when null is passed as an input to the release operation.",
+      "objective": "Validate error handling for null inputs during release operation.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4434",
+      "original_id": "TC_001_004",
+      "title": "Test GripperTool Release with Incorrect Input Type",
+      "description": "This test case checks the system's behavior when an incorrect input type is provided to the release operation.",
+      "objective": "Validate error handling for incorrect input types during release operation.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4435",
+      "original_id": "TC_001_005",
+      "title": "Test GripperTool Release with Maximum Load Capacity",
+      "description": "This test case evaluates the system's behavior when attempting to release a gripper that is holding an object at its maximum load capacity.",
+      "objective": "Validate proper handling of maximum load capacity during release operation.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4436",
+      "original_id": "TC_001_006",
+      "title": "Test GripperTool Release with Interrupted Operation",
+      "description": "This test case assesses the system's error recovery mechanism when an interruption occurs during the release operation.",
+      "objective": "Validate error recovery for interrupted release operations.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4437",
+      "original_id": "TC_001_007",
+      "title": "Test GripperTool Release with Timeout",
+      "description": "This test case evaluates the system's behavior when a timeout occurs during the release operation.",
+      "objective": "Validate error handling for timeouts during release operation.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4438",
+      "original_id": "TC_006_001",
+      "title": "Verify Error Handling for Invalid Gripper State - Open",
+      "description": "Test that the system displays an error message when the gripper is in an invalid state (Open) and no product is detected.",
+      "objective": "Validate error handling mechanism for invalid gripper state",
+      "decision": "Similar",
+      "similar_to": "R4374"
+    },
+    {
+      "row_ref": "R4439",
+      "original_id": "TC_006_001",
+      "title": "Verify Robot System Security - Encryption Check",
+      "description": "Test that the robot system correctly encrypts and decrypts data using secure protocols.",
+      "objective": "Validate encryption mechanism of the robot system",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4440",
+      "original_id": "TC_006_002",
+      "title": "Verify Error Handling for Invalid Gripper State - Closed",
+      "description": "Test that the system displays an error message when the gripper is in an invalid state (Closed) and no product is detected.",
+      "objective": "Validate error handling mechanism for invalid gripper state",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4441",
+      "original_id": "TC_006_002",
+      "title": "Verify Robot System Security - Access Control Check",
+      "description": "Test that the robot system correctly controls access to sensitive areas and resources.",
+      "objective": "Validate access control mechanism of the robot system",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4442",
+      "original_id": "TC_006_003",
+      "title": "Verify Error Handling for Invalid Gripper State - Mixed",
+      "description": "Test that the system displays an error message when the gripper is in a mixed state (Open and Closed) and no product is detected.",
+      "objective": "Validate error handling mechanism for invalid gripper state",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4443",
+      "original_id": "TC_006_003",
+      "title": "Verify Robot System Security - Data Storage Check",
+      "description": "Test that the robot system stores sensitive data securely and in compliance with regulations.",
+      "objective": "Validate data storage mechanism of the robot system",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4444",
+      "original_id": "TC_006_004",
+      "title": "Verify Error Handling for Invalid Sensor Data - Low Value",
+      "description": "Test that the system displays an error message when one of the sensors detects a low value.",
+      "objective": "Validate error handling mechanism for invalid sensor data",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4445",
+      "original_id": "TC_006_004",
+      "title": "Verify Robot System Security - Collision Detection Check",
+      "description": "Test that the robot system detects potential collisions with other robots or objects.",
+      "objective": "Validate collision detection mechanism of the robot system",
+      "decision": "Similar",
+      "similar_to": "R4356"
+    },
+    {
+      "row_ref": "R4446",
+      "original_id": "TC_006_005",
+      "title": "Verify Error Handling for Invalid Sensor Data - High Value",
+      "description": "Test that the system displays an error message when one of the sensors detects a high value.",
+      "objective": "Validate error handling mechanism for invalid sensor data",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4447",
+      "original_id": "TC_006_005",
+      "title": "Verify Robot System Security - State Transition Check",
+      "description": "Test that the robot system transitions between states correctly and in a timely manner.",
+      "objective": "Validate state transition mechanism of the robot system",
+      "decision": "Similar",
+      "similar_to": "R4330"
+    },
+    {
+      "row_ref": "R4448",
+      "original_id": "TC_006_006",
+      "title": "Verify Error Handling for Invalid Gripper State - Product Detected",
+      "description": "Test that the system displays an error message when a product is detected despite the gripper being in an invalid state.",
+      "objective": "Validate error handling mechanism for invalid gripper state with product detection",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4449",
+      "original_id": "TC_006_006",
+      "title": "Verify Robot System Security - Robustness Check",
+      "description": "Test that the robot system remains secure even in the presence of unexpected events or attacks.",
+      "objective": "Validate robustness mechanism of the robot system",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4450",
+      "original_id": "TC_006_007",
+      "title": "Verify Error Handling for Invalid Sensor Data - Zero Value",
+      "description": "Test that the system displays an error message when one of the sensors detects a zero value.",
+      "objective": "Validate error handling mechanism for invalid sensor data",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4451",
+      "original_id": "TC_006_007",
+      "title": "Verify Robot System Security - Compliance Check",
+      "description": "Test that the robot system complies with relevant regulations, standards, and industry best practices.",
+      "objective": "Validate compliance mechanism of the robot system",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4452",
+      "original_id": "TC_006_008",
+      "title": "Verify Error Handling for Invalid Gripper State - Multiple Products Detected",
+      "description": "Test that the system displays an error message when multiple products are detected despite the gripper being in an invalid state.",
+      "objective": "Validate error handling mechanism for invalid gripper state with multiple product detection",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4453",
+      "original_id": "TC_006_008",
+      "title": "Verify Robot System Security - Performance Check",
+      "description": "Test that the robot system performs optimally under various conditions, including high traffic or resource constraints.",
+      "objective": "Validate performance mechanism of the robot system",
+      "decision": "Similar",
+      "similar_to": "R4361"
+    },
+    {
+      "row_ref": "R4454",
+      "original_id": "TC_001",
+      "title": "Verify Robot System Initialization",
+      "description": "Test that the robot system initializes correctly and detects the environment properly.",
+      "objective": "Validate robot system initialization mechanism",
+      "decision": "Similar",
+      "similar_to": "R4317"
+    },
+    {
+      "row_ref": "R4455",
+      "original_id": "TC_001",
+      "title": "Verify System Behavior for Multiple Sensor Readings - Concurrent Readings",
+      "description": "Test that the system correctly detects products when receiving concurrent sensor readings from both distance sensors.",
+      "objective": "Validate system behavior for concurrent sensor readings",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4456",
+      "original_id": "TC_001_001",
+      "title": "Verify RobotController GetJointPose Operation with Valid Inputs",
+      "description": "This test case validates the getJointPose operation of the RobotController class using valid inputs, ensuring successful execution and correct output.",
+      "objective": "Validate the getJointPose method in RobotController with valid parameters.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4457",
+      "original_id": "TC_001_002",
+      "title": "Test GetJointPose with Null Input",
+      "description": "This test case checks the behavior of getJointPose when an invalid or null input is provided.",
+      "objective": "Validate error handling for null inputs in getJointPose method.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4458",
+      "original_id": "TC_001_003",
+      "title": "Boundary Test GetJointPose with Minimum Joint Pose Values",
+      "description": "This test case validates the getJointPose method using minimum joint pose values to check for boundary conditions.",
+      "objective": "Ensure correct output when input is at the lower bound of possible values.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4459",
+      "original_id": "TC_001_004",
+      "title": "Boundary Test GetJointPose with Maximum Joint Pose Values",
+      "description": "This test case validates the getJointPose method using maximum joint pose values to check for boundary conditions.",
+      "objective": "Ensure correct output when input is at the upper bound of possible values.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4460",
+      "original_id": "TC_001_005",
+      "title": "Performance Test GetJointPose with High Frequency Calls",
+      "description": "This test case evaluates the performance of getJointPose method under high frequency calls.",
+      "objective": "Ensure that the method performs efficiently under heavy load.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4461",
+      "original_id": "TC_001_006",
+      "title": "Security Test GetJointPose with Invalid Credentials",
+      "description": "This test case checks the security of getJointPose method by providing invalid credentials.",
+      "objective": "Ensure that unauthorized access is prevented and appropriate error handling occurs.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4462",
+      "original_id": "TC_001_007",
+      "title": "Error Recovery Test GetJointPose with Interrupted Operation",
+      "description": "This test case assesses the system's error recovery mechanisms during normal operations, specifically for getJointPose.",
+      "objective": "Validate that the system recovers properly from interrupted operations.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4463",
+      "original_id": "TC_002",
+      "title": "Verify Distance Sensor Readings",
+      "description": "Test that the distance sensors (D1 and D2) provide accurate readings for both SODA and WATER objects.",
+      "objective": "Validate distance sensor accuracy",
+      "decision": "Similar",
+      "similar_to": "R4320"
+    },
+    {
+      "row_ref": "R4464",
+      "original_id": "TC_002",
+      "title": "Verify System Behavior for Multiple Sensor Readings - Sequential Readings",
+      "description": "Test that the system correctly detects products when receiving sequential sensor readings from both distance sensors.",
+      "objective": "Validate system behavior for sequential sensor readings",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4465",
+      "original_id": "TC_003",
+      "title": "Verify Gripper Operation",
+      "description": "Test that the gripper opens and closes correctly for both SODA and WATER objects.",
+      "objective": "Validate gripper operation mechanism",
+      "decision": "Similar",
+      "similar_to": "R4323"
+    },
+    {
+      "row_ref": "R4466",
+      "original_id": "TC_003",
+      "title": "Verify System Behavior for Multiple Sensor Readings - Zero Distance Readings",
+      "description": "Test that the system correctly handles zero distance readings from both sensors.",
+      "objective": "Validate system behavior for zero distance readings",
+      "decision": "Similar",
+      "similar_to": "R4340"
+    },
+    {
+      "row_ref": "R4467",
+      "original_id": "TC_004",
+      "title": "Verify Object Detection and Classification",
+      "description": "Test that the system correctly detects and classifies SODA and WATER objects.",
+      "objective": "Validate object detection mechanism",
+      "decision": "Similar",
+      "similar_to": "R4380"
+    },
+    {
+      "row_ref": "R4468",
+      "original_id": "TC_004",
+      "title": "Verify System Behavior for Multiple Sensor Readings - Invalid Distance Readings",
+      "description": "Test that the system correctly handles invalid distance readings from both sensors.",
+      "objective": "Validate system behavior for invalid distance readings",
+      "decision": "Similar",
+      "similar_to": "R4372"
+    },
+    {
+      "row_ref": "R4469",
+      "original_id": "TC_005",
+      "title": "Verify State Transitions",
+      "description": "Test that the robot system transitions between states (INIT, BAND, HOME, RED, WHITE, MOVING) correctly.",
+      "objective": "Validate state transition mechanism",
+      "decision": "Similar",
+      "similar_to": "R4330"
+    },
+    {
+      "row_ref": "R4470",
+      "original_id": "TC_005",
+      "title": "Verify System Behavior for Multiple Sensor Readings - Product Detection Error",
+      "description": "Test that the system correctly handles product detection errors when receiving multiple sensor readings.",
+      "objective": "Validate system behavior for product detection error",
+      "decision": "Similar",
+      "similar_to": "R4424"
+    },
+    {
+      "row_ref": "R4471",
+      "original_id": "TC_006",
+      "title": "Verify Safety Constraints",
+      "description": "Test that the system ensures robots do not collide by satisfying safety constraints RQ1–RQ5.",
+      "objective": "Validate safety constraint mechanism",
+      "decision": "Similar",
+      "similar_to": "R4333"
+    },
+    {
+      "row_ref": "R4472",
+      "original_id": "TC_006",
+      "title": "Verify System Behavior for Multiple Sensor Readings - Concurrent Readings with Different Products",
+      "description": "Test that the system correctly detects different products when receiving concurrent sensor readings from both distance sensors.",
+      "objective": "Validate system behavior for concurrent readings with different products",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4473",
+      "original_id": "TC_007",
+      "title": "Verify Real-Time Responsiveness",
+      "description": "Test that the system updates sensor readings and state transitions within the control timestep.",
+      "objective": "Validate real-time responsiveness mechanism",
+      "decision": "Similar",
+      "similar_to": "R4336"
+    },
+    {
+      "row_ref": "R4474",
+      "original_id": "TC_007",
+      "title": "Verify System Behavior for Multiple Sensor Readings - Sequential Readings with Different Products",
+      "description": "Test that the system correctly detects different products when receiving sequential sensor readings from both distance sensors.",
+      "objective": "Validate system behavior for sequential readings with different products",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4475",
+      "original_id": "TC_008",
+      "title": "Verify Error Recovery Mechanism",
+      "description": "Test that the system recovers from errors such as invalid inputs or interruptions.",
+      "objective": "Validate error recovery mechanism",
+      "decision": "Similar",
+      "similar_to": "R4360"
+    },
+    {
+      "row_ref": "R4476",
+      "original_id": "TC_008",
+      "title": "Verify System Behavior for Multiple Sensor Readings - Boundary Value Error Handling",
+      "description": "Test that the system correctly handles boundary value errors when receiving multiple sensor readings.",
+      "objective": "Validate system behavior for boundary value error handling",
+      "decision": "Similar",
+      "similar_to": "R4378"
+    },
+    {
+      "row_ref": "R4477",
+      "original_id": "TC_001_001",
+      "title": "Verify Robot System Compatibility with Different Devices",
+      "description": "Test that the robot system can detect and interact with different devices, including SODA and WATER bottles.",
+      "objective": "Validate robot system compatibility with various devices",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R4478",
+      "original_id": "TC_001_002",
+      "title": "Verify Object Detection using Distance Sensors (D1 and D2)",
+      "description": "Test that the robot system can detect objects of different types using distance sensors D1 and D2.",
+      "objective": "Validate object detection mechanism",
+      "decision": "Similar",
+      "similar_to": "R4320"
+    },
+    {
+      "row_ref": "R4479",
+      "original_id": "TC_001_003",
+      "title": "Verify Gripper Operation (OPEN and CLOSE)",
+      "description": "Test that the gripper opens and closes correctly according to the object type detected.",
+      "objective": "Validate gripper operation",
+      "decision": "Similar",
+      "similar_to": "R4323"
+    },
+    {
+      "row_ref": "R4480",
+      "original_id": "TC_001_004",
+      "title": "Verify Robot Movement between BANDi and HOMEi",
+      "description": "Test that the robot moves correctly from BANDi to HOMEi after grasping the object.",
+      "objective": "Validate robot movement mechanism",
+      "decision": "Similar",
+      "similar_to": "R4359"
+    },
+    {
+      "row_ref": "R4481",
+      "original_id": "TC_001_005",
+      "title": "Verify Product Placement (SODA in REDi and WATER in WHITEi)",
+      "description": "Test that the robot places SODA in REDi and WATER in WHITEi correctly.",
+      "objective": "Validate product placement mechanism",
+      "decision": "Similar",
+      "similar_to": "R4358"
+    },
+    {
+      "row_ref": "R4482",
+      "original_id": "TC_001_006",
+      "title": "Verify Safety Constraints (No Collision)",
+      "description": "Test that the robot system ensures safety constraints are met by not colliding with other robots.",
+      "objective": "Validate safety mechanism",
+      "decision": "Similar",
+      "similar_to": "R4356"
+    },
+    {
+      "row_ref": "R4483",
+      "original_id": "TC_001_007",
+      "title": "Verify Real-Time Responsiveness (Sensor Readings and State Transitions)",
+      "description": "Test that the robot system updates sensor readings and state transitions within the control timestep.",
+      "objective": "Validate real-time responsiveness mechanism",
+      "decision": "Similar",
+      "similar_to": "R4336"
+    },
+    {
+      "row_ref": "R4484",
+      "original_id": "TC_001_008",
+      "title": "Verify Modularity (Component Independence)",
+      "description": "Test that the system's components, such as gripper and robot controller, are independently modelled.",
+      "objective": "Validate modularity mechanism",
+      "decision": "Similar",
+      "similar_to": "R4338"
+    }
+  ]
+}

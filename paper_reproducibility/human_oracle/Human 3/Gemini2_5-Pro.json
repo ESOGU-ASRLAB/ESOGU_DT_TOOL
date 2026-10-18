@@ -1,0 +1,1378 @@
+{
+  "total_test_cases": 152,
+  "summary": {
+    "Unique": 99,
+    "Similar": 53
+  },
+  "process_name": "Gemini2.5-Pro",
+  "oracle": [
+    {
+      "row_ref": "R7899",
+      "original_id": "TC_001_001",
+      "title": "Core Functionality: End-to-End Successful Sorting of a 'SODA' Object",
+      "description": "This test case validates the complete, successful 'happy path' workflow for a 'SODA' object. It covers detection, grasping, transport, placement, and return to the initial state, ensuring all functional requirements for a standard cycle are met.",
+      "objective": "To verify that the system can successfully execute the entire sorting process for a 'SODA' object from start to finish without errors, as defined in the primary success scenario.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7900",
+      "original_id": "TC_001_001",
+      "title": "Core Functionality: Verify 'Product::NONE' with Both Sensors Exactly at Inactive Boundary (250)",
+      "description": "This test case validates the primary success path described in the scenario. It simulates a state where the actuator is open and both distance sensors (D1 and D2) report a value of exactly 250. This value is the boundary for the inactive state (>= 250). The test ensures the system correctly interprets this boundary condition to identify the product state as 'Product::NONE'.",
+      "objective": "To confirm that the system correctly identifies 'Product::NONE' when D1 and D2 sensor values are exactly 250 and the actuator is open.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7901",
+      "original_id": "TC_001_001",
+      "title": "Verify RobotController Initialization with Valid Inputs",
+      "description": "This test case ensures that the RobotController class initializes correctly using valid inputs for its attributes.",
+      "objective": "Validate initialization of RobotController with correct and valid inputs.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7902",
+      "original_id": "TC_001_002",
+      "title": "Boundary Value Analysis: Verify No 'Product::NONE' with One Sensor Just Below Boundary (249)",
+      "description": "This test case focuses on the lower boundary condition. It checks the system's behavior when one sensor (D1) reports a value just inside the active range (249), while the other sensor (D2) is at the inactive boundary (250). According to the logic, if any sensor is active (< 250), the product state should not be 'NONE'.",
+      "objective": "To validate that the system does not identify 'Product::NONE' when at least one sensor value is less than the 250 threshold, confirming the strictness of the boundary check.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7903",
+      "original_id": "TC_001_002",
+      "title": "Object Identification: Verify Accurate 'SODA' Object Recognition",
+      "description": "This test focuses specifically on the object identification phase (FR1). It ensures that when a 'SODA' object is placed on the conveyor, the system's vision or sensor system correctly identifies it as 'SODA' and initiates the subsequent grasping state.",
+      "objective": "To isolate and confirm the accuracy and reliability of the object recognition system for 'SODA' objects.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7904",
+      "original_id": "TC_001_002",
+      "title": "Verify Initialization Fails with Invalid WayPoints Input",
+      "description": "This test case checks the behavior of RobotController when initialized with invalid wayPoints input.",
+      "objective": "Validate error handling during initialization with invalid inputs for wayPoints.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7905",
+      "original_id": "TC_001_003",
+      "title": "Boundary Value Analysis: Verify 'Product::NONE' with Both Sensors Just Above Boundary (251)",
+      "description": "This test case validates the system's behavior for values clearly within the inactive range but close to the boundary. Both sensors (D1 and D2) will report a value of 251. This confirms that the 'greater than or equal to' logic for the inactive state is functioning correctly.",
+      "objective": "To ensure the system correctly identifies 'Product::NONE' when both sensor values are slightly above the inactive threshold of 250.",
+      "decision": "Similar",
+      "similar_to": "R7900"
+    },
+    {
+      "row_ref": "R7906",
+      "original_id": "TC_001_003",
+      "title": "Navigation and Placement: Verify Correct Pathing to 'REDi' Zone",
+      "description": "This test validates the robotic arm's navigation (FR4, FR6) after successfully grasping the object. It ensures the arm follows the prescribed path from 'BANDi' through the 'HOMEi' checkpoint to the 'REDi' zone and places the object within the specified target area.",
+      "objective": "To confirm the accuracy of the robotic arm's movement, pathfinding, and placement precision.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7907",
+      "original_id": "TC_001_003",
+      "title": "Verify Initialization Fails with Invalid State Input",
+      "description": "This test case evaluates the system's response when initializing RobotController with invalid state input.",
+      "objective": "Validate error handling during initialization with invalid inputs for state.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7908",
+      "original_id": "TC_001_004",
+      "title": "Negative Test: Verify No 'Product::NONE' Identification when Actuator is Closed",
+      "description": "This test case validates a critical precondition from the scenario: the actuator must be open. It simulates a condition where both sensors report an inactive value of 250, but the actuator is in a 'Closed' state. The system should not perform the identification or should not conclude the state is 'Product::NONE'.",
+      "objective": "To confirm that the 'actuator open' state is a mandatory precondition for the product identification logic to execute and yield a 'Product::NONE' result.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7909",
+      "original_id": "TC_001_004",
+      "title": "State Management: Verify System Return and Reset to 'INIT' State",
+      "description": "This test focuses on the final phase of the cycle (FR7). After placing the 'SODA' object, it verifies that the robotic arm correctly returns to the 'BANDi' position and the system's overall state transitions back to 'INIT', ready to process the next object.",
+      "objective": "To validate the successful completion of the operational cycle and ensure the system correctly resets for subsequent operations.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7910",
+      "original_id": "TC_001_004",
+      "title": "Verify Initialization Fails with Invalid Gripper Tool Input",
+      "description": "This test case assesses the system's behavior when initializing RobotController with invalid gripper tool input.",
+      "objective": "Validate error handling during initialization with invalid inputs for gripper.",
+      "decision": "Similar",
+      "similar_to": "R7907"
+    },
+    {
+      "row_ref": "R7911",
+      "original_id": "TC_001_005",
+      "title": "Boundary Value Analysis: Object at Edge of Conveyor Detection Zone",
+      "description": "This test evaluates the system's behavior at the physical boundaries of its operational area. A 'SODA' object is placed at the extreme edge of the conveyor's detection and grasping zone to test the limits of the sensors and robotic arm's reach.",
+      "objective": "To assess the system's ability to handle objects at the boundary of its operational range, ensuring it either processes them correctly or flags them as unreachable without error.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7912",
+      "original_id": "TC_001_005",
+      "title": "User Input Validation: Verify System Behavior with One Clearly Active Sensor",
+      "description": "This test case validates the logic that *both* sensors must be inactive. It provides an input where one sensor is clearly active (e.g., value of 100) and the other is at the inactive boundary (250). The system should not identify 'Product::NONE' under this condition.",
+      "objective": "To validate that the logical AND condition for sensor inactivity is correctly implemented and prevents a 'Product::NONE' identification if any sensor is active.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7913",
+      "original_id": "TC_001_005",
+      "title": "Verify Initialization Fails with Invalid Product Detection Input",
+      "description": "This test case checks the system's response when initializing RobotController with invalid product detection input.",
+      "objective": "Validate error handling during initialization with invalid inputs for productDetection.",
+      "decision": "Similar",
+      "similar_to": "R7907"
+    },
+    {
+      "row_ref": "R7914",
+      "original_id": "TC_001_006",
+      "title": "Error Recovery: Assess System Response to Invalid Negative Sensor Input",
+      "description": "This test case evaluates the system's robustness and error handling capabilities. It simulates a scenario where one sensor provides an invalid, out-of-bounds reading (e.g., -1), while the other sensor is at the inactive boundary (250). The system should handle this invalid data gracefully without crashing or making an incorrect identification.",
+      "objective": "To verify that the system can detect and handle invalid sensor data, log an appropriate error, and maintain a safe, stable state.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7915",
+      "original_id": "TC_001_006",
+      "title": "Error Recovery: Grasping Action Failure",
+      "description": "This negative test case simulates a failure during the grasping phase (FR2, FR3). The test will verify the system's ability to detect that the 'SODA' object was not successfully picked up, abort the current cycle, log an appropriate error, and return to a safe, ready state.",
+      "objective": "To validate the system's error detection and recovery mechanisms when a critical mechanical action like grasping fails.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7916",
+      "original_id": "TC_001_006",
+      "title": "Verify Initialization Fails with Invalid Target WayPoint Input",
+      "description": "This test case evaluates the system's behavior when initializing RobotController with invalid target wayPoint input.",
+      "objective": "Validate error handling during initialization with invalid inputs for targetWayPoint.",
+      "decision": "Similar",
+      "similar_to": "R7907"
+    },
+    {
+      "row_ref": "R7917",
+      "original_id": "TC_001_007",
+      "title": "Error Recovery: Assess System Behavior on Sensor Communication Failure (NULL Input)",
+      "description": "This test case simulates a hardware or communication failure where one sensor fails to provide a reading (represented as NULL or a timeout). The other sensor reports a value at the inactive boundary (250). The system must be able to detect this failure and react appropriately.",
+      "objective": "To ensure the system has a defined fault-tolerant behavior for sensor communication loss and enters a safe error state instead of misinterpreting the missing data.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7918",
+      "original_id": "TC_001_007",
+      "title": "User Input Validation: Unrecognized Object on Conveyor",
+      "description": "This test validates the system's ability to correctly handle invalid or unrecognized inputs. An object that is not a 'SODA' can is placed on the conveyor to ensure the system identifies it as a non-target and allows it to pass without initiating the sorting sequence.",
+      "objective": "To ensure the system correctly differentiates between target and non-target objects and avoids incorrect processing, demonstrating proper input validation.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7919",
+      "original_id": "TC_001_007",
+      "title": "Verify Initialization Fails with Invalid Current Pose Input",
+      "description": "This test case checks the system's response when initializing RobotController with invalid currentPose input.",
+      "objective": "Validate error handling during initialization with invalid inputs for currentPose.",
+      "decision": "Similar",
+      "similar_to": "R7907"
+    },
+    {
+      "row_ref": "R7920",
+      "original_id": "TC_001_008",
+      "title": "Interruption Handling: System Pause and Resume During Navigation",
+      "description": "This test assesses the system's robustness by simulating an external interruption (e.g., an emergency stop or pause command) while the arm is in transit between 'HOMEi' and 'REDi'. The test verifies that the system can safely pause its operation and then correctly resume its path to complete the task once the resume command is given.",
+      "objective": "To validate the system's ability to handle interruptions gracefully, ensuring operational safety and the ability to resume a task without data loss or mechanical error.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7921",
+      "original_id": "TC_001_001",
+      "title": "Verify Successful Addition of WayPoint to RobotController",
+      "description": "This test case checks the successful addition of a valid JointPose object as a new wayPoint in the RobotController's wayPoints attribute.",
+      "objective": "Validate that the addWayPoint operation correctly adds a valid JointPose object to the RobotController's wayPoints collection.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7922",
+      "original_id": "TC_001_002",
+      "title": "Verify Failure to Add Invalid WayPoint to RobotController",
+      "description": "This test case attempts to add an invalid JointPose object (e.g., null or malformed) as a wayPoint and checks for proper error handling.",
+      "objective": "Ensure that the system handles invalid inputs correctly by preventing them from being added to the wayPoints collection.",
+      "decision": "Similar",
+      "similar_to": "R7921"
+    },
+    {
+      "row_ref": "R7923",
+      "original_id": "TC_001_003",
+      "title": "Check AddWayPoint Operation with Duplicate WayPoints",
+      "description": "This test case attempts to add a duplicate wayPoint (same JointPose) and checks for proper handling of duplicates.",
+      "objective": "Validate that the system does not allow adding duplicate wayPoints and handles them gracefully.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7924",
+      "original_id": "TC_001_004",
+      "title": "Test AddWayPoint with Large Number of WayPoints",
+      "description": "This test case attempts to add a large number of wayPoints and checks for performance and memory constraints.",
+      "objective": "Ensure that the system can handle a high volume of wayPoints without crashing or degrading performance.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7925",
+      "original_id": "TC_001_005",
+      "title": "Verify Error Recovery After AddWayPoint Failure",
+      "description": "This test case simulates an error during the addWayPoint operation and checks for proper recovery mechanisms.",
+      "objective": "Validate that the system can recover from errors gracefully without affecting other operations.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7926",
+      "original_id": "TC_001_006",
+      "title": "Test AddWayPoint with Concurrent Operations",
+      "description": "This test case checks the behavior of addWayPoint when multiple threads attempt to add wayPoints concurrently.",
+      "objective": "Ensure that concurrent operations do not cause data corruption or race conditions in the RobotController's wayPoints collection.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7927",
+      "original_id": "TC_001_007",
+      "title": "Check AddWayPoint with WayPoints Collection Limit",
+      "description": "This test case attempts to add a number of wayPoints that exceeds the predefined limit and checks for proper handling.",
+      "objective": "Validate that the system enforces limits on the size of the wayPoints collection.",
+      "decision": "Similar",
+      "similar_to": "R7923"
+    },
+    {
+      "row_ref": "R7928",
+      "original_id": "TC_002_001",
+      "title": "Core Functionality: Verify 'SODA' Identification at Exact Lower Boundary",
+      "description": "This test case validates the core functionality by testing the exact boundary conditions for 'SODA' identification. It uses a value where the small detector (D1) is at its highest 'active' value (249) and the large detector (D2) is at its lowest 'inactive' value (250).",
+      "objective": "To confirm the system correctly identifies 'Product::SODA' when D1=249 and D2=250, validating the 'd1 is active AND d2 is inactive' logic at its most critical decision point.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7929",
+      "original_id": "TC_002_001",
+      "title": "End-to-End Successful Sorting of a Standard 'WATER' Object (Happy Path)",
+      "description": "This test case validates the primary success path for a 'WATER' object. It verifies that a standard water bottle placed at the starting point (BANDi) is correctly identified, grasped, transported to the 'WHITEi' zone, placed, and the system returns to its initial state.",
+      "objective": "To confirm that all functional requirements (FR1-FR7) for the successful sorting of a 'WATER' object are met in a single, uninterrupted end-to-end process.",
+      "decision": "Similar",
+      "similar_to": "R7899"
+    },
+    {
+      "row_ref": "R7930",
+      "original_id": "TC_002_002",
+      "title": "Boundary Value Analysis: Verify D1 Upper Active Boundary",
+      "description": "This test case focuses on the upper boundary of the D1 'active' state. It sets D1 to 249 (just inside the < 250 threshold) while keeping D2 well within the 'inactive' range to isolate and confirm the D1 boundary logic.",
+      "objective": "To validate that the system correctly interprets D1 as 'active' at the boundary value of 249, leading to a 'SODA' identification when D2 is confirmed inactive.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7931",
+      "original_id": "TC_002_002",
+      "title": "Verify 'WATER' Object Handling at Grasping Zone Boundaries (BVA)",
+      "description": "This test case uses Boundary Value Analysis to evaluate the system's ability to identify and grasp a 'WATER' object placed at the extreme edges (left, right, front, back) of the designated grasping area at BANDi. It tests the limits of the vision and robotic arm's reach.",
+      "objective": "To ensure the system can successfully execute the grasp and sort process even when the 'WATER' object is not perfectly centered, validating the robustness of the detection and grasping subsystems.",
+      "decision": "Similar",
+      "similar_to": "R7911"
+    },
+    {
+      "row_ref": "R7932",
+      "original_id": "TC_002_003",
+      "title": "Boundary Value Analysis: Verify D2 Lower Inactive Boundary",
+      "description": "This test case focuses on the lower boundary of the D2 'inactive' state. It sets D2 to 250 (at the >= 250 threshold) while keeping D1 well within the 'active' range to isolate and confirm the D2 boundary logic.",
+      "objective": "To validate that the system correctly interprets D2 as 'inactive' at the boundary value of 250, leading to a 'SODA' identification when D1 is confirmed active.",
+      "decision": "Similar",
+      "similar_to": "R7930"
+    },
+    {
+      "row_ref": "R7933",
+      "original_id": "TC_002_003",
+      "title": "Verify System Error Recovery on Grasp Failure",
+      "description": "This test case simulates a failure during the grasping phase (FR3) of a 'WATER' object. The test will verify the system's error handling and recovery mechanism, such as attempting a limited number of retries before entering a safe error state and alerting an operator.",
+      "objective": "To validate that the system can gracefully handle a physical interaction failure (failed grasp), prevent damage, and follow a defined error recovery protocol.",
+      "decision": "Similar",
+      "similar_to": "R7925"
+    },
+    {
+      "row_ref": "R7934",
+      "original_id": "TC_002_004",
+      "title": "Negative BVA: Verify No 'SODA' Identification at D1 Lower Inactive Boundary",
+      "description": "This is a negative boundary test case where D1 is set to 250, the first value for which it is considered 'inactive'. The system should fail to identify 'SODA' because the 'd1 is active' condition is not met.",
+      "objective": "To ensure the system does not identify 'SODA' when D1 is at the boundary value of 250, preventing a false positive identification.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7935",
+      "original_id": "TC_002_004",
+      "title": "Verify System Response to Path Obstruction During Transport",
+      "description": "This test case assesses the system's safety and error handling mechanisms by introducing an unexpected obstacle in the transport path between 'HOMEi' and the 'WHITEi' zone while it is carrying a 'WATER' object.",
+      "objective": "To ensure the system can detect an obstruction, safely stop its motion to avoid collision, retain the grasped object, and enter a paused/error state requiring manual intervention.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7936",
+      "original_id": "TC_002_005",
+      "title": "Negative BVA: Verify No 'SODA' Identification at D2 Upper Active Boundary",
+      "description": "This is a negative boundary test case where D2 is set to 249, the last value for which it is considered 'active'. The system should fail to identify 'SODA' because the 'd2 is inactive' condition is not met.",
+      "objective": "To ensure the system does not identify 'SODA' when D2 is at the boundary value of 249, preventing a false positive identification.",
+      "decision": "Similar",
+      "similar_to": "R7934"
+    },
+    {
+      "row_ref": "R7937",
+      "original_id": "TC_002_005",
+      "title": "Verify System Rejection of a Non-'WATER' Object (Negative Test)",
+      "description": "This is a negative test case to verify the system's object differentiation capability (FR1). A non-'WATER' object (e.g., a metal can) is placed at BANDi. The system should correctly identify it as not 'WATER' and should not proceed with the grasp-and-sort sequence for the 'WHITEi' zone.",
+      "objective": "To validate the selectivity of the object identification system and ensure that only objects classified as 'WATER' are sorted to the 'WHITEi' zone.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7938",
+      "original_id": "TC_002_006",
+      "title": "Negative Case: Verify No 'SODA' Identification When Both Detectors Are Active",
+      "description": "This test case uses nominal input values where both D1 and D2 are clearly in the 'active' state (e.g., D1=150, D2=150). The system must not identify the product as 'SODA'.",
+      "objective": "To confirm that the logical AND condition for 'SODA' correctly evaluates to false when the 'd2 is inactive' part of the condition is false.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7939",
+      "original_id": "TC_002_006",
+      "title": "Verify Correct State Transitions During 'WATER' Object Sorting",
+      "description": "This test focuses specifically on validating the system's state machine logic (FR7). Throughout the end-to-end sorting process of a 'WATER' object, the system's internal state will be monitored to ensure it transitions correctly through all expected states (e.g., INIT, IDENTIFYING, GRASPING, TRANSPORTING, PLACING, RETURNING).",
+      "objective": "To confirm the system's state machine operates as designed, ensuring process integrity and providing accurate status tracking for diagnostics and monitoring.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7940",
+      "original_id": "TC_002_007",
+      "title": "Negative Case: Verify No 'SODA' Identification When Both Detectors Are Inactive",
+      "description": "This test case uses nominal input values where both D1 and D2 are clearly in the 'inactive' state (e.g., D1=300, D2=300). The system must not identify the product as 'SODA'.",
+      "objective": "To confirm that the logical AND condition for 'SODA' correctly evaluates to false when the 'd1 is active' part of the condition is false.",
+      "decision": "Similar",
+      "similar_to": "R7938"
+    },
+    {
+      "row_ref": "R7941",
+      "original_id": "TC_002_007",
+      "title": "Verify 'WATER' Identification with Varied Bottle Types (Robustness)",
+      "description": "This test case evaluates the robustness of the object identification function (FR1) by presenting the system with various types of water bottles. This includes bottles of different sizes, shapes, colors, label designs, and fill levels (empty, half-full, full).",
+      "objective": "To ensure the 'WATER' classification model is robust and not overfitted to a single type of water bottle, ensuring high identification accuracy in a realistic environment.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7942",
+      "original_id": "TC_002_008",
+      "title": "Error Recovery: Verify System Behavior with Invalid Detector Inputs",
+      "description": "This test case assesses the system's error handling and recovery mechanisms by providing invalid data types for detector inputs, such as negative numbers, non-integer values, or strings.",
+      "objective": "To ensure the system does not crash, handles the invalid data gracefully, and returns a predictable state, such as 'Unknown Product' or a specific error code, without a false identification.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7943",
+      "original_id": "TC_002_008",
+      "title": "Measure and Verify End-to-End Cycle Time (Performance)",
+      "description": "This test case measures the performance of the system by timing the complete end-to-end sorting cycle for a 'WATER' object. The time is measured from the moment the object is detected at BANDi to the moment the system returns to the INIT state, ready for the next object.",
+      "objective": "To validate that the system's operational speed meets the required performance benchmarks or throughput targets (e.g., cycle time under 15 seconds).",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7944",
+      "original_id": "TC_001_001",
+      "title": "Verify Successful Grasp Operation of GripperTool",
+      "description": "This test case ensures that the GripperTool can successfully grasp an object when provided with valid inputs.",
+      "objective": "Validate successful execution of the grasp operation using valid parameters.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7945",
+      "original_id": "TC_001_002",
+      "title": "Test Grasp Operation with Invalid Product Detection",
+      "description": "This test case checks the system's response when an invalid product detection is provided during a grasp operation.",
+      "objective": "Validate error handling and recovery mechanism for invalid inputs in grasping.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7946",
+      "original_id": "TC_001_003",
+      "title": "Boundary Test for Grasp Operation with Minimum Joint Pose Values",
+      "description": "This test case evaluates the system's behavior when minimum joint pose values are used during a grasp operation.",
+      "objective": "Ensure the system handles boundary conditions correctly in grasping operations.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7947",
+      "original_id": "TC_001_004",
+      "title": "Boundary Test for Grasp Operation with Maximum Joint Pose Values",
+      "description": "This test case checks the system's response when maximum joint pose values are used during a grasp operation.",
+      "objective": "Ensure the system handles boundary conditions correctly in grasping operations.",
+      "decision": "Similar",
+      "similar_to": "R7946"
+    },
+    {
+      "row_ref": "R7948",
+      "original_id": "TC_001_005",
+      "title": "Error Recovery During Grasp Operation",
+      "description": "This test case assesses the system's error recovery mechanisms during a grasp operation.",
+      "objective": "Validate that the system can recover from errors gracefully and provide appropriate feedback.",
+      "decision": "Similar",
+      "similar_to": "R7925"
+    },
+    {
+      "row_ref": "R7949",
+      "original_id": "TC_001_006",
+      "title": "Grasp Operation with Null Product Detection",
+      "description": "This test case checks the system's response when null product detection is provided during a grasp operation.",
+      "objective": "Validate error handling and recovery mechanism for null inputs in grasping.",
+      "decision": "Similar",
+      "similar_to": "R7945"
+    },
+    {
+      "row_ref": "R7950",
+      "original_id": "TC_001_007",
+      "title": "Grasp Operation with Invalid Joint Pose Values",
+      "description": "This test case evaluates the system's response when invalid joint pose values are used during a grasp operation.",
+      "objective": "Validate error handling and recovery mechanism for invalid inputs in grasping.",
+      "decision": "Similar",
+      "similar_to": "R7946"
+    },
+    {
+      "row_ref": "R7951",
+      "original_id": "TC_003_001",
+      "title": "Core Functionality: Verify 'WATER' Identification with Nominal Active Sensor Values",
+      "description": "This positive test case verifies that the system correctly identifies 'Product::WATER' when both the small (D1) and large (D2) distance sensors report nominal values well within the active range (< 250) and the actuator is open. This validates the primary success path.",
+      "objective": "To confirm the 'd1 is active AND d2 is active' logic path for 'WATER' identification under standard operating conditions.",
+      "decision": "Similar",
+      "similar_to": "R7900"
+    },
+    {
+      "row_ref": "R7952",
+      "original_id": "TC_003_002",
+      "title": "Boundary Value Analysis: Verify 'WATER' Identification at Upper Active Boundary (249)",
+      "description": "This boundary test case evaluates the system's behavior when both D1 and D2 sensor values are at the exact upper limit of the active range (249). This ensures the '< 250' condition is inclusive of the highest valid active value.",
+      "objective": "To validate that the system correctly identifies 'WATER' when sensor readings are precisely at the boundary of the active state.",
+      "decision": "Similar",
+      "similar_to": "R7930"
+    },
+    {
+      "row_ref": "R7953",
+      "original_id": "TC_003_003",
+      "title": "Boundary Value Analysis (Negative): Verify No 'WATER' Identification at Inactive Boundary (250)",
+      "description": "This negative boundary test case checks that the system does not identify 'Product::WATER' when both D1 and D2 sensor values are exactly at the lower limit of the inactive range (250). This verifies the strictness of the '< 250' condition.",
+      "objective": "To ensure the system correctly rejects 'WATER' identification when sensor values are exactly on the inactive boundary, preventing false positives.",
+      "decision": "Similar",
+      "similar_to": "R7900"
+    },
+    {
+      "row_ref": "R7954",
+      "original_id": "TC_003_004",
+      "title": "Boundary Value Analysis: Verify 'WATER' Identification at Lower Boundary (0)",
+      "description": "This boundary test case validates the system's response when both D1 and D2 sensors report the lowest possible valid value (0). This confirms the logic works across the entire valid active range.",
+      "objective": "To ensure the system correctly identifies 'WATER' at the minimum possible sensor reading, confirming the lower boundary of the active range.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7955",
+      "original_id": "TC_003_005",
+      "title": "Negative Case: Verify No 'WATER' Identification with One Inactive Sensor",
+      "description": "This negative test case verifies the 'AND' condition in the identification logic. It simulates a scenario where one sensor (D1) is active, but the other (D2) is inactive. The system should not identify 'Product::WATER'.",
+      "objective": "To confirm that both sensors must be concurrently active for 'WATER' identification and that a single active sensor is insufficient.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7956",
+      "original_id": "TC_003_006",
+      "title": "Error Handling: Verify System Behavior with Invalid Sensor Input",
+      "description": "This test case assesses the system's robustness and error handling by providing an invalid input from one of the sensors (e.g., a negative value). The system should handle the error gracefully without crashing and should not identify 'Product::WATER'.",
+      "objective": "To ensure the system's input validation and error recovery mechanisms function correctly when receiving unexpected or corrupt sensor data.",
+      "decision": "Similar",
+      "similar_to": "R7914"
+    },
+    {
+      "row_ref": "R7957",
+      "original_id": "TC_003_007",
+      "title": "Precondition Failure: Verify No 'WATER' Identification with Closed Actuator",
+      "description": "This test case verifies that the system logic correctly incorporates the precondition that the actuator must be open. Even if both D1 and D2 sensors are in the active range, 'Product::WATER' should not be identified if the actuator is closed.",
+      "objective": "To validate that system preconditions are correctly evaluated and enforced before the primary product identification logic is executed.",
+      "decision": "Similar",
+      "similar_to": "R7908"
+    },
+    {
+      "row_ref": "R7958",
+      "original_id": "TS_003_TC_001",
+      "title": "focuses on meticulously tracking and validating the system's state transitions as it processes an unrecognized object. The expected state flow (e.g., IDLE -> CONVEYOR_ACTIVE -> SCANNING -> ERROR_UNKNOWN_OBJECT -> AWAITING_RESET -> IDLE) is monitored via system logs or a diagnostic interface to ensure it matches the design specification.\",",
+      "description": "Comprehensive test case for validating System Response to an Unrecognized Object on Conveyor. This test case was auto-generated from the scenario requirements.",
+      "objective": "Verify the functionality and behavior of System Response to an Unrecognized Object on Conveyor",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7959",
+      "original_id": "TS_003_TC_002",
+      "title": "assesses the system's robustness by placing multiple, different unrecognized objects on the conveyor in sequence. The system should correctly identify, flag, and halt for each object individually, requiring operator intervention for each before being ready to process the next item.\",",
+      "description": "Comprehensive test case for validating System Response to an Unrecognized Object on Conveyor. This test case was auto-generated from the scenario requirements.",
+      "objective": "Verify the functionality and behavior of System Response to an Unrecognized Object on Conveyor",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7960",
+      "original_id": "TS_003_TC_003",
+      "title": "ID\": \"TC_003_006\",",
+      "description": "Comprehensive test case for validating System Response to an Unrecognized Object on Conveyor. This test case was auto-generated from the scenario requirements.",
+      "objective": "Verify the functionality and behavior of System Response to an Unrecognized Object on Conveyor",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7961",
+      "original_id": "TS_003_TC_004",
+      "title": "simulates a hardware fault. While an unrecognized object is under the sensors (D1, D2), one of the sensors is programmatically disabled or physically obstructed. The system should not make a default or incorrect classification but should enter a specific fault state indicating a sensor malfunction.\",",
+      "description": "Comprehensive test case for validating System Response to an Unrecognized Object on Conveyor. This test case was auto-generated from the scenario requirements.",
+      "objective": "Verify the functionality and behavior of System Response to an Unrecognized Object on Conveyor",
+      "decision": "Similar",
+      "similar_to": "R7960"
+    },
+    {
+      "row_ref": "R7962",
+      "original_id": "TS_003_TC_005",
+      "title": "\": \"User Input Validation: System Response to Physically Inappropriate Objects\",",
+      "description": "Comprehensive test case for validating System Response to an Unrecognized Object on Conveyor. This test case was auto-generated from the scenario requirements.",
+      "objective": "Verify the functionality and behavior of System Response to an Unrecognized Object on Conveyor",
+      "decision": "Similar",
+      "similar_to": "R7960"
+    },
+    {
+      "row_ref": "R7963",
+      "original_id": "TC_004_001",
+      "title": "Core Functionality - Halt on Occupied Destination",
+      "description": "Verifies that the system correctly identifies an occupied 'REDi' destination, halts its movement before entry, and transitions to a 'WAITING_FOR_CLEARANCE' state while holding a 'SODA' can. This is the primary positive test for the collision avoidance safety feature (FR8).",
+      "objective": "To confirm the system's ability to prevent a collision by stopping its transport sequence when the target destination is blocked.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7964",
+      "original_id": "TC_004_001",
+      "title": "Core Negative Test: Verify Logic is Bypassed When Actuator State is 'CLOSED'",
+      "description": "This test case validates the primary negative path described in the scenario. It ensures that when the actuator's state is explicitly set to 'CLOSED', the product identification logic within the run() method is not triggered, even when detector inputs that would normally cause a product state change are provided.",
+      "objective": "To confirm that the product state remains unchanged from 'NONE' when the run() method is called with a 'CLOSED' actuator and valid detector values for 'WATER'.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7965",
+      "original_id": "TC_004_001",
+      "title": "Verify ProductDetection Interaction with GripperTool and RobotController",
+      "description": "This test case ensures that the ProductDetection class correctly interacts with the GripperTool and RobotController classes during product detection.",
+      "objective": "Validate interactions between ProductDetection, GripperTool, and RobotController classes for correct operation.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7966",
+      "original_id": "TC_004_002",
+      "title": "Boundary Case: Verify Logic is Bypassed with an 'UNKNOWN' Actuator State",
+      "description": "This test evaluates the system's behavior at the edge of defined states. It checks if the conditional logic strictly requires the 'OPEN' state by testing an undefined or 'UNKNOWN' state. The product identification logic should be bypassed as the condition 'GripperState::OPEN' is not met.",
+      "objective": "To verify that the product state does not change when the actuator is in an 'UNKNOWN' state and the run() method is executed with product-changing detector values.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7967",
+      "original_id": "TC_004_002",
+      "title": "Boundary Value Analysis - Stopping Distance at Zone Edge",
+      "description": "Evaluates the system's precision in halting its movement exactly at the boundary of the occupied 'REDi' zone. The test measures the final stopping position of the robotic arm relative to the zone's defined perimeter.",
+      "objective": "To validate that the system stops within the specified safety tolerance (e.g., not crossing the boundary line) without stopping prematurely far from the zone.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7968",
+      "original_id": "TC_004_002",
+      "title": "Test GripperTool Grasp and Release Operations",
+      "description": "This test case checks the functionality of the GripperTool's grasp and release operations.",
+      "objective": "Validate the correctness of the grasp and release methods in the GripperTool class.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7969",
+      "original_id": "TC_004_003",
+      "title": "Error Handling: Verify Logic is Bypassed with an 'ERROR' Actuator State",
+      "description": "This test case assesses the system's robustness and error handling. It simulates a scenario where the actuator is in a fault or 'ERROR' state. The product identification logic must be bypassed to prevent unpredictable behavior or incorrect product identification based on faulty sensor data.",
+      "objective": "To ensure the run() method does not update the product state if the actuator reports an 'ERROR' state, thereby confirming safe-state behavior.",
+      "decision": "Similar",
+      "similar_to": "R7966"
+    },
+    {
+      "row_ref": "R7970",
+      "original_id": "TC_004_003",
+      "title": "Error Recovery - Resumption of Task After Clearance",
+      "description": "Tests the system's ability to recover and complete its task after the 'REDi' destination zone becomes clear. This case starts with the system in the 'WAITING_FOR_CLEARANCE' state and then removes the obstruction.",
+      "objective": "To verify that the system can successfully resume its motion and place the 'SODA' can in the 'REDi' zone once the obstruction is removed, transitioning out of the waiting state.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7971",
+      "original_id": "TC_004_003",
+      "title": "Validate RobotController Movement Operations",
+      "description": "This test case verifies the movement operations of the RobotController class.",
+      "objective": "Ensure that the RobotController can move to specified waypoints and maintain correct state.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7972",
+      "original_id": "TC_004_004",
+      "title": "Check Error Handling in GripperTool Operations",
+      "description": "This test case assesses the error recovery mechanisms of the GripperTool class during operations.",
+      "objective": "Ensure proper handling and recovery from errors in the grasp and release methods.",
+      "decision": "Similar",
+      "similar_to": "R7968"
+    },
+    {
+      "row_ref": "R7973",
+      "original_id": "TC_004_004",
+      "title": "Input Variation: Verify Logic Bypass Across Multiple Detector Inputs with 'CLOSED' Actuator",
+      "description": "This test validates that the bypass logic is independent of the detector input values. It cycles through various detector inputs (e.g., for 'WATER', 'COKE', 'PEPSI') while the actuator remains 'CLOSED' to confirm that the product state is never updated, regardless of the potential product type.",
+      "objective": "To confirm the actuator state check is the single gatekeeper for the identification logic, and no combination of detector inputs can override a 'CLOSED' actuator state.",
+      "decision": "Similar",
+      "similar_to": "R7964"
+    },
+    {
+      "row_ref": "R7974",
+      "original_id": "TC_004_004",
+      "title": "User Input Validation - System State Integrity During Wait",
+      "description": "Validates the system's state management by attempting to issue new commands (e.g., 'move', 'sort new item', 'cancel') while it is in the 'WAITING_FOR_CLEARANCE' state. The system should reject conflicting commands.",
+      "objective": "To ensure the system maintains a safe and stable state while waiting, ignoring or correctly queuing commands that could override the safety halt.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7975",
+      "original_id": "TC_004_005",
+      "title": "Negative Case - Obstruction Appears Mid-Transit",
+      "description": "This test simulates a dynamic environment where the 'REDi' zone becomes occupied *after* the system has already started its transport sequence. It tests the system's real-time obstacle detection and response.",
+      "objective": "To confirm that the system's safety monitoring is continuous and can trigger a halt command at any point during the arm's movement towards the destination.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7976",
+      "original_id": "TC_004_005",
+      "title": "State Transition Test: Verify Logic Bypass After a Successful OPEN-State Cycle",
+      "description": "This test case verifies the bypass logic within a typical operational sequence. First, a successful product identification is performed with an 'OPEN' actuator. The actuator is then set to 'CLOSED', and a new set of detector values is provided. The test confirms that the product state, updated in the first step, is not altered in the second step.",
+      "objective": "To validate that the system correctly re-evaluates the actuator state on each call to run() and that a previous 'OPEN' state does not incorrectly influence a subsequent call where the state is 'CLOSED'.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7977",
+      "original_id": "TC_004_005",
+      "title": "Test ProductDetection with Invalid Inputs",
+      "description": "This test case evaluates the system's response when invalid inputs are provided to the ProductDetection class.",
+      "objective": "Ensure that the system handles invalid inputs gracefully and provides appropriate error messages.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7978",
+      "original_id": "TC_004_006",
+      "title": "Boundary Case for RobotController Waypoint Addition",
+      "description": "This test case checks the boundary conditions for adding waypoints to the RobotController's wayPoints attribute.",
+      "objective": "Ensure that the system handles edge cases correctly when adding waypoints.",
+      "decision": "Similar",
+      "similar_to": "R7921"
+    },
+    {
+      "row_ref": "R7979",
+      "original_id": "TC_004_006",
+      "title": "Negative Case - Destination Sensor Failure",
+      "description": "Simulates a failure of the sensor responsible for detecting occupancy in the 'REDi' zone. The system should not proceed and cause a collision but instead detect the sensor fault and enter a safe error state.",
+      "objective": "To verify the system's failsafe mechanisms in the event of a critical sensor malfunction, preventing unsafe operation.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7980",
+      "original_id": "TC_004_006",
+      "title": "Positive Control Test: Verify Logic Executes Correctly with 'OPEN' Actuator",
+      "description": "This is a positive control test case to establish a baseline and ensure the test environment and underlying product identification logic are functioning correctly. It verifies that when the actuator state is 'OPEN', the run() method correctly processes detector values and updates the product state as expected.",
+      "objective": "To confirm that the product state correctly changes from 'NONE' to 'WATER' when the actuator state is 'OPEN' and corresponding detector values are provided.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7981",
+      "original_id": "TC_004_007",
+      "title": "Performance Test for RobotController Movement Operations",
+      "description": "This test case evaluates the performance of the RobotController class during movement operations.",
+      "objective": "Ensure that the system performs efficiently under load and meets performance criteria.",
+      "decision": "Similar",
+      "similar_to": "R7971"
+    },
+    {
+      "row_ref": "R7982",
+      "original_id": "TC_004_007",
+      "title": "Repetitive Call Test: Verify State Stability with Repeated Calls and 'CLOSED' Actuator",
+      "description": "This test case checks for side effects or state corruption from multiple, consecutive calls to the run() method while the actuator state is 'CLOSED'. The method will be called multiple times with product-changing inputs to ensure the product state remains consistently unchanged.",
+      "objective": "To ensure that repeated execution of the run() method with a non-open actuator does not lead to unintended state changes, memory leaks, or other cumulative errors.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7983",
+      "original_id": "TC_004_007",
+      "title": "State Transition - Timeout from 'WAITING_FOR_CLEARANCE'",
+      "description": "Tests the system's behavior when the 'REDi' zone remains occupied for an extended period, exceeding a predefined timeout. The system should transition from 'WAITING_FOR_CLEARANCE' to a different state, such as 'ERROR_DESTINATION_BLOCKED' or 'AWAITING_MANUAL_INTERVENTION'.",
+      "objective": "To validate the system's timeout logic for unresolved blockages, ensuring it doesn't wait indefinitely and correctly alerts an operator.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7984",
+      "original_id": "TC_004_008",
+      "title": "Concurrency - New Sort Task While Waiting for Clearance",
+      "description": "This test case assesses the system's task management logic. While the system is holding a 'SODA' can and is in the 'WAITING_FOR_CLEARANCE' state for the 'REDi' zone, a new command is issued to sort a different item to an available destination.",
+      "objective": "To verify how the system handles concurrent tasks, specifically whether it can queue the new task, reject it, or (if designed to) execute the new task if it doesn't conflict with the current safety hold.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7985",
+      "original_id": "TC_004_008",
+      "title": "Intermediate State Test: Verify Logic is Bypassed with 'MOVING' Actuator State",
+      "description": "This test case covers an intermediate, transitional actuator state such as 'MOVING' or 'IN_TRANSIT'. The product identification logic should not execute during this phase, as detector readings would be unreliable. This test ensures the precondition is strictly for a stable 'OPEN' state.",
+      "objective": "To verify that the product state remains unchanged when the run() method is called while the actuator is in a 'MOVING' state.",
+      "decision": "Similar",
+      "similar_to": "R7964"
+    },
+    {
+      "row_ref": "R7986",
+      "original_id": "TC_001_001",
+      "title": "Verify RobotController Run Operation with Valid Inputs",
+      "description": "This test case validates the run operation of the RobotController class using valid inputs, ensuring successful execution and correct state transitions.",
+      "objective": "Validate that the RobotController's run operation functions correctly with valid parameters.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7987",
+      "original_id": "TC_001_002",
+      "title": "Test Invalid Input for RobotController Run Operation",
+      "description": "This test case checks the system's response when invalid inputs are provided to the run operation.",
+      "objective": "Ensure that the system handles invalid inputs gracefully and provides appropriate error messages.",
+      "decision": "Similar",
+      "similar_to": "R7977"
+    },
+    {
+      "row_ref": "R7988",
+      "original_id": "TC_001_003",
+      "title": "Boundary Test for RobotController Run Operation",
+      "description": "This test case evaluates the system's behavior with boundary values for input parameters.",
+      "objective": "Verify that the system handles edge cases correctly, such as minimum and maximum values.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7989",
+      "original_id": "TC_001_004",
+      "title": "Error Recovery Test for RobotController Run Operation",
+      "description": "This test case assesses the system's error recovery mechanisms during normal operations.",
+      "objective": "Ensure that the system can recover from errors and provide correct outputs after interruptions or fault conditions.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7990",
+      "original_id": "TC_001_005",
+      "title": "Concurrency Test for RobotController Run Operation",
+      "description": "This test case evaluates the system's ability to handle multiple concurrent run operations.",
+      "objective": "Ensure that the system can manage parallel execution without data corruption or loss.",
+      "decision": "Similar",
+      "similar_to": "R7988"
+    },
+    {
+      "row_ref": "R7991",
+      "original_id": "TC_001_006",
+      "title": "Performance Test for RobotController Run Operation",
+      "description": "This test case measures the performance of the run operation under various loads.",
+      "objective": "Ensure that the system performs efficiently with acceptable response times.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7992",
+      "original_id": "TC_001_007",
+      "title": "Security Test for RobotController Run Operation",
+      "description": "This test case checks the system's security measures against unauthorized access and data manipulation.",
+      "objective": "Ensure that the run operation is secure from unauthorized inputs or modifications.",
+      "decision": "Similar",
+      "similar_to": "R7991"
+    },
+    {
+      "row_ref": "R7993",
+      "original_id": "TC_005_001",
+      "title": "Core Functionality - Sequential Sorting of Different Objects",
+      "description": "This test case validates the primary success path of the scenario. It verifies that the system can successfully sort a 'SODA' can to the 'REDi' bin, correctly reset its state upon returning to 'BANDi', and then immediately process and sort a 'WATER' bottle to the 'WHITEi' bin without any functional errors.",
+      "objective": "To confirm the system's state machine correctly handles two consecutive and different sorting tasks as per the functional requirement FR7.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7994",
+      "original_id": "TC_005_002",
+      "title": "Boundary Value - Minimal Delay Between Sorting Tasks",
+      "description": "This test case focuses on the timing boundary by placing the 'WATER' bottle on the conveyor at the earliest possible moment after the system completes the 'SODA' can sort and signals its return to the ready state ('BANDi'). This tests the system's responsiveness and ability to immediately re-engage without a cooldown period.",
+      "objective": "To evaluate the system's ability to handle immediate, back-to-back processing requests at the lower boundary of the ready-state duration.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7995",
+      "original_id": "TC_005_003",
+      "title": "Boundary Value - Maximum Delay Between Sorting Tasks",
+      "description": "This test case evaluates the system's stability over time by introducing a significant, predefined delay (e.g., 5 minutes) after the first sorting cycle completes and the system is in the 'BANDi' state, before placing the second object ('WATER' bottle).",
+      "objective": "To ensure the system's ready state is stable and does not time out or lose context while idle, and can correctly initiate a new task after a prolonged wait.",
+      "decision": "Similar",
+      "similar_to": "R7994"
+    },
+    {
+      "row_ref": "R7996",
+      "original_id": "TC_005_004",
+      "title": "Error Recovery - Failure During First Sorting Cycle",
+      "description": "This test simulates an error during the sorting of the first object ('SODA' can), such as a conveyor jam or sensor failure. After the error is cleared and the system is reset, this test verifies that the system can correctly process the second object ('WATER' bottle) without being affected by the previous failed state.",
+      "objective": "To validate the system's error handling and recovery mechanism, ensuring a prior fault does not corrupt the state machine for subsequent operations.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7997",
+      "original_id": "TC_005_005",
+      "title": "User Input Validation - Invalid Second Object",
+      "description": "This negative test case verifies the system's behavior when an unknown or unsortable object (e.g., a 'BATTERY') is placed on the conveyor after a successful first sort of the 'SODA' can. The system should correctly identify the object as invalid and execute its standard rejection or error protocol.",
+      "objective": "To ensure the system's object identification logic is not compromised by a previous successful sort and that it correctly handles invalid inputs in a sequence.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7998",
+      "original_id": "TC_005_006",
+      "title": "State Integrity Verification - No Data Carryover",
+      "description": "This test case explicitly checks for data carryover between the two sorting tasks. After the 'SODA' can is sorted, system logs, memory dumps, or diagnostic interfaces will be checked to confirm that all parameters related to the first object (e.g., color profile, weight, target bin 'REDi') have been cleared. Then, the 'WATER' bottle is sorted, and its parameters are verified.",
+      "objective": "To provide concrete evidence that the system state is fully and correctly reset between operations, preventing misclassification of the second object based on data from the first.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R7999",
+      "original_id": "TC_005_007",
+      "title": "Repetitive Operation - Sequential Sorting Loop",
+      "description": "This test case assesses system robustness by executing the SODA-then-WATER sorting sequence repeatedly in a loop (e.g., 20 consecutive times). System performance metrics, cycle times, and error logs are monitored throughout the test.",
+      "objective": "To identify potential issues like memory leaks, performance degradation, or mechanical wear that only manifest after numerous, continuous state transitions and operations.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8000",
+      "original_id": "TC_005_008",
+      "title": "Interruption Handling - Pause Between Sorting Cycles",
+      "description": "This test case verifies the system's ability to handle interruptions between sorting tasks. After the 'SODA' can is sorted and the system returns to the 'BANDi' state, an external 'PAUSE' command is issued. After a short duration, a 'RESUME' command is sent, and then the 'WATER' bottle is placed on the conveyor.",
+      "objective": "To ensure that pausing and resuming the system while in a ready state does not corrupt the state machine, and that it can proceed with the next task normally after resuming.",
+      "decision": "Similar",
+      "similar_to": "R7920"
+    },
+    {
+      "row_ref": "R8001",
+      "original_id": "TS_005_TC_001",
+      "title": "to verify the system's primary behavior when encountering the undefined logical condition where the small detector (D1) is inactive and the large detector (D2) is active. The test ensures the system defaults to a safe, 'no change' state as per the scenario's objective.\",",
+      "description": "Comprehensive test case for validating Negative Test: Evaluate Behavior for Unspecified Logic Path (!d1 && d2). This test case was auto-generated from the scenario requirements.",
+      "objective": "Verify the functionality and behavior of Negative Test: Evaluate Behavior for Unspecified Logic Path (!d1 && d2)",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8002",
+      "original_id": "TS_005_TC_002",
+      "title": "ID\": \"TC_005_007\",",
+      "description": "Comprehensive test case for validating Negative Test: Evaluate Behavior for Unspecified Logic Path (!d1 && d2). This test case was auto-generated from the scenario requirements.",
+      "objective": "Verify the functionality and behavior of Negative Test: Evaluate Behavior for Unspecified Logic Path (!d1 && d2)",
+      "decision": "Similar",
+      "similar_to": "R8001"
+    },
+    {
+      "row_ref": "R8003",
+      "original_id": "TS_005_TC_003",
+      "title": "ID\": \"TC_005_004\",",
+      "description": "Comprehensive test case for validating Negative Test: Evaluate Behavior for Unspecified Logic Path (!d1 && d2). This test case was auto-generated from the scenario requirements.",
+      "objective": "Verify the functionality and behavior of Negative Test: Evaluate Behavior for Unspecified Logic Path (!d1 && d2)",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8004",
+      "original_id": "TS_005_TC_004",
+      "title": "'s objective.\",",
+      "description": "Comprehensive test case for validating Negative Test: Evaluate Behavior for Unspecified Logic Path (!d1 && d2). This test case was auto-generated from the scenario requirements.",
+      "objective": "Verify the functionality and behavior of Negative Test: Evaluate Behavior for Unspecified Logic Path (!d1 && d2)",
+      "decision": "Similar",
+      "similar_to": "R8003"
+    },
+    {
+      "row_ref": "R8005",
+      "original_id": "TS_005_TC_005",
+      "title": "\": \"Error Logging and Reporting: Verify System Logs the Unhandled Condition\",",
+      "description": "Comprehensive test case for validating Negative Test: Evaluate Behavior for Unspecified Logic Path (!d1 && d2). This test case was auto-generated from the scenario requirements.",
+      "objective": "Verify the functionality and behavior of Negative Test: Evaluate Behavior for Unspecified Logic Path (!d1 && d2)",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8006",
+      "original_id": "TC_001_001",
+      "title": "Verify GripperTool Release Operation with Valid Inputs",
+      "description": "This test case checks the release operation of the GripperTool class using valid inputs to ensure proper execution and state transition.",
+      "objective": "Validate the release operation of GripperTool with correct inputs.",
+      "decision": "Similar",
+      "similar_to": "R7986"
+    },
+    {
+      "row_ref": "R8007",
+      "original_id": "TC_001_002",
+      "title": "Test GripperTool Release with Invalid State",
+      "description": "This test case evaluates the system's behavior when attempting to release a gripper that is not in a state where it can be released.",
+      "objective": "Validate error handling for invalid states during release operation.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8008",
+      "original_id": "TC_001_003",
+      "title": "Test GripperTool Release with Null Input",
+      "description": "This test case assesses the system's response when null is passed as an input to the release operation.",
+      "objective": "Validate error handling for null inputs during release operation.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8009",
+      "original_id": "TC_001_004",
+      "title": "Test GripperTool Release with Incorrect Input Type",
+      "description": "This test case checks the system's behavior when an incorrect input type is provided to the release operation.",
+      "objective": "Validate error handling for incorrect input types during release operation.",
+      "decision": "Similar",
+      "similar_to": "R8008"
+    },
+    {
+      "row_ref": "R8010",
+      "original_id": "TC_001_005",
+      "title": "Test GripperTool Release with Maximum Load Capacity",
+      "description": "This test case evaluates the system's behavior when attempting to release a gripper that is holding an object at its maximum load capacity.",
+      "objective": "Validate proper handling of maximum load capacity during release operation.",
+      "decision": "Similar",
+      "similar_to": "R8007"
+    },
+    {
+      "row_ref": "R8011",
+      "original_id": "TC_001_006",
+      "title": "Test GripperTool Release with Interrupted Operation",
+      "description": "This test case assesses the system's error recovery mechanism when an interruption occurs during the release operation.",
+      "objective": "Validate error recovery for interrupted release operations.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8012",
+      "original_id": "TC_001_007",
+      "title": "Test GripperTool Release with Timeout",
+      "description": "This test case evaluates the system's behavior when a timeout occurs during the release operation.",
+      "objective": "Validate error handling for timeouts during release operation.",
+      "decision": "Similar",
+      "similar_to": "R8011"
+    },
+    {
+      "row_ref": "R8013",
+      "original_id": "TC_006_001",
+      "title": "Core Functionality: Verify 'SODA' Identification with In-Bounds D1 and On-Boundary D2",
+      "description": "This is a positive test case designed to validate the core requirement of the scenario. It checks if the system correctly identifies the product as 'SODA' when the small detector (D1) value is clearly within its active range and the large detector (D2) value is exactly on the lower boundary of its inactive range.",
+      "objective": "To confirm that the product identification logic correctly processes a combination of a nominal D1 value and a boundary D2 value to identify 'SODA'.",
+      "decision": "Similar",
+      "similar_to": "R7928"
+    },
+    {
+      "row_ref": "R8014",
+      "original_id": "TC_006_001",
+      "title": "Core Functionality: Verify System Recovery on Complete Grasping Failure",
+      "description": "This is a negative test case that simulates a complete failure of the actuator to grasp the identified 'WATER' bottle. It verifies that the system correctly detects the failure, aborts the transport sequence, retracts the arm, and enters a defined error state.",
+      "objective": "To validate the primary error handling and recovery path when a grasp action is completely unsuccessful.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8015",
+      "original_id": "TC_006_002",
+      "title": "Boundary Value Analysis: Grasp Sensor Pressure Thresholds",
+      "description": "This test case evaluates the system's behavior at the boundaries of the actuator's grasp sensor readings. It tests scenarios where the sensor feedback is just below the minimum threshold for a successful grasp and exactly at the threshold to ensure the system makes a correct and consistent decision.",
+      "objective": "To verify the system's robustness and accuracy in detecting a grasp failure based on sensor data at its decision-making boundaries.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8016",
+      "original_id": "TC_006_002",
+      "title": "Boundary Value Analysis: Verify No 'SODA' Identification with D2 Just Below Inactive Boundary",
+      "description": "This BVA test case checks the lower boundary of the D2 inactive range. By setting D2 to a value just below the boundary (249), this test ensures the system does not incorrectly identify 'SODA', verifying the precision of the '>=' or equivalent logical operator.",
+      "objective": "To validate that the system correctly excludes products from 'SODA' identification when the D2 value is immediately adjacent to, but outside of, the specified inactive boundary.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8017",
+      "original_id": "TC_006_003",
+      "title": "Boundary Value Analysis: Verify 'SODA' Identification with D2 Just Above Inactive Boundary",
+      "description": "This BVA test case complements the on-boundary test by checking the value immediately inside the D2 inactive range (251). It confirms that the logic holds not just at the boundary itself but for values clearly within the defined inactive range.",
+      "objective": "To ensure the 'SODA' identification logic is robust for D2 values just inside the inactive range, confirming the boundary condition is not an isolated success case.",
+      "decision": "Similar",
+      "similar_to": "R8016"
+    },
+    {
+      "row_ref": "R8018",
+      "original_id": "TC_006_003",
+      "title": "Error Recovery: Validate System State and Operator Notification",
+      "description": "This test case focuses on the system's state after a grasp failure is detected. It verifies that the system transitions to a specific 'ERROR' or 'RECOVERY_REQUIRED' state, halts further autonomous actions, and presents a clear, actionable error message to the operator via the user interface.",
+      "objective": "To ensure the system enters a safe, stable state post-failure and provides sufficient information for an operator to diagnose and resolve the issue.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8019",
+      "original_id": "TC_006_004",
+      "title": "Boundary Value Analysis: Verify 'SODA' Identification with D1 at Lower Active Boundary",
+      "description": "This test case evaluates the combined boundary conditions. It sets the small detector (D1) to its minimum assumed active value (e.g., 100) while keeping the large detector (D2) at its inactive boundary (250). This verifies the logic at the lower edge of the D1 active range.",
+      "objective": "To validate the system's ability to correctly identify 'SODA' when both D1 and D2 inputs are at the minimum values for their respective qualifying ranges.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8020",
+      "original_id": "TC_006_004",
+      "title": "User Input Validation: Operator Response to Grasp Failure Alert",
+      "description": "Following a grasp failure, this test case validates the system's response to various operator inputs from the recovery screen. It will test options such as 'Retry Grasp', 'Abort Task', and 'Recalibrate Arm' to ensure each option triggers the correct subsequent workflow.",
+      "objective": "To verify that the user-facing recovery options function as designed and allow for effective manual intervention.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8021",
+      "original_id": "TC_006_005",
+      "title": "Boundary Value Analysis: Verify 'SODA' Identification with D1 at Upper Active Boundary",
+      "description": "This test case evaluates the logic when D1 is at its maximum assumed active value (e.g., 199) and D2 is at its inactive boundary (250). This ensures the upper boundary of the D1 active range is correctly handled in conjunction with the D2 boundary condition.",
+      "objective": "To validate correct 'SODA' identification when D1 is at the upper limit of its active range and D2 is at the lower limit of its inactive range.",
+      "decision": "Similar",
+      "similar_to": "R7930"
+    },
+    {
+      "row_ref": "R8022",
+      "original_id": "TC_006_005",
+      "title": "Negative Test: Grasp Failure with False Positive Sensor Signal",
+      "description": "This test simulates a critical failure where the actuator fails to grasp the object, but a faulty sensor incorrectly reports a successful grasp. The test verifies if any secondary checks can catch the error or if the system proceeds with the transport sequence with an empty actuator.",
+      "objective": "To assess the system's resilience against sensor malfunctions and determine if fail-safes exist beyond the primary grasp sensor.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8023",
+      "original_id": "TC_006_006",
+      "title": "Error Recovery: Verify System Response to Invalid Non-Numeric D1 Input",
+      "description": "This negative test case assesses the system's error handling and recovery capabilities. It provides a non-numeric, invalid input for the D1 detector while D2 is at a valid boundary value. The system should gracefully handle the error without crashing or producing an incorrect identification.",
+      "objective": "To ensure the system has robust input validation and provides clear, user-friendly error messages when presented with data of an incorrect type for the D1 detector.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8024",
+      "original_id": "TC_006_006",
+      "title": "Negative Test: Object Dropped Mid-Transport",
+      "description": "This test case simulates a scenario where the initial grasp is successful, but the object is dropped during the arm's movement to the destination. It verifies that the system's continuous monitoring detects the loss of the object, immediately stops the arm, and triggers the failure recovery protocol.",
+      "objective": "To validate that grasp integrity is monitored throughout the transport phase, not just at the moment of grasping.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8025",
+      "original_id": "TC_006_007",
+      "title": "System Validation: Verify Safe Arm Retraction Path",
+      "description": "This test case specifically validates the arm's retraction sequence after a grasp failure. It ensures the arm retracts to a pre-defined 'home' or 'safe' position without colliding with the object it failed to grasp or any other known obstacles in its environment.",
+      "objective": "To confirm that the failure recovery includes a safe and collision-free physical retraction of the robotic arm.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8026",
+      "original_id": "TC_006_007",
+      "title": "User Input Validation: Verify System Rejection of Out-of-Range Negative D2 Input",
+      "description": "This test case focuses on input validation by providing a syntactically valid but semantically invalid input for D2 (a negative number). Detector readings are typically non-negative. The system should reject this value and provide appropriate feedback.",
+      "objective": "To validate that the system's business rules and constraints (e.g., detector values cannot be negative) are correctly enforced at the input stage.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8027",
+      "original_id": "TC_006_008",
+      "title": "Edge Case: Verify No 'SODA' Identification with D1 Just Outside Active Boundary",
+      "description": "This edge case test ensures the exclusivity of the D1 active range's upper boundary. By setting D1 to the first value outside its active range (e.g., 200) and D2 to a qualifying value (250), the system should not identify the product as 'SODA'.",
+      "objective": "To prevent false positive identifications by confirming the strictness of the upper boundary condition for the D1 detector's active range.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8028",
+      "original_id": "TC_006_008",
+      "title": "System Validation: Failure Event Logging and Auditing",
+      "description": "This test case verifies that upon a grasping failure, a detailed event log is generated. The log entry should include a timestamp, the type of failure ('Grasp Unsuccessful'), the target object ('WATER'), and relevant sensor data at the time of failure.",
+      "objective": "To ensure that all critical failures are logged with sufficient detail to support later diagnostics, auditing, and system improvement.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8029",
+      "original_id": "TC_001_001",
+      "title": "Verify RobotController GetJointPose Operation with Valid Inputs",
+      "description": "This test case validates the getJointPose operation of the RobotController class using valid inputs, ensuring successful execution and correct output.",
+      "objective": "Validate the getJointPose method in RobotController with valid parameters.",
+      "decision": "Similar",
+      "similar_to": "R7986"
+    },
+    {
+      "row_ref": "R8030",
+      "original_id": "TC_001_002",
+      "title": "Test GetJointPose with Null Input",
+      "description": "This test case checks the behavior of getJointPose when an invalid or null input is provided.",
+      "objective": "Validate error handling for null inputs in getJointPose method.",
+      "decision": "Similar",
+      "similar_to": "R8008"
+    },
+    {
+      "row_ref": "R8031",
+      "original_id": "TC_001_003",
+      "title": "Boundary Test GetJointPose with Minimum Joint Pose Values",
+      "description": "This test case validates the getJointPose method using minimum joint pose values to check for boundary conditions.",
+      "objective": "Ensure correct output when input is at the lower bound of possible values.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8032",
+      "original_id": "TC_001_004",
+      "title": "Boundary Test GetJointPose with Maximum Joint Pose Values",
+      "description": "This test case validates the getJointPose method using maximum joint pose values to check for boundary conditions.",
+      "objective": "Ensure correct output when input is at the upper bound of possible values.",
+      "decision": "Similar",
+      "similar_to": "R8031"
+    },
+    {
+      "row_ref": "R8033",
+      "original_id": "TC_001_005",
+      "title": "Performance Test GetJointPose with High Frequency Calls",
+      "description": "This test case evaluates the performance of getJointPose method under high frequency calls.",
+      "objective": "Ensure that the method performs efficiently under heavy load.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8034",
+      "original_id": "TC_001_006",
+      "title": "Security Test GetJointPose with Invalid Credentials",
+      "description": "This test case checks the security of getJointPose method by providing invalid credentials.",
+      "objective": "Ensure that unauthorized access is prevented and appropriate error handling occurs.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8035",
+      "original_id": "TC_001_007",
+      "title": "Error Recovery Test GetJointPose with Interrupted Operation",
+      "description": "This test case assesses the system's error recovery mechanisms during normal operations, specifically for getJointPose.",
+      "objective": "Validate that the system recovers properly from interrupted operations.",
+      "decision": "Similar",
+      "similar_to": "R7989"
+    },
+    {
+      "row_ref": "R8036",
+      "original_id": "TC_007_001",
+      "title": "Core Functionality - Successful Pause and Resume Mid-Path",
+      "description": "This positive test case verifies the system's core ability to pause its operation while in a 'MOVING' state and then resume its task from the exact point of interruption upon receiving the respective commands, successfully completing its journey.",
+      "objective": "To validate the primary pause/resume state transition (MOVING -> PAUSED -> MOVING) and ensure operational continuity as per functional requirement FR7.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8037",
+      "original_id": "TC_007_001",
+      "title": "Core Functionality: Verify Product State Persistence with Closed Actuator After Successful Detection",
+      "description": "This is the primary positive test case that validates the core requirement of the scenario. It ensures that after a product ('SODA') is successfully identified with an 'OPEN' actuator, its state is maintained across a subsequent 'run()' call where the actuator is 'CLOSED', even when sensor inputs for a different product ('WATER') are present.",
+      "objective": "To confirm that the product state is not altered by a 'run()' call if the actuator state is not 'OPEN'.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8038",
+      "original_id": "TC_007_002",
+      "title": "Boundary Value Analysis - Pause Immediately After Start",
+      "description": "This test case focuses on Boundary Value Analysis by issuing a 'PAUSE' command immediately after the system leaves 'HOMEi' and enters the 'MOVING' state. It then verifies if the system can correctly resume its full path to 'REDi'.",
+      "objective": "To ensure the state transition logic is robust and handles interruptions at the very beginning of the operational path without losing context.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8039",
+      "original_id": "TC_007_002",
+      "title": "State Update Verification: Verify Product State is Updated on Subsequent Call with Open Actuator",
+      "description": "This test case acts as a control to the primary scenario. It verifies that the product state *is* correctly updated on a subsequent 'run()' call if the actuator remains 'OPEN'. This confirms that the state persistence is specifically tied to the actuator's 'CLOSED' state and is not a general bug where the state gets stuck.",
+      "objective": "To validate that the product identification logic correctly re-evaluates and updates the product state when the 'actuator open' precondition is met on consecutive calls.",
+      "decision": "Similar",
+      "similar_to": "R8037"
+    },
+    {
+      "row_ref": "R8040",
+      "original_id": "TC_007_003",
+      "title": "Boundary Value Analysis - Pause Just Before Destination",
+      "description": "This test case uses Boundary Value Analysis by issuing a 'PAUSE' command just before the system is expected to arrive at its destination 'REDi'. It then verifies if the system can resume and correctly complete the final delivery and sorting cycle.",
+      "objective": "To validate the system's ability to handle interruptions at the end of its path and correctly transition to the next state (e.g., 'SORTING') after resumption.",
+      "decision": "Similar",
+      "similar_to": "R8038"
+    },
+    {
+      "row_ref": "R8041",
+      "original_id": "TC_007_003",
+      "title": "Boundary Value Analysis: Verify State Persistence with Non-Standard Actuator States",
+      "description": "This test case uses Boundary Value Analysis to check system behavior when the actuator is in a state that is neither 'OPEN' nor 'CLOSED' (e.g., 'ERROR', 'OPENING', 'UNDEFINED'). The expectation is that the identification logic is only triggered by the specific 'OPEN' state, and all other boundary/invalid states should result in state persistence.",
+      "objective": "To ensure the product identification logic is strictly gated by the 'OPEN' actuator state and does not trigger on any other state, thereby preserving the last known product.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8042",
+      "original_id": "TC_007_004",
+      "title": "Error Recovery - Redundant 'RESUME' Command While Moving",
+      "description": "This negative test case verifies the system's error handling by issuing a 'RESUME' command while it is already in the 'MOVING' state. The system should ignore the command and continue its operation without interruption.",
+      "objective": "To ensure the system correctly handles and ignores extraneous commands that are not applicable to its current state, preventing unintended behavior or state corruption.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8043",
+      "original_id": "TC_007_004",
+      "title": "Error Recovery: Verify State Persistence After an Initial Failed Detection",
+      "description": "This test assesses the system's error recovery and state handling when the first attempt to identify a product fails (e.g., due to invalid or unrecognized sensor data) while the actuator is 'OPEN'. Subsequent calls with a 'CLOSED' actuator should persist the resulting 'unidentified' or 'null' state.",
+      "objective": "To verify that the system correctly persists a non-successful identification state (e.g., 'NONE', 'ERROR', or 'NULL') when the actuator is subsequently closed.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8044",
+      "original_id": "TC_007_005",
+      "title": "Error Recovery - Redundant 'PAUSE' Command While Paused",
+      "description": "This negative test case assesses the system's behavior when a 'PAUSE' command is issued while it is already in the 'PAUSED' state. The system should ignore the redundant command and remain in the 'PAUSED' state.",
+      "objective": "To confirm that the system state is idempotent for the PAUSE command and that repeated commands do not cause state flickers or errors.",
+      "decision": "Similar",
+      "similar_to": "R8042"
+    },
+    {
+      "row_ref": "R8045",
+      "original_id": "TC_007_005",
+      "title": "User Input Validation: Verify State Persistence When Subsequent Call Has Invalid Inputs and Closed Actuator",
+      "description": "This test validates that the system correctly ignores detector inputs on a 'run()' call if the primary precondition (actuator 'OPEN') is not met, even if those inputs are invalid, null, or malformed. The previously set state should be preserved without causing system errors.",
+      "objective": "To ensure the system's stability and state integrity by confirming that invalid inputs are ignored when the identification logic is bypassed.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8046",
+      "original_id": "TC_007_006",
+      "title": "Multi-Cycle Test: Verify State Persistence Over Multiple Consecutive Calls with Closed Actuator",
+      "description": "This test extends the core scenario by executing multiple 'run()' calls with the actuator remaining 'CLOSED'. Each call will provide different valid detector inputs. The test verifies that the initially set product state ('SODA') remains unchanged throughout all these subsequent calls, proving long-term state stability.",
+      "objective": "To confirm that the state persistence logic is robust and not affected by the number of subsequent calls or varying sensor data while the actuator is inactive.",
+      "decision": "Similar",
+      "similar_to": "R7982"
+    },
+    {
+      "row_ref": "R8047",
+      "original_id": "TC_007_006",
+      "title": "User Input Validation - Invalid Command in 'PAUSED' State",
+      "description": "This test case validates the system's input handling by sending an undefined or contextually invalid command (e.g., 'REVERSE', 'START_NEW_TASK') while the system is in the 'PAUSED' state.",
+      "objective": "To validate that the system's command parser correctly rejects invalid commands and that the system remains in a safe, stable 'PAUSED' state without any change.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8048",
+      "original_id": "TC_007_007",
+      "title": "Initial State Test: Verify Persistence of Initial State When First Call Has Closed Actuator",
+      "description": "This test case checks the system's behavior when the very first 'run()' call is made with the actuator already in a 'CLOSED' state. The system should not attempt to identify a product, and its internal product state should remain in its initial default value (e.g., 'NONE' or null).",
+      "objective": "To ensure the identification logic is not triggered and the default product state is maintained if the 'actuator open' precondition is not met on the initial system run.",
+      "decision": "Similar",
+      "similar_to": "R8043"
+    },
+    {
+      "row_ref": "R8049",
+      "original_id": "TC_007_007",
+      "title": "State Transition - Multiple Pause/Resume Cycles",
+      "description": "This test case assesses the system's robustness by subjecting it to multiple 'PAUSE' and 'RESUME' command cycles during a single transport operation from 'HOMEi' to 'REDi'.",
+      "objective": "To check for memory leaks, state degradation, or path deviation issues that might occur from repeated state transitions within a single operational task.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R8050",
+      "original_id": "TC_007_008",
+      "title": "State Persistence - Resumption After Extended Pause",
+      "description": "Verifies that the system can maintain its state context (current position, destination, payload information) accurately during a prolonged 'PAUSED' state (e.g., 10 minutes) and resume its operation correctly afterward.",
+      "objective": "To ensure that no state information is lost or corrupted over time due to session timeouts, variable resets, or memory management issues while the system is paused.",
+      "decision": "Unique",
+      "similar_to": ""
+    }
+  ]
+}

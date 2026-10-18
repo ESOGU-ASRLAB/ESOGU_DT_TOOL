@@ -1,0 +1,194 @@
+[
+  {
+    "DuplicateCase": {
+      "ScenarioID": "TS_003",
+      "TestCaseID": "TC_003_001",
+      "Title": "Core Functional Test - Correct Object Classification and Gripper Operation",
+      "Description": "Verify that the system correctly identifies objects (SODA/WATER) and performs gripper operation as expected when object classification is accurate.",
+      "Objective": "Validate core functionality of object detection and gripper behavior under correct classification",
+      "Category": "Positive",
+      "Comments": "Ensure gripper operates without error for valid object types",
+      "ArtifactType": "requirements",
+      "SourceFile": "Functional_and_NonFunctional_Requirements.txt",
+      "SourceSessionID": "40b370ff-da15-46f2-ad96-692814082995",
+      "SourceInputSHA256": "705067b15ff8542772259ac589d99e37841311483b06f6eae56bc878376e1d51",
+      "ArtifactScopedScenarioID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_003",
+      "CaseUID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_003::TC_003_001::01"
+    },
+    "MatchedWith": {
+      "ScenarioID": "TS_001",
+      "TestCaseID": "TC_001_001",
+      "Title": "Core Functional Test - Object Detection and Gripper Activation for SODA/WATER",
+      "Description": "Validates the robot's ability to detect object types (SODA or WATER) using distance sensors D1 and D2, activate gripper for grasping, and perform state transitions from INIT to BAND, MOVING, and HOME after placing the object.",
+      "Objective": "Ensure accurate object type detection and gripper activation with proper state transitions",
+      "Category": "Positive",
+      "Comments": "Enforces safety constraints RQ1–RQ5 during operation",
+      "ArtifactType": "requirements",
+      "SourceFile": "Functional_and_NonFunctional_Requirements.txt",
+      "SourceSessionID": "40b370ff-da15-46f2-ad96-692814082995",
+      "SourceInputSHA256": "705067b15ff8542772259ac589d99e37841311483b06f6eae56bc878376e1d51",
+      "ArtifactScopedScenarioID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_001",
+      "CaseUID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_001::TC_001_001::01"
+    }
+  },
+  {
+    "DuplicateCase": {
+      "ScenarioID": "TS_004",
+      "TestCaseID": "TC_004_001",
+      "Title": "Core Functional Test: Place Object in Correct Bin with State Validation",
+      "Description": "Verify that the robot correctly places a grasped object into the appropriate bin (REDi or WHITEi) based on object type, and transitions through defined states (INIT, BAND, MOVING, HOME, RED, WHITE). Ensure gripper releases object only after confirming correct placement.",
+      "Objective": "Validate accurate object placement in designated bins with proper state transitions",
+      "Category": "Positive",
+      "Comments": "Test covers successful execution of object placement sequence",
+      "ArtifactType": "requirements",
+      "SourceFile": "Functional_and_NonFunctional_Requirements.txt",
+      "SourceSessionID": "40b370ff-da15-46f2-ad96-692814082995",
+      "SourceInputSHA256": "705067b15ff8542772259ac589d99e37841311483b06f6eae56bc878376e1d51",
+      "ArtifactScopedScenarioID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_004",
+      "CaseUID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_004::TC_004_001::01"
+    },
+    "MatchedWith": {
+      "ScenarioID": "TS_001",
+      "TestCaseID": "TC_001_006",
+      "Title": "Positive Test - Successful WATER Object Detection and Placement",
+      "Description": "Verifies successful detection of a WATER object, activation of gripper, movement to designated bin, and proper state transition sequence.",
+      "Objective": "Confirm correct operation for valid WATER item handling",
+      "Category": "Positive",
+      "Comments": "Tests full workflow from INIT to HOME",
+      "ArtifactType": "requirements",
+      "SourceFile": "Functional_and_NonFunctional_Requirements.txt",
+      "SourceSessionID": "40b370ff-da15-46f2-ad96-692814082995",
+      "SourceInputSHA256": "705067b15ff8542772259ac589d99e37841311483b06f6eae56bc878376e1d51",
+      "ArtifactScopedScenarioID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_001",
+      "CaseUID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_001::TC_001_006::06"
+    }
+  },
+  {
+    "DuplicateCase": {
+      "ScenarioID": "TS_008",
+      "TestCaseID": "TC_008_001",
+      "Title": "Core Functional Test: Successful Object Grasping Within Timeout",
+      "Description": "Verify that the robot successfully grasps an object within the defined timeout period, ensuring proper gripper closure and item detection.",
+      "Objective": "Validate normal operation of object grasping with valid inputs and time constraints",
+      "Category": "Positive",
+      "Comments": "Preconditions include a stable robotic arm, accessible object in position, and no environmental interference",
+      "ArtifactType": "requirements",
+      "SourceFile": "Functional_and_NonFunctional_Requirements.txt",
+      "SourceSessionID": "40b370ff-da15-46f2-ad96-692814082995",
+      "SourceInputSHA256": "705067b15ff8542772259ac589d99e37841311483b06f6eae56bc878376e1d51",
+      "ArtifactScopedScenarioID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_008",
+      "CaseUID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_008::TC_008_001::01"
+    },
+    "MatchedWith": {
+      "ScenarioID": "TS_001",
+      "TestCaseID": "TC_001_006",
+      "Title": "Positive Test - Successful WATER Object Detection and Placement",
+      "Description": "Verifies successful detection of a WATER object, activation of gripper, movement to designated bin, and proper state transition sequence.",
+      "Objective": "Confirm correct operation for valid WATER item handling",
+      "Category": "Positive",
+      "Comments": "Tests full workflow from INIT to HOME",
+      "ArtifactType": "requirements",
+      "SourceFile": "Functional_and_NonFunctional_Requirements.txt",
+      "SourceSessionID": "40b370ff-da15-46f2-ad96-692814082995",
+      "SourceInputSHA256": "705067b15ff8542772259ac589d99e37841311483b06f6eae56bc878376e1d51",
+      "ArtifactScopedScenarioID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_001",
+      "CaseUID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_001::TC_001_006::06"
+    }
+  },
+  {
+    "DuplicateCase": {
+      "ScenarioID": "TS_008",
+      "TestCaseID": "TC_008_007",
+      "Title": "Positive Test: Normal Operation with Valid Object",
+      "Description": "Confirm that the robot performs a successful grasp when all conditions are met, including valid object presence and correct positioning.",
+      "Objective": "Validate standard operation under ideal conditions",
+      "Category": "Positive",
+      "Comments": "Ensures system integrity and correctness in normal scenarios",
+      "ArtifactType": "requirements",
+      "SourceFile": "Functional_and_NonFunctional_Requirements.txt",
+      "SourceSessionID": "40b370ff-da15-46f2-ad96-692814082995",
+      "SourceInputSHA256": "705067b15ff8542772259ac589d99e37841311483b06f6eae56bc878376e1d51",
+      "ArtifactScopedScenarioID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_008",
+      "CaseUID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_008::TC_008_007::07"
+    },
+    "MatchedWith": {
+      "ScenarioID": "TS_001",
+      "TestCaseID": "TC_001_006",
+      "Title": "Positive Test - Successful WATER Object Detection and Placement",
+      "Description": "Verifies successful detection of a WATER object, activation of gripper, movement to designated bin, and proper state transition sequence.",
+      "Objective": "Confirm correct operation for valid WATER item handling",
+      "Category": "Positive",
+      "Comments": "Tests full workflow from INIT to HOME",
+      "ArtifactType": "requirements",
+      "SourceFile": "Functional_and_NonFunctional_Requirements.txt",
+      "SourceSessionID": "40b370ff-da15-46f2-ad96-692814082995",
+      "SourceInputSHA256": "705067b15ff8542772259ac589d99e37841311483b06f6eae56bc878376e1d51",
+      "ArtifactScopedScenarioID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_001",
+      "CaseUID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_001::TC_001_006::06"
+    }
+  },
+  {
+    "DuplicateCase": {
+      "ScenarioID": "TS_007",
+      "TestCaseID": "TC_007_005",
+      "Title": "Positive Test - Successful Multi-Object Sequence Execution",
+      "Description": "Executes a full sequence with valid objects and bins, verifying correct execution of all steps including detection, movement, and placement.",
+      "Objective": "Confirm successful completion of multi-object task sequence",
+      "Category": "Positive",
+      "Comments": "Standard test case for normal operation validation",
+      "ArtifactType": "requirements",
+      "SourceFile": "Functional_and_NonFunctional_Requirements.txt",
+      "SourceSessionID": "40b370ff-da15-46f2-ad96-692814082995",
+      "SourceInputSHA256": "705067b15ff8542772259ac589d99e37841311483b06f6eae56bc878376e1d51",
+      "ArtifactScopedScenarioID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_007",
+      "CaseUID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_007::TC_007_005::05"
+    },
+    "MatchedWith": {
+      "ScenarioID": "TS_002",
+      "TestCaseID": "TC_002_005",
+      "Title": "Positive Test: Successful Navigation Between All Valid Locations",
+      "Description": "Execute a full sequence of movements from BANDi to HOMEi, then REDi, and finally WHITEi, verifying successful completion without constraint violations.",
+      "Objective": "Confirm correct execution of multi-location navigation with no safety breaches.",
+      "Category": "Positive",
+      "Comments": "Test complete journey from start to finish.",
+      "ArtifactType": "requirements",
+      "SourceFile": "Functional_and_NonFunctional_Requirements.txt",
+      "SourceSessionID": "40b370ff-da15-46f2-ad96-692814082995",
+      "SourceInputSHA256": "705067b15ff8542772259ac589d99e37841311483b06f6eae56bc878376e1d51",
+      "ArtifactScopedScenarioID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_002",
+      "CaseUID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_002::TC_002_005::05"
+    }
+  },
+  {
+    "DuplicateCase": {
+      "ScenarioID": "TS_007",
+      "TestCaseID": "TC_007_004",
+      "Title": "User Input Validation - Invalid Object Type Detection",
+      "Description": "Tests the system's ability to validate and reject invalid object types during sequence execution, ensuring proper error messages are displayed.",
+      "Objective": "Ensure invalid inputs are handled gracefully with appropriate feedback",
+      "Category": "Positive",
+      "Comments": "Includes testing with non-standard or unsupported object types",
+      "ArtifactType": "requirements",
+      "SourceFile": "Functional_and_NonFunctional_Requirements.txt",
+      "SourceSessionID": "40b370ff-da15-46f2-ad96-692814082995",
+      "SourceInputSHA256": "705067b15ff8542772259ac589d99e37841311483b06f6eae56bc878376e1d51",
+      "ArtifactScopedScenarioID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_007",
+      "CaseUID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_007::TC_007_004::04"
+    },
+    "MatchedWith": {
+      "ScenarioID": "TS_003",
+      "TestCaseID": "TC_003_004",
+      "Title": "User Input Validation - Invalid Object Type Handling",
+      "Description": "Test how the system handles invalid or unexpected object types during classification, ensuring appropriate error messages and graceful degradation.",
+      "Objective": "Validate input validation for object type recognition",
+      "Category": "Positive",
+      "Comments": "Ensure system does not crash or enter unsafe states with invalid inputs",
+      "ArtifactType": "requirements",
+      "SourceFile": "Functional_and_NonFunctional_Requirements.txt",
+      "SourceSessionID": "40b370ff-da15-46f2-ad96-692814082995",
+      "SourceInputSHA256": "705067b15ff8542772259ac589d99e37841311483b06f6eae56bc878376e1d51",
+      "ArtifactScopedScenarioID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_003",
+      "CaseUID": "requirements::Functional_and_NonFunctional_Requirements.txt::TS_003::TC_003_004::04"
+    }
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "DuplicateCase": {
+      "ScenarioID": "TS_003",
+      "TestCaseID": "TC_003_002",
+      "Title": "Boundary Value Analysis: Sensor D2 at Lower Boundary for WATER Detection",
+      "Description": "Test the gripper behavior when sensor D2 detects exactly 249 units, which is just below the 250-unit threshold for WATER product identification.",
+      "Objective": "Validate system response at boundary condition of 249 units",
+      "Category": "Positive",
+      "Comments": "Confirm correct handling at edge case of lower limit",
+      "ArtifactType": "source_code",
+      "SourceFile": "ProductDetection.cpp",
+      "SourceSessionID": "52083295-62a9-45f4-bd77-ad32cc2599c2",
+      "SourceInputSHA256": "7a5019c8fb15e3cdc4a8d7e3bf9706a2ad146c104df60a05e8399644021cc545",
+      "ArtifactScopedScenarioID": "source_code::ProductDetection.cpp::TS_003",
+      "CaseUID": "source_code::ProductDetection.cpp::TS_003::TC_003_002::02"
+    },
+    "MatchedWith": {
+      "ScenarioID": "TS_003",
+      "TestCaseID": "TC_003_001",
+      "Title": "Core Functional Test: Gripper Behavior for WATER Product Detection",
+      "Description": "Verify that the gripper correctly identifies and responds to a WATER product when sensor D2 detects less than 250 units, ensuring proper state transition to WATER.",
+      "Objective": "Validate correct gripper behavior and system state transition for WATER product detection",
+      "Category": "Positive",
+      "Comments": "Ensure gripper action aligns with WATER product type requirements",
+      "ArtifactType": "source_code",
+      "SourceFile": "ProductDetection.cpp",
+      "SourceSessionID": "52083295-62a9-45f4-bd77-ad32cc2599c2",
+      "SourceInputSHA256": "7a5019c8fb15e3cdc4a8d7e3bf9706a2ad146c104df60a05e8399644021cc545",
+      "ArtifactScopedScenarioID": "source_code::ProductDetection.cpp::TS_003",
+      "CaseUID": "source_code::ProductDetection.cpp::TS_003::TC_003_001::01"
+    }
+  },
+  {
+    "DuplicateCase": {
+      "ScenarioID": "TS_004",
+      "TestCaseID": "TC_004_002",
+      "Title": "Verify System Response to No Product Detected by Sensor D2",
+      "Description": "Validate that the system correctly identifies a NONE product type when sensor D2 does not detect any product, ensuring the gripper remains open and appropriate status is logged.",
+      "Objective": "Ensure correct identification of NONE product type when sensor D2 fails to detect an object",
+      "Category": "Positive",
+      "Comments": "Precondition: Sensor D2 must be simulated as inactive or returning no detection signal",
+      "ArtifactType": "source_code",
+      "SourceFile": "ProductDetection.cpp",
+      "SourceSessionID": "52083295-62a9-45f4-bd77-ad32cc2599c2",
+      "SourceInputSHA256": "7a5019c8fb15e3cdc4a8d7e3bf9706a2ad146c104df60a05e8399644021cc545",
+      "ArtifactScopedScenarioID": "source_code::ProductDetection.cpp::TS_004",
+      "CaseUID": "source_code::ProductDetection.cpp::TS_004::TC_004_002::02"
+    },
+    "MatchedWith": {
+      "ScenarioID": "TS_004",
+      "TestCaseID": "TC_004_001",
+      "Title": "Verify System Response to No Product Detected by Sensor D1",
+      "Description": "Validate that the system correctly identifies a NONE product type when sensor D1 does not detect any product, ensuring the gripper remains open and appropriate status is logged.",
+      "Objective": "Ensure correct identification of NONE product type when sensor D1 fails to detect an object",
+      "Category": "Positive",
+      "Comments": "Precondition: Sensor D1 must be simulated as inactive or returning no detection signal",
+      "ArtifactType": "source_code",
+      "SourceFile": "ProductDetection.cpp",
+      "SourceSessionID": "52083295-62a9-45f4-bd77-ad32cc2599c2",
+      "SourceInputSHA256": "7a5019c8fb15e3cdc4a8d7e3bf9706a2ad146c104df60a05e8399644021cc545",
+      "ArtifactScopedScenarioID": "source_code::ProductDetection.cpp::TS_004",
+      "CaseUID": "source_code::ProductDetection.cpp::TS_004::TC_004_001::01"
+    }
+  }
+]

@@ -1,0 +1,1243 @@
+{
+  "total_test_cases": 137,
+  "summary": {
+    "Unique": 79,
+    "Similar": 58
+  },
+  "process_name": "GPT-OSS-20B",
+  "oracle": [
+    {
+      "row_ref": "R1145",
+      "original_id": "TC_001_001",
+      "title": "Verify No Product Detection When Both Sensors Above Threshold",
+      "description": "Test that the system correctly identifies the absence of a product when both distance sensors report values equal to or greater than 250 mm, ensuring no false positives are generated.",
+      "objective": "Validate NONE state when both sensors ≥250 mm",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1146",
+      "original_id": "TC_001_002",
+      "title": "Verify No Product Detection When Both Sensors Below Threshold",
+      "description": "Test that the system correctly identifies the absence of a product when both distance sensors report values below 250 mm, ensuring no false positives are generated.",
+      "objective": "Validate NONE state when both sensors <250 mm",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1147",
+      "original_id": "TC_001_003",
+      "title": "Verify No Product Detection When One Sensor Above Threshold and Other Below Threshold",
+      "description": "Test that the system correctly identifies the absence of a product when one distance sensor reports a value equal to or greater than 250 mm and the other reports a value below 250 mm, ensuring no false positives are generated.",
+      "objective": "Validate NONE state when one sensor ≥250 mm and other <250 mm",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1148",
+      "original_id": "TC_001_004",
+      "title": "Verify No Product Detection When Both Sensors Zeroed Out",
+      "description": "Test that the system correctly identifies the absence of a product when both distance sensors report zero values, ensuring no false positives are generated.",
+      "objective": "Validate NONE state when both sensors =0 mm",
+      "decision": "Similar",
+      "similar_to": "R1146"
+    },
+    {
+      "row_ref": "R1149",
+      "original_id": "TC_001_005",
+      "title": "Verify No Product Detection When Both Sensors Out of Range",
+      "description": "Test that the system correctly identifies the absence of a product when both distance sensors report values outside their valid range, ensuring no false positives are generated.",
+      "objective": "Validate NONE state when both sensors out of range",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1150",
+      "original_id": "TC_001_006",
+      "title": "Verify No Product Detection When Sensor 1 Malfunctioning",
+      "description": "Test that the system correctly identifies the absence of a product when sensor 1 reports an invalid value, ensuring no false positives are generated.",
+      "objective": "Validate NONE state when sensor 1 malfunctioning",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1151",
+      "original_id": "TC_001_007",
+      "title": "Verify No Product Detection When Sensor 2 Malfunctioning",
+      "description": "Test that the system correctly identifies the absence of a product when sensor 2 reports an invalid value, ensuring no false positives are generated.",
+      "objective": "Validate NONE state when sensor 2 malfunctioning",
+      "decision": "Similar",
+      "similar_to": "R1150"
+    },
+    {
+      "row_ref": "R1152",
+      "original_id": "TC_001_008",
+      "title": "Verify No Product Detection When Gripper Malfunctioning",
+      "description": "Test that the system correctly identifies the absence of a product when the gripper is in an invalid state, ensuring no false positives are generated.",
+      "objective": "Validate NONE state when gripper malfunctioning",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1153",
+      "original_id": "TC_001_001",
+      "title": "Verify SODA Detection with Small Sensor Below Threshold and Big Sensor Above or Equal Threshold",
+      "description": "Test that the system correctly identifies a SODA product when the small distance sensor reads less than 250 mm while the big sensor reads equal to or greater than 250 mm.",
+      "objective": "Validate correct identification of SODA under mixed sensor readings",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1154",
+      "original_id": "TC_001_002",
+      "title": "Verify No WATER State with Small Sensor Below Threshold and Big Sensor Above or Equal Threshold",
+      "description": "Test that the system does not incorrectly classify a product as WATER when the small distance sensor reads less than 250 mm while the big sensor reads equal to or greater than 250 mm.",
+      "objective": "Validate correct classification of non-WATER products under mixed sensor readings",
+      "decision": "Similar",
+      "similar_to": "R1153"
+    },
+    {
+      "row_ref": "R1155",
+      "original_id": "TC_001_003",
+      "title": "Verify SODA Detection with Small Sensor Exactly at Threshold and Big Sensor Above or Equal Threshold",
+      "description": "Test that the system correctly identifies a SODA product when the small distance sensor reads exactly 250 mm while the big sensor reads equal to or greater than 250 mm.",
+      "objective": "Validate correct identification of SODA under mixed sensor readings with edge values",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1156",
+      "original_id": "TC_001_004",
+      "title": "Verify No WATER State with Small Sensor Exactly at Threshold and Big Sensor Above or Equal Threshold",
+      "description": "Test that the system does not incorrectly classify a product as WATER when the small distance sensor reads exactly 250 mm while the big sensor reads equal to or greater than 250 mm.",
+      "objective": "Validate correct classification of non-WATER products under mixed sensor readings with edge values",
+      "decision": "Similar",
+      "similar_to": "R1155"
+    },
+    {
+      "row_ref": "R1157",
+      "original_id": "TC_001_005",
+      "title": "Verify SODA Detection with Small Sensor Below Threshold and Big Sensor Exactly at Threshold",
+      "description": "Test that the system correctly identifies a SODA product when the small distance sensor reads less than 250 mm while the big sensor reads exactly 250 mm.",
+      "objective": "Validate correct identification of SODA under mixed sensor readings with different edge values",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1158",
+      "original_id": "TC_001_006",
+      "title": "Verify No WATER State with Small Sensor Below Threshold and Big Sensor Exactly at Threshold",
+      "description": "Test that the system does not incorrectly classify a product as WATER when the small distance sensor reads less than 250 mm while the big sensor reads exactly 250 mm.",
+      "objective": "Validate correct classification of non-WATER products under mixed sensor readings with different edge values",
+      "decision": "Similar",
+      "similar_to": "R1157"
+    },
+    {
+      "row_ref": "R1159",
+      "original_id": "TC_001_007",
+      "title": "Verify System Behavior During Sensor Failure or Interruption",
+      "description": "Test that the system behaves correctly when one of the distance sensors fails or is interrupted during operation.",
+      "objective": "Validate system robustness and error handling mechanisms",
+      "decision": "Similar",
+      "similar_to": "R1150"
+    },
+    {
+      "row_ref": "R1160",
+      "original_id": "TC_001_008",
+      "title": "Verify System Behavior During Gripper State Transition Failure",
+      "description": "Test that the system behaves correctly when there is a failure during gripper state transition.",
+      "objective": "Validate system robustness and error handling mechanisms",
+      "decision": "Similar",
+      "similar_to": "R1152"
+    },
+    {
+      "row_ref": "R1161",
+      "original_id": "TC_001_001",
+      "title": "Verify WATER Detection with Both Sensors Below Threshold",
+      "description": "Test that the system detects WATER when both distance sensors are set below 250 mm, ensuring proper authentication and session management.",
+      "objective": "Validate WATER detection mechanism with D1<250 and D2<250",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1162",
+      "original_id": "TC_001_002",
+      "title": "Verify SODA Detection with One Sensor Below Threshold",
+      "description": "Test that the system does not mistakenly classify as SODA when one sensor is below threshold, ensuring correct authentication and session management.",
+      "objective": "Validate SODA detection mechanism with D1<250 or D2<250",
+      "decision": "Similar",
+      "similar_to": "R1153"
+    },
+    {
+      "row_ref": "R1163",
+      "original_id": "TC_001_003",
+      "title": "Verify NONE Detection with Both Sensors Above Threshold",
+      "description": "Test that the system does not detect as WATER when both sensors are above threshold, ensuring correct authentication and session management.",
+      "objective": "Validate NONE detection mechanism with D1>250 and D2>250",
+      "decision": "Similar",
+      "similar_to": "R1145"
+    },
+    {
+      "row_ref": "R1164",
+      "original_id": "TC_001_004",
+      "title": "Verify Gripper Action for WATER Detection",
+      "description": "Test that the system initiates the correct gripper action when WATER is detected, ensuring proper authentication and session management.",
+      "objective": "Validate gripper action mechanism for WATER detection",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1165",
+      "original_id": "TC_001_005",
+      "title": "Verify Error Handling for Invalid Sensor Data",
+      "description": "Test that the system handles invalid sensor data correctly, ensuring proper authentication and session management.",
+      "objective": "Validate error handling mechanism for invalid sensor data",
+      "decision": "Similar",
+      "similar_to": "R1149"
+    },
+    {
+      "row_ref": "R1166",
+      "original_id": "TC_001_006",
+      "title": "Verify System Transition to WATER State",
+      "description": "Test that the system transitions correctly to the WATER state when both sensors are below threshold, ensuring proper authentication and session management.",
+      "objective": "Validate system transition mechanism to WATER state",
+      "decision": "Similar",
+      "similar_to": "R1161"
+    },
+    {
+      "row_ref": "R1167",
+      "original_id": "TC_001_007",
+      "title": "Verify System Transition to SODA State",
+      "description": "Test that the system transitions correctly to the SODA state when one sensor is below threshold, ensuring proper authentication and session management.",
+      "objective": "Validate system transition mechanism to SODA state",
+      "decision": "Similar",
+      "similar_to": "R1153"
+    },
+    {
+      "row_ref": "R1168",
+      "original_id": "TC_001_008",
+      "title": "Verify System Transition to NONE State",
+      "description": "Test that the system transitions correctly to the NONE state when both sensors are above threshold, ensuring proper authentication and session management.",
+      "objective": "Validate system transition mechanism to NONE state",
+      "decision": "Similar",
+      "similar_to": "R1145"
+    },
+    {
+      "row_ref": "R1169",
+      "original_id": "TC_001_001",
+      "title": "Verify Login with Valid Credentials",
+      "description": "Test that a user can successfully log in with valid username and password, ensuring proper authentication and session management.",
+      "objective": "Validate user authentication mechanism with correct credentials",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1170",
+      "original_id": "TC_001_002",
+      "title": "Verify Login with Invalid Credentials",
+      "description": "Test that a user cannot log in with invalid username or password, ensuring proper error handling and security measures.",
+      "objective": "Validate user authentication mechanism with incorrect credentials",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1171",
+      "original_id": "TC_001_003",
+      "title": "Verify Sensor Values at Thresholds",
+      "description": "Test that the system correctly classifies sensor values at exact threshold conditions, ensuring consistency with defined thresholds.",
+      "objective": "Ensure correct classification at exact threshold values",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1172",
+      "original_id": "TC_001_004",
+      "title": "Verify Sensor Values Below Thresholds",
+      "description": "Test that the system correctly classifies sensor values below defined thresholds, ensuring proper error handling.",
+      "objective": "Ensure correct classification at threshold values",
+      "decision": "Similar",
+      "similar_to": "R1161"
+    },
+    {
+      "row_ref": "R1173",
+      "original_id": "TC_001_005",
+      "title": "Verify Sensor Values Above Thresholds",
+      "description": "Test that the system correctly classifies sensor values above defined thresholds, ensuring proper error handling.",
+      "objective": "Ensure correct classification at threshold values",
+      "decision": "Similar",
+      "similar_to": "R1145"
+    },
+    {
+      "row_ref": "R1174",
+      "original_id": "TC_001_006",
+      "title": "Verify Sensor Values with Interference",
+      "description": "Test that the system correctly handles sensor values with interference or noise, ensuring proper error handling.",
+      "objective": "Ensure correct classification in noisy conditions",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1175",
+      "original_id": "TC_001_007",
+      "title": "Verify Sensor Values with Faulty Sensors",
+      "description": "Test that the system correctly handles sensor values from faulty sensors, ensuring proper error handling.",
+      "objective": "Ensure correct classification in faulty conditions",
+      "decision": "Similar",
+      "similar_to": "R1149"
+    },
+    {
+      "row_ref": "R1176",
+      "original_id": "TC_001_008",
+      "title": "Verify System Behavior with Multiple Sensors",
+      "description": "Test that the system correctly handles multiple sensor values, ensuring proper classification and error handling.",
+      "objective": "Ensure correct classification with multiple sensors",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1177",
+      "original_id": "TC_001_002",
+      "title": "Verify Sensor Readings Slightly Above Thresholds Trigger NONE",
+      "description": "Test that when both sensors read values just above 250 mm, the system correctly identifies no product and remains in the NONE state.",
+      "objective": "Validate resilience to slight threshold overshoot without false detection",
+      "decision": "Similar",
+      "similar_to": "R1145"
+    },
+    {
+      "row_ref": "R1178",
+      "original_id": "TC_001_003",
+      "title": "Verify Gripper State When No Product Detected",
+      "description": "Test that the gripper stays OPEN when no product is detected.",
+      "objective": "Validate gripper behavior in absence of product",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1179",
+      "original_id": "TC_001_004",
+      "title": "Verify Product Detection Logic",
+      "description": "Test that the system correctly determines the product based on sensor readings.",
+      "objective": "Validate product detection mechanism",
+      "decision": "Similar",
+      "similar_to": "R1171"
+    },
+    {
+      "row_ref": "R1180",
+      "original_id": "TC_001_005",
+      "title": "Verify Error Handling in Sensor Readings",
+      "description": "Test that the system correctly handles invalid sensor readings.",
+      "objective": "Validate error handling for sensor data",
+      "decision": "Similar",
+      "similar_to": "R1149"
+    },
+    {
+      "row_ref": "R1181",
+      "original_id": "TC_001_006",
+      "title": "Verify System Behavior in Presence of Multiple Products",
+      "description": "Test that the system correctly identifies multiple products based on sensor readings.",
+      "objective": "Validate system behavior with multiple products",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1182",
+      "original_id": "TC_001_007",
+      "title": "Verify System Behavior in Presence of No Products",
+      "description": "Test that the system correctly identifies no products based on sensor readings.",
+      "objective": "Validate system behavior with no products",
+      "decision": "Similar",
+      "similar_to": "R1145"
+    },
+    {
+      "row_ref": "R1183",
+      "original_id": "TC_001_008",
+      "title": "Verify System Performance Under Heavy Load",
+      "description": "Test that the system performs correctly under heavy load conditions.",
+      "objective": "Validate system performance under heavy load",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1184",
+      "original_id": "TC_001_009",
+      "title": "Verify System Security Features",
+      "description": "Test that the system correctly implements security features to prevent unauthorized access.",
+      "objective": "Validate system security features",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1185",
+      "original_id": "TC_001_001",
+      "title": "Verify Login with Valid Credentials",
+      "description": "Test that a user can successfully log in with valid username and password, ensuring proper authentication and session management.",
+      "objective": "Validate user authentication mechanism with correct credentials",
+      "decision": "Similar",
+      "similar_to": "R1169"
+    },
+    {
+      "row_ref": "R1186",
+      "original_id": "TC_001_001",
+      "title": "Verify RobotController Initialization with Valid Inputs",
+      "description": "This test case ensures that the RobotController class initializes correctly using valid inputs for its attributes.",
+      "objective": "Validate initialization of RobotController with correct and valid inputs.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1187",
+      "original_id": "TC_001_002",
+      "title": "Verify Initialization Fails with Invalid WayPoints Input",
+      "description": "This test case checks the behavior of RobotController when initialized with invalid wayPoints input.",
+      "objective": "Validate error handling during initialization with invalid inputs for wayPoints.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1188",
+      "original_id": "TC_001_002",
+      "title": "Verify Login with Invalid Credentials",
+      "description": "Test that a user cannot successfully log in with invalid username and password, ensuring proper error handling and session management.",
+      "objective": "Validate user authentication mechanism with incorrect credentials",
+      "decision": "Similar",
+      "similar_to": "R1170"
+    },
+    {
+      "row_ref": "R1189",
+      "original_id": "TC_001_003",
+      "title": "Verify Initialization Fails with Invalid State Input",
+      "description": "This test case evaluates the system's response when initializing RobotController with invalid state input.",
+      "objective": "Validate error handling during initialization with invalid inputs for state.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1190",
+      "original_id": "TC_001_003",
+      "title": "Verify Login with Empty Credentials",
+      "description": "Test that a user cannot successfully log in with empty username and password, ensuring proper error handling and session management.",
+      "objective": "Validate user authentication mechanism with missing credentials",
+      "decision": "Similar",
+      "similar_to": "R1170"
+    },
+    {
+      "row_ref": "R1191",
+      "original_id": "TC_001_004",
+      "title": "Verify Initialization Fails with Invalid Gripper Tool Input",
+      "description": "This test case assesses the system's behavior when initializing RobotController with invalid gripper tool input.",
+      "objective": "Validate error handling during initialization with invalid inputs for gripper.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1192",
+      "original_id": "TC_001_004",
+      "title": "Verify Login with Valid Credentials and Redirect to Dashboard",
+      "description": "Test that a user can successfully log in with valid username and password, redirecting to the dashboard after successful authentication.",
+      "objective": "Validate user authentication mechanism with correct credentials and proper redirection",
+      "decision": "Similar",
+      "similar_to": "R1169"
+    },
+    {
+      "row_ref": "R1193",
+      "original_id": "TC_001_005",
+      "title": "Verify Initialization Fails with Invalid Product Detection Input",
+      "description": "This test case checks the system's response when initializing RobotController with invalid product detection input.",
+      "objective": "Validate error handling during initialization with invalid inputs for productDetection.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1194",
+      "original_id": "TC_001_005",
+      "title": "Verify Login with Invalid Credentials and Redirect to Error Page",
+      "description": "Test that a user cannot successfully log in with invalid username and password, redirecting to the error page after failed authentication.",
+      "objective": "Validate user authentication mechanism with incorrect credentials and proper redirection",
+      "decision": "Similar",
+      "similar_to": "R1170"
+    },
+    {
+      "row_ref": "R1195",
+      "original_id": "TC_001_006",
+      "title": "Verify Initialization Fails with Invalid Target WayPoint Input",
+      "description": "This test case evaluates the system's behavior when initializing RobotController with invalid target wayPoint input.",
+      "objective": "Validate error handling during initialization with invalid inputs for targetWayPoint.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1196",
+      "original_id": "TC_001_006",
+      "title": "Verify Login with Empty Credentials and Redirect to Error Page",
+      "description": "Test that a user cannot successfully log in with empty username and password, redirecting to the error page after failed authentication.",
+      "objective": "Validate user authentication mechanism with missing credentials and proper redirection",
+      "decision": "Similar",
+      "similar_to": "R1190"
+    },
+    {
+      "row_ref": "R1197",
+      "original_id": "TC_001_007",
+      "title": "Verify Initialization Fails with Invalid Current Pose Input",
+      "description": "This test case checks the system's response when initializing RobotController with invalid currentPose input.",
+      "objective": "Validate error handling during initialization with invalid inputs for currentPose.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1198",
+      "original_id": "TC_001_007",
+      "title": "Verify Login with Valid Credentials and Error Handling",
+      "description": "Test that a user can successfully log in with valid username and password, ensuring proper error handling during authentication.",
+      "objective": "Validate user authentication mechanism with correct credentials and proper error handling",
+      "decision": "Similar",
+      "similar_to": "R1169"
+    },
+    {
+      "row_ref": "R1199",
+      "original_id": "TC_001_008",
+      "title": "Verify Login with Invalid Credentials and Error Handling",
+      "description": "Test that a user cannot successfully log in with invalid username and password, ensuring proper error handling during authentication.",
+      "objective": "Validate user authentication mechanism with incorrect credentials and proper error handling",
+      "decision": "Similar",
+      "similar_to": "R1170"
+    },
+    {
+      "row_ref": "R1200",
+      "original_id": "TC_001_001",
+      "title": "Verify Detection of WATER Item",
+      "description": "Test that the robot detects a WATER item correctly using distance sensors (D1 and D2) and performs state transitions accordingly.",
+      "objective": "Validate correct detection of WATER items by the robot",
+      "decision": "Similar",
+      "similar_to": "R1161"
+    },
+    {
+      "row_ref": "R1201",
+      "original_id": "TC_001_001",
+      "title": "Verify Successful Addition of WayPoint to RobotController",
+      "description": "This test case checks the successful addition of a valid JointPose object as a new wayPoint in the RobotController's wayPoints attribute.",
+      "objective": "Validate that the addWayPoint operation correctly adds a valid JointPose object to the RobotController's wayPoints collection.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1202",
+      "original_id": "TC_001_002",
+      "title": "Verify Failure to Add Invalid WayPoint to RobotController",
+      "description": "This test case attempts to add an invalid JointPose object (e.g., null or malformed) as a wayPoint and checks for proper error handling.",
+      "objective": "Ensure that the system handles invalid inputs correctly by preventing them from being added to the wayPoints collection.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1203",
+      "original_id": "TC_001_002",
+      "title": "Verify Placement of WATER Item in WHITEi",
+      "description": "Test that the robot places a detected WATER item in its correct bin (WHITEi) and returns safely to BANDi.",
+      "objective": "Validate placement of WATER items by the robot",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1204",
+      "original_id": "TC_001_003",
+      "title": "Check AddWayPoint Operation with Duplicate WayPoints",
+      "description": "This test case attempts to add a duplicate wayPoint (same JointPose) and checks for proper handling of duplicates.",
+      "objective": "Validate that the system does not allow adding duplicate wayPoints and handles them gracefully.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1205",
+      "original_id": "TC_001_003",
+      "title": "Verify Gripper Closure for WATER Item",
+      "description": "Test that the gripper closes around a detected WATER item and releases it properly.",
+      "objective": "Validate gripper closure mechanism for WATER items",
+      "decision": "Similar",
+      "similar_to": "R1164"
+    },
+    {
+      "row_ref": "R1206",
+      "original_id": "TC_001_004",
+      "title": "Test AddWayPoint with Large Number of WayPoints",
+      "description": "This test case attempts to add a large number of wayPoints and checks for performance and memory constraints.",
+      "objective": "Ensure that the system can handle a high volume of wayPoints without crashing or degrading performance.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1207",
+      "original_id": "TC_001_004",
+      "title": "Verify State Transition from BANDi to HOMEi",
+      "description": "Test that the robot transitions from BANDi to HOMEi after grasping a WATER item and placing it in WHITEi.",
+      "objective": "Validate state transition mechanism for WATER items",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1208",
+      "original_id": "TC_001_005",
+      "title": "Verify Collision Avoidance with Other Robots",
+      "description": "Test that the robot avoids collisions with other robots in or moving to the same area when attempting to place a WATER item.",
+      "objective": "Validate collision avoidance mechanism for WATER items",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1209",
+      "original_id": "TC_001_005",
+      "title": "Verify Error Recovery After AddWayPoint Failure",
+      "description": "This test case simulates an error during the addWayPoint operation and checks for proper recovery mechanisms.",
+      "objective": "Validate that the system can recover from errors gracefully without affecting other operations.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1210",
+      "original_id": "TC_001_006",
+      "title": "Test AddWayPoint with Concurrent Operations",
+      "description": "This test case checks the behavior of addWayPoint when multiple threads attempt to add wayPoints concurrently.",
+      "objective": "Ensure that concurrent operations do not cause data corruption or race conditions in the RobotController's wayPoints collection.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1211",
+      "original_id": "TC_001_006",
+      "title": "Verify Real-Time Responsiveness of Sensor Readings",
+      "description": "Test that sensor readings and state transitions are updated within the control timestep.",
+      "objective": "Validate real-time responsiveness of robot's sensors",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1212",
+      "original_id": "TC_001_007",
+      "title": "Check AddWayPoint with WayPoints Collection Limit",
+      "description": "This test case attempts to add a number of wayPoints that exceeds the predefined limit and checks for proper handling.",
+      "objective": "Validate that the system enforces limits on the size of the wayPoints collection.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1213",
+      "original_id": "TC_001_007",
+      "title": "Verify Deterministic Behavior of Gripper Control Logic",
+      "description": "Test that the gripper control logic produces predictable outcomes under the same inputs.",
+      "objective": "Validate determinism of gripper control mechanism",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1214",
+      "original_id": "TC_001_008",
+      "title": "Verify Modularity of System Components",
+      "description": "Test that components such as gripper, robot controller, product detector, and conveyor are independently modelled.",
+      "objective": "Validate modularity of system components",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1215",
+      "original_id": "TC_001_001",
+      "title": "Verify Successful Grasp Operation of GripperTool",
+      "description": "This test case ensures that the GripperTool can successfully grasp an object when provided with valid inputs.",
+      "objective": "Validate successful execution of the grasp operation using valid parameters.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1216",
+      "original_id": "TC_001_002",
+      "title": "Test Grasp Operation with Invalid Product Detection",
+      "description": "This test case checks the system's response when an invalid product detection is provided during a grasp operation.",
+      "objective": "Validate error handling and recovery mechanism for invalid inputs in grasping.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1217",
+      "original_id": "TC_001_003",
+      "title": "Boundary Test for Grasp Operation with Minimum Joint Pose Values",
+      "description": "This test case evaluates the system's behavior when minimum joint pose values are used during a grasp operation.",
+      "objective": "Ensure the system handles boundary conditions correctly in grasping operations.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1218",
+      "original_id": "TC_001_004",
+      "title": "Boundary Test for Grasp Operation with Maximum Joint Pose Values",
+      "description": "This test case checks the system's response when maximum joint pose values are used during a grasp operation.",
+      "objective": "Ensure the system handles boundary conditions correctly in grasping operations.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1219",
+      "original_id": "TC_001_005",
+      "title": "Error Recovery During Grasp Operation",
+      "description": "This test case assesses the system's error recovery mechanisms during a grasp operation.",
+      "objective": "Validate that the system can recover from errors gracefully and provide appropriate feedback.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1220",
+      "original_id": "TC_001_006",
+      "title": "Grasp Operation with Null Product Detection",
+      "description": "This test case checks the system's response when null product detection is provided during a grasp operation.",
+      "objective": "Validate error handling and recovery mechanism for null inputs in grasping.",
+      "decision": "Similar",
+      "similar_to": "R1216"
+    },
+    {
+      "row_ref": "R1221",
+      "original_id": "TC_001_007",
+      "title": "Grasp Operation with Invalid Joint Pose Values",
+      "description": "This test case evaluates the system's response when invalid joint pose values are used during a grasp operation.",
+      "objective": "Validate error handling and recovery mechanism for invalid inputs in grasping.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1222",
+      "original_id": "TC_001_NG_Misclassification_Due_to_Sensor_Noise",
+      "title": "Verify Misclassification Due to Sensor Noise",
+      "description": "This test case verifies that the robot misclassifies an object due to sensor noise, and handles it correctly by aborting the cycle or triggering a safety stop.",
+      "objective": "Validate robustness against sensor noise and misclassification handling per NFR1 and RQ5",
+      "decision": "Similar",
+      "similar_to": "R1174"
+    },
+    {
+      "row_ref": "R1223",
+      "original_id": "TC_002_NG_Misclassification_Due_to_Sensor_Noise",
+      "title": "Verify Misclassification Due to Sensor Noise (Alternative Approach)",
+      "description": "This test case verifies that the robot misclassifies an object due to sensor noise, and handles it correctly by retrying classification.",
+      "objective": "Validate robustness against sensor noise and misclassification handling per NFR1 and RQ5",
+      "decision": "Similar",
+      "similar_to": "R1174"
+    },
+    {
+      "row_ref": "R1224",
+      "original_id": "TC_003_NG_Misclassification_Due_to_Sensor_Noise",
+      "title": "Verify Misclassification Due to Sensor Noise (Edge Case)",
+      "description": "This test case verifies that the robot misclassifies an object due to sensor noise, and handles it correctly by aborting the cycle or triggering a safety stop when the object is already being grasped.",
+      "objective": "Validate robustness against sensor noise and misclassification handling per NFR1 and RQ5",
+      "decision": "Similar",
+      "similar_to": "R1174"
+    },
+    {
+      "row_ref": "R1225",
+      "original_id": "TC_004_NG_Misclassification_Due_to_Sensor_Noise",
+      "title": "Verify Misclassification Due to Sensor Noise (Alternative Approach with Edge Case)",
+      "description": "This test case verifies that the robot misclassifies an object due to sensor noise, and handles it correctly by retrying classification when the object is already being grasped.",
+      "objective": "Validate robustness against sensor noise and misclassification handling per NFR1 and RQ5",
+      "decision": "Similar",
+      "similar_to": "R1174"
+    },
+    {
+      "row_ref": "R1226",
+      "original_id": "TC_005_NG_Misclassification_Due_to_Sensor_Noise",
+      "title": "Verify Misclassification Due to Sensor Noise (Boundary Value Analysis)",
+      "description": "This test case verifies that the robot misclassifies an object due to sensor noise, and handles it correctly by aborting the cycle or triggering a safety stop when the distance readings are at the boundary of WATER threshold range.",
+      "objective": "Validate robustness against sensor noise and misclassification handling per NFR1 and RQ5",
+      "decision": "Similar",
+      "similar_to": "R1174"
+    },
+    {
+      "row_ref": "R1227",
+      "original_id": "TC_006_NG_Misclassification_Due_to_Sensor_Noise",
+      "title": "Verify Misclassification Due to Sensor Noise (Alternative Approach with Boundary Value Analysis)",
+      "description": "This test case verifies that the robot misclassifies an object due to sensor noise, and handles it correctly by retrying classification when the distance readings are at the boundary of WATER threshold range.",
+      "objective": "Validate robustness against sensor noise and misclassification handling per NFR1 and RQ5",
+      "decision": "Similar",
+      "similar_to": "R1174"
+    },
+    {
+      "row_ref": "R1228",
+      "original_id": "TC_007_NG_Misclassification_Due_to_Sensor_Noise",
+      "title": "Verify Misclassification Due to Sensor Noise (Edge Case with Alternative Approach)",
+      "description": "This test case verifies that the robot misclassifies an object due to sensor noise, and handles it correctly by aborting the cycle or triggering a safety stop when the object is already being grasped and retrying classification.",
+      "objective": "Validate robustness against sensor noise and misclassification handling per NFR1 and RQ5",
+      "decision": "Similar",
+      "similar_to": "R1174"
+    },
+    {
+      "row_ref": "R1229",
+      "original_id": "TC_008_NG_Misclassification_Due_to_Sensor_Noise",
+      "title": "Verify Misclassification Due to Sensor Noise (Alternative Approach with Edge Case and Boundary Value Analysis)",
+      "description": "This test case verifies that the robot misclassifies an object due to sensor noise, and handles it correctly by retrying classification when the object is already being grasped and distance readings are at the boundary of WATER threshold range.",
+      "objective": "Validate robustness against sensor noise and misclassification handling per NFR1 and RQ5",
+      "decision": "Similar",
+      "similar_to": "R1174"
+    },
+    {
+      "row_ref": "R1230",
+      "original_id": "TC_001_001",
+      "title": "Verify Distance Threshold Logic at Lower Bound (SODA)",
+      "description": "Test that the system correctly classifies an object as SODA when it is placed exactly at the lower bound of the SODA range.",
+      "objective": "Validate sensor threshold logic for lower bound detection",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1231",
+      "original_id": "TC_001_002",
+      "title": "Verify Distance Threshold Logic at Upper Bound (WATER)",
+      "description": "Test that the system correctly classifies an object as WATER when it is placed exactly at the upper bound of the WATER range.",
+      "objective": "Validate sensor threshold logic for upper bound detection",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1232",
+      "original_id": "TC_001_003",
+      "title": "Verify Distance Threshold Logic at Lower Bound (SODA) - Edge Case",
+      "description": "Test that the system correctly classifies an object as SODA when it is placed slightly above the lower bound of the SODA range.",
+      "objective": "Validate sensor threshold logic for edge case detection",
+      "decision": "Similar",
+      "similar_to": "R1230"
+    },
+    {
+      "row_ref": "R1233",
+      "original_id": "TC_001_004",
+      "title": "Verify Distance Threshold Logic at Upper Bound (WATER) - Edge Case",
+      "description": "Test that the system correctly classifies an object as WATER when it is placed slightly below the upper bound of the WATER range.",
+      "objective": "Validate sensor threshold logic for edge case detection",
+      "decision": "Similar",
+      "similar_to": "R1231"
+    },
+    {
+      "row_ref": "R1234",
+      "original_id": "TC_001_005",
+      "title": "Verify Distance Threshold Logic at Lower Bound (SODA) - Invalid Input",
+      "description": "Test that the system rejects an object placed outside the SODA range.",
+      "objective": "Validate sensor threshold logic for invalid input detection",
+      "decision": "Similar",
+      "similar_to": "R1165"
+    },
+    {
+      "row_ref": "R1235",
+      "original_id": "TC_001_006",
+      "title": "Verify Distance Threshold Logic at Upper Bound (WATER) - Invalid Input",
+      "description": "Test that the system rejects an object placed outside the WATER range.",
+      "objective": "Validate sensor threshold logic for invalid input detection",
+      "decision": "Similar",
+      "similar_to": "R1234"
+    },
+    {
+      "row_ref": "R1236",
+      "original_id": "TC_001_007",
+      "title": "Verify Distance Threshold Logic at Lower Bound (SODA) - Multiple Objects",
+      "description": "Test that the system correctly classifies multiple objects placed within the SODA range.",
+      "objective": "Validate sensor threshold logic for multiple object detection",
+      "decision": "Similar",
+      "similar_to": "R1181"
+    },
+    {
+      "row_ref": "R1237",
+      "original_id": "TC_001_008",
+      "title": "Verify Distance Threshold Logic at Upper Bound (WATER) - Multiple Objects",
+      "description": "Test that the system correctly classifies multiple objects placed within the WATER range.",
+      "objective": "Validate sensor threshold logic for multiple object detection",
+      "decision": "Similar",
+      "similar_to": "R1236"
+    },
+    {
+      "row_ref": "R1238",
+      "original_id": "TC_004_001",
+      "title": "Verify ProductDetection Interaction with GripperTool and RobotController",
+      "description": "This test case ensures that the ProductDetection class correctly interacts with the GripperTool and RobotController classes during product detection.",
+      "objective": "Validate interactions between ProductDetection, GripperTool, and RobotController classes for correct operation.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1239",
+      "original_id": "TC_004_002",
+      "title": "Test GripperTool Grasp and Release Operations",
+      "description": "This test case checks the functionality of the GripperTool's grasp and release operations.",
+      "objective": "Validate the correctness of the grasp and release methods in the GripperTool class.",
+      "decision": "Similar",
+      "similar_to": "R1215"
+    },
+    {
+      "row_ref": "R1240",
+      "original_id": "TC_004_003",
+      "title": "Validate RobotController Movement Operations",
+      "description": "This test case verifies the movement operations of the RobotController class.",
+      "objective": "Ensure that the RobotController can move to specified waypoints and maintain correct state.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1241",
+      "original_id": "TC_004_004",
+      "title": "Check Error Handling in GripperTool Operations",
+      "description": "This test case assesses the error recovery mechanisms of the GripperTool class during operations.",
+      "objective": "Ensure proper handling and recovery from errors in the grasp and release methods.",
+      "decision": "Similar",
+      "similar_to": "R1219"
+    },
+    {
+      "row_ref": "R1242",
+      "original_id": "TC_004_005",
+      "title": "Test ProductDetection with Invalid Inputs",
+      "description": "This test case evaluates the system's response when invalid inputs are provided to the ProductDetection class.",
+      "objective": "Ensure that the system handles invalid inputs gracefully and provides appropriate error messages.",
+      "decision": "Similar",
+      "similar_to": "R1149"
+    },
+    {
+      "row_ref": "R1243",
+      "original_id": "TC_004_006",
+      "title": "Boundary Case for RobotController Waypoint Addition",
+      "description": "This test case checks the boundary conditions for adding waypoints to the RobotController's wayPoints attribute.",
+      "objective": "Ensure that the system handles edge cases correctly when adding waypoints.",
+      "decision": "Similar",
+      "similar_to": "R1212"
+    },
+    {
+      "row_ref": "R1244",
+      "original_id": "TC_004_007",
+      "title": "Performance Test for RobotController Movement Operations",
+      "description": "This test case evaluates the performance of the RobotController class during movement operations.",
+      "objective": "Ensure that the system performs efficiently under load and meets performance criteria.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1245",
+      "original_id": "TC_001_001",
+      "title": "Verify RobotController Run Operation with Valid Inputs",
+      "description": "This test case validates the run operation of the RobotController class using valid inputs, ensuring successful execution and correct state transitions.",
+      "objective": "Validate that the RobotController's run operation functions correctly with valid parameters.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1246",
+      "original_id": "TC_001_002",
+      "title": "Test Invalid Input for RobotController Run Operation",
+      "description": "This test case checks the system's response when invalid inputs are provided to the run operation.",
+      "objective": "Ensure that the system handles invalid inputs gracefully and provides appropriate error messages.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1247",
+      "original_id": "TC_001_003",
+      "title": "Boundary Test for RobotController Run Operation",
+      "description": "This test case evaluates the system's behavior with boundary values for input parameters.",
+      "objective": "Verify that the system handles edge cases correctly, such as minimum and maximum values.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1248",
+      "original_id": "TC_001_004",
+      "title": "Error Recovery Test for RobotController Run Operation",
+      "description": "This test case assesses the system's error recovery mechanisms during normal operations.",
+      "objective": "Ensure that the system can recover from errors and provide correct outputs after interruptions or fault conditions.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1249",
+      "original_id": "TC_001_005",
+      "title": "Concurrency Test for RobotController Run Operation",
+      "description": "This test case evaluates the system's ability to handle multiple concurrent run operations.",
+      "objective": "Ensure that the system can manage parallel execution without data corruption or loss.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1250",
+      "original_id": "TC_001_006",
+      "title": "Performance Test for RobotController Run Operation",
+      "description": "This test case measures the performance of the run operation under various loads.",
+      "objective": "Ensure that the system performs efficiently with acceptable response times.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1251",
+      "original_id": "TC_001_007",
+      "title": "Security Test for RobotController Run Operation",
+      "description": "This test case checks the system's security measures against unauthorized access and data manipulation.",
+      "objective": "Ensure that the run operation is secure from unauthorized inputs or modifications.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1252",
+      "original_id": "TC_005_001",
+      "title": "Verify Safe Transition from Pick Cycle to HOMEi During Unexpected Event",
+      "description": "Test that the robot transitions safely from pick cycle to HOMEi when an unexpected event occurs during the pick cycle, ensuring no collision with other robots and proper logging of incident.",
+      "objective": "Validate safe state transition under abnormal conditions per NFR1",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1253",
+      "original_id": "TC_005_002",
+      "title": "Verify Proper Gripper Closure During Unexpected Event",
+      "description": "Test that the gripper closes correctly during an unexpected event in the pick cycle, ensuring no product damage or robot injury.",
+      "objective": "Validate gripper closure mechanism under abnormal conditions",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1254",
+      "original_id": "TC_005_003",
+      "title": "Verify Safe Movement from BANDi to HOMEi During Unexpected Event",
+      "description": "Test that the robot moves safely from BANDi to HOMEi during an unexpected event in the pick cycle, ensuring no collision with other robots.",
+      "objective": "Validate safe movement mechanism under abnormal conditions",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1255",
+      "original_id": "TC_005_004",
+      "title": "Verify Proper Logging of Incident During Unexpected Event",
+      "description": "Test that the system logs incidents correctly during an unexpected event in the pick cycle, ensuring proper data integrity.",
+      "objective": "Validate incident logging mechanism under abnormal conditions",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1256",
+      "original_id": "TC_005_005",
+      "title": "Verify Safe Transition from HOMEi to BANDi During Unexpected Event",
+      "description": "Test that the robot transitions safely from HOMEi to BANDi during an unexpected event in the pick cycle, ensuring no collision with other robots.",
+      "objective": "Validate safe state transition under abnormal conditions per NFR1",
+      "decision": "Similar",
+      "similar_to": "R1252"
+    },
+    {
+      "row_ref": "R1257",
+      "original_id": "TC_005_006",
+      "title": "Verify Proper Gripper Opening During Unexpected Event",
+      "description": "Test that the gripper opens correctly during an unexpected event in the pick cycle, ensuring no product damage or robot injury.",
+      "objective": "Validate gripper opening mechanism under abnormal conditions",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1258",
+      "original_id": "TC_005_007",
+      "title": "Verify Safe Movement from BANDi to HOMEi with Multiple Unexpected Events",
+      "description": "Test that the robot moves safely from BANDi to HOMEi during multiple unexpected events in the pick cycle, ensuring no collision with other robots.",
+      "objective": "Validate safe movement mechanism under abnormal conditions",
+      "decision": "Similar",
+      "similar_to": "R1254"
+    },
+    {
+      "row_ref": "R1259",
+      "original_id": "TC_005_008",
+      "title": "Verify Proper Incident Reporting During Unexpected Event with Multiple Robots",
+      "description": "Test that the system reports incidents correctly during an unexpected event in the pick cycle involving multiple robots, ensuring proper data integrity.",
+      "objective": "Validate incident reporting mechanism under abnormal conditions",
+      "decision": "Similar",
+      "similar_to": "R1255"
+    },
+    {
+      "row_ref": "R1260",
+      "original_id": "TC_001_001",
+      "title": "Verify GripperTool Release Operation with Valid Inputs",
+      "description": "This test case checks the release operation of the GripperTool class using valid inputs to ensure proper execution and state transition.",
+      "objective": "Validate the release operation of GripperTool with correct inputs.",
+      "decision": "Similar",
+      "similar_to": "R1239"
+    },
+    {
+      "row_ref": "R1261",
+      "original_id": "TC_001_002",
+      "title": "Test GripperTool Release with Invalid State",
+      "description": "This test case evaluates the system's behavior when attempting to release a gripper that is not in a state where it can be released.",
+      "objective": "Validate error handling for invalid states during release operation.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1262",
+      "original_id": "TC_001_003",
+      "title": "Test GripperTool Release with Null Input",
+      "description": "This test case assesses the system's response when null is passed as an input to the release operation.",
+      "objective": "Validate error handling for null inputs during release operation.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1263",
+      "original_id": "TC_001_004",
+      "title": "Test GripperTool Release with Incorrect Input Type",
+      "description": "This test case checks the system's behavior when an incorrect input type is provided to the release operation.",
+      "objective": "Validate error handling for incorrect input types during release operation.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1264",
+      "original_id": "TC_001_005",
+      "title": "Test GripperTool Release with Maximum Load Capacity",
+      "description": "This test case evaluates the system's behavior when attempting to release a gripper that is holding an object at its maximum load capacity.",
+      "objective": "Validate proper handling of maximum load capacity during release operation.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1265",
+      "original_id": "TC_001_006",
+      "title": "Test GripperTool Release with Interrupted Operation",
+      "description": "This test case assesses the system's error recovery mechanism when an interruption occurs during the release operation.",
+      "objective": "Validate error recovery for interrupted release operations.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1266",
+      "original_id": "TC_001_007",
+      "title": "Test GripperTool Release with Timeout",
+      "description": "This test case evaluates the system's behavior when a timeout occurs during the release operation.",
+      "objective": "Validate error handling for timeouts during release operation.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1267",
+      "original_id": "TC_001_GripperControlLogic",
+      "title": "Verify Gripper Control Logic for SODA Object Type",
+      "description": "Test that the gripper opens correctly when an SODA object is detected using distance sensors (D1 and D2).",
+      "objective": "Validate gripper control logic for SODA object type",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1268",
+      "original_id": "TC_002_GripperControlLogic",
+      "title": "Verify Gripper Control Logic for WATER Object Type",
+      "description": "Test that the gripper closes correctly when a WATER object is detected using distance sensors (D1 and D2).",
+      "objective": "Validate gripper control logic for WATER object type",
+      "decision": "Similar",
+      "similar_to": "R1164"
+    },
+    {
+      "row_ref": "R1269",
+      "original_id": "TC_003_GripperControlLogic",
+      "title": "Verify Gripper Control Logic for Unknown Object Type",
+      "description": "Test that the gripper does not take any action when an unknown object is detected using distance sensors (D1 and D2).",
+      "objective": "Validate gripper control logic for unknown object type",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1270",
+      "original_id": "TC_004_RobotStateTransition",
+      "title": "Verify Robot State Transition from BAND to HOME",
+      "description": "Test that the robot moves correctly from BANDi to HOMEi after grasping an object.",
+      "objective": "Validate robot state transition from BAND to HOME",
+      "decision": "Similar",
+      "similar_to": "R1207"
+    },
+    {
+      "row_ref": "R1271",
+      "original_id": "TC_005_RobotStateTransition",
+      "title": "Verify Robot State Transition from HOME to BAND",
+      "description": "Test that the robot moves correctly from HOMEi to BANDi after delivering an object.",
+      "objective": "Validate robot state transition from HOME to BAND",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1272",
+      "original_id": "TC_006_SensorReadings",
+      "title": "Verify Sensor Readings for SODA Object Type",
+      "description": "Test that distance sensors (D1 and D2) detect the correct object type (SODA) when an object is placed in REDi.",
+      "objective": "Validate sensor readings for SODA object type",
+      "decision": "Similar",
+      "similar_to": "R1153"
+    },
+    {
+      "row_ref": "R1273",
+      "original_id": "TC_007_SensorReadings",
+      "title": "Verify Sensor Readings for WATER Object Type",
+      "description": "Test that distance sensors (D1 and D2) detect the correct object type (WATER) when an object is placed in WHITEi.",
+      "objective": "Validate sensor readings for WATER object type",
+      "decision": "Similar",
+      "similar_to": "R1161"
+    },
+    {
+      "row_ref": "R1274",
+      "original_id": "TC_008_SensorReadings",
+      "title": "Verify Sensor Readings for Unknown Object Type",
+      "description": "Test that distance sensors (D1 and D2) do not detect an object when no object is placed in REDi or WHITEi.",
+      "objective": "Validate sensor readings for unknown object type",
+      "decision": "Similar",
+      "similar_to": "R1145"
+    },
+    {
+      "row_ref": "R1275",
+      "original_id": "TC_001_001",
+      "title": "Verify RobotController GetJointPose Operation with Valid Inputs",
+      "description": "This test case validates the getJointPose operation of the RobotController class using valid inputs, ensuring successful execution and correct output.",
+      "objective": "Validate the getJointPose method in RobotController with valid parameters.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1276",
+      "original_id": "TC_001_002",
+      "title": "Test GetJointPose with Null Input",
+      "description": "This test case checks the behavior of getJointPose when an invalid or null input is provided.",
+      "objective": "Validate error handling for null inputs in getJointPose method.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1277",
+      "original_id": "TC_001_003",
+      "title": "Boundary Test GetJointPose with Minimum Joint Pose Values",
+      "description": "This test case validates the getJointPose method using minimum joint pose values to check for boundary conditions.",
+      "objective": "Ensure correct output when input is at the lower bound of possible values.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1278",
+      "original_id": "TC_001_004",
+      "title": "Boundary Test GetJointPose with Maximum Joint Pose Values",
+      "description": "This test case validates the getJointPose method using maximum joint pose values to check for boundary conditions.",
+      "objective": "Ensure correct output when input is at the upper bound of possible values.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1279",
+      "original_id": "TC_001_005",
+      "title": "Performance Test GetJointPose with High Frequency Calls",
+      "description": "This test case evaluates the performance of getJointPose method under high frequency calls.",
+      "objective": "Ensure that the method performs efficiently under heavy load.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1280",
+      "original_id": "TC_001_006",
+      "title": "Security Test GetJointPose with Invalid Credentials",
+      "description": "This test case checks the security of getJointPose method by providing invalid credentials.",
+      "objective": "Ensure that unauthorized access is prevented and appropriate error handling occurs.",
+      "decision": "Unique",
+      "similar_to": ""
+    },
+    {
+      "row_ref": "R1281",
+      "original_id": "TC_001_007",
+      "title": "Error Recovery Test GetJointPose with Interrupted Operation",
+      "description": "This test case assesses the system's error recovery mechanisms during normal operations, specifically for getJointPose.",
+      "objective": "Validate that the system recovers properly from interrupted operations.",
+      "decision": "Unique",
+      "similar_to": ""
+    }
+  ]
+}

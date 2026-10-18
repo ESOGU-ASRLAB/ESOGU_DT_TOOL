@@ -1,0 +1,13 @@
+{
+  "suite_id": "FULLREQ",
+  "artifact_type": "requirements",
+  "source_artifact": "C:\\Users\\matisse\\Desktop\\STLC-Manager\\test_inputs\\Functional_and_NonFunctional_Requirements.txt",
+  "source_artifact_hash": "705067b15ff8542772259ac589d99e37841311483b06f6eae56bc878376e1d51",
+  "source_session_id": "40b370ff-da15-46f2-ad96-692814082995",
+  "generation_model": "NOT RECORDED",
+  "generation_timestamp": "2026-03-06 15:29:45.829000",
+  "database_record_id": "69aaf214d040c89c74b30994",
+  "scenario_count": 8,
+  "test_case_count": 64,
+  "suite_content_hash": "583c7907febd9cb5c7784f70c6cf5e05bb20b4958dc59cac9eee4cfb6e557fdf"
+}
